@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Granule Cell Quiz</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="22" r="5"/><path d="M16 17V4M16 10l-6-5M16 8l6-4M16 13l5-3M16 12l-5-2"/><circle cx="10" cy="5" r="1.6"/><circle cx="22" cy="4" r="1.6"/><circle cx="21" cy="10" r="1.6"/><circle cx="11" cy="10" r="1.6"/><circle cx="16" cy="3.5" r="1.6"/></svg>
+    <span>Granule Cell Quiz</span>
+  </div>
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-view="quiz" class="tab active">Quiz</button>
+    <button role="tab" data-view="browse" class="tab">Browse</button>
+    <button role="tab" data-view="papers" class="tab">Papers</button>
+  </nav>
+</header>
+
+<main>
+  <!-- QUIZ SETUP -->
+  <section id="view-setup" class="view">
+    <h1>What do you know about olfactory bulb granule cells?</h1>
+    <p class="lead" id="setup-lead"></p>
+
+    <div class="setup-block">
+      <div class="setup-head"><h2>Topics</h2><button class="link" id="topics-all">all</button><button class="link" id="topics-none">none</button></div>
+      <div class="chips" id="topic-chips"></div>
+    </div>
+
+    <div class="setup-row">
+      <div class="setup-block">
+        <h2>Question type</h2>
+        <div class="seg" id="type-seg">
+          <button data-v="all" class="on">Both</button>
+          <button data-v="predict">Predict the result</button>
+          <button data-v="concept">Concept check</button>
+        </div>
+      </div>
+      <div class="setup-block">
+        <h2>Difficulty</h2>
+        <div class="seg multi" id="diff-seg">
+          <button data-v="1" class="on">Core</button>
+          <button data-v="2" class="on">Key finding</button>
+          <button data-v="3" class="on">Detailed</button>
+        </div>
+      </div>
+      <div class="setup-block">
+        <h2>Length</h2>
+        <div class="seg" id="len-seg">
+          <button data-v="10" class="on">10</button>
+          <button data-v="20">20</button>
+          <button data-v="all">All</button>
+        </div>
+      </div>
+      <div class="setup-block">
+        <h2>Pool</h2>
+        <div class="seg" id="pool-seg">
+          <button data-v="all" class="on">Everything</button>
+          <button data-v="unseen">Unseen</button>
+          <button data-v="missed">Missed before</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="start-row">
+      <button class="primary big" id="start-btn">Start</button>
+      <span class="muted" id="pool-count"></span>
+    </div>
+
+    <div class="stats-strip" id="stats-strip"></div>
+  </section>
+
+  <!-- QUIZ RUN -->
+  <section id="view-run" class="view hidden">
+    <div class="run-bar">
+      <button class="link" id="quit-btn">← End quiz</button>
+      <div class="progress"><div class="progress-fill" id="progress-fill"></div></div>
+      <span class="score" id="run-score"></span>
+    </div>
+    <article class="card" id="q-card"></article>
+  </section>
+
+  <!-- QUIZ END -->
+  <section id="view-end" class="view hidden">
+    <h1 id="end-title"></h1>
+    <p class="lead" id="end-lead"></p>
+    <div class="topic-bars" id="end-bars"></div>
+    <h2 class="sec" id="missed-head">Review what you missed</h2>
+    <div id="end-missed"></div>
+    <div class="start-row">
+      <button class="primary" id="again-btn">New quiz</button>
+      <button class="ghost" id="retry-missed-btn">Retry missed</button>
+    </div>
+  </section>
+
+  <!-- BROWSE -->
+  <section id="view-browse" class="view hidden">
+    <h1>Browse all cards</h1>
+    <p class="lead">Every question with its answer, explanation and figure, grouped by topic. Use it as a literature review.</p>
+    <div class="browse-tools">
+      <input type="search" id="browse-search" placeholder="Search questions, findings, papers…">
+      <select id="browse-topic"></select>
+      <button class="ghost" id="expand-all">Expand all</button>
+    </div>
+    <div id="browse-list"></div>
+  </section>
+
+  <!-- PAPERS -->
+  <section id="view-papers" class="view hidden">
+    <h1>Papers</h1>
+    <p class="lead">Every paper the quiz draws on, with the questions that use it. Zotero links open the item in your library.</p>
+    <input type="search" id="paper-search" placeholder="Filter by author, title, journal…">
+    <div id="paper-list"></div>
+  </section>
+</main>
+
+<div class="lightbox hidden" id="lightbox" role="dialog" aria-modal="true">
+  <img id="lightbox-img" alt="">
+  <div class="lightbox-cap" id="lightbox-cap"></div>
+</div>
+
+<footer class="foot">
+  Figure panels are reproduced from the cited papers for private study only. Progress is stored in this browser.
+  <button class="link" id="reset-btn">Reset progress</button>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
