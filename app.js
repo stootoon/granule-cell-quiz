@@ -32,13 +32,21 @@
   const setRemoved = (id, on) => { on ? removed.add(id) : removed.delete(id); store.removed = [...removed]; save(); };
   const live = () => QS.filter(q => !removed.has(q.id));
   const stat = id => store.stats[id] || { n: 0, c: 0, last: null };
+  /* spaced repetition: a right answer moves a card up a box, a wrong one sends it back to box 0 */
+  const DAY = 864e5;
+  const STEPS = [1, 3, 7, 16, 35, 75, 160]; // days until the card is due again, per box
+  const endOfToday = () => { const d = new Date(); d.setHours(23, 59, 59, 999); return +d; };
+  const dueOf = s => s.due != null ? s.due : (s.n ? (s.t || 0) + (s.last ? STEPS[1] : STEPS[0]) * DAY : null);
+  const isDue = id => { const s = stat(id); return s.n > 0 && dueOf(s) <= endOfToday(); };
   const record = (id, ok) => {
     const s = stat(id); s.n++; if (ok) s.c++; s.last = ok ? 1 : 0; s.t = Date.now();
+    s.box = ok ? Math.min(s.box == null ? 1 : s.box + 1, STEPS.length - 1) : 0;
+    s.due = s.t + STEPS[s.box] * DAY;
     store.stats[id] = s; save();
   };
 
   /* ---------- settings ---------- */
-  const prefs = Object.assign({ topics: TOPICS.map(t => t.id), type: 'all', diffs: [1, 2, 3], len: '10', pool: 'all' }, store.prefs);
+  const prefs = Object.assign({ topics: TOPICS.map(t => t.id), type: 'all', diffs: [1, 2, 3], len: '10', pool: 'all', opts: 'show' }, store.prefs);
   const savePrefs = () => { store.prefs = prefs; save(); };
 
   /* ---------- helpers ---------- */
@@ -46,7 +54,7 @@
   const topicStyle = id => `--tc: var(--t-${id})`;
   const dots = d => '●'.repeat(d) + '○'.repeat(3 - d);
   const diffName = d => ['', 'Core', 'Key finding', 'Detailed'][d];
-  const typeName = t => t === 'predict' ? 'Predict the result' : 'Concept check';
+  const typeName = t => ({ predict: 'Predict the result', synthesis: 'Synthesis' }[t] || 'Concept check');
   const short = k => { const p = P[k]; return p ? `${p.author} ${p.year}` : k; };
   const zoteroLink = k => `zotero://select/library/items/${k}`;
   const doiLink = k => P[k] && P[k].doi ? `https://doi.org/${P[k].doi}` : `https://scholar.google.com/scholar?q=${encodeURIComponent(P[k] ? P[k].title : k)}`;
@@ -116,11 +124,18 @@
   }));
 
   /* ---------- setup ---------- */
+  const filtered = () => live().filter(q => prefs.topics.includes(q.topic)
+    && (prefs.type === 'all' || q.type === prefs.type)
+    && prefs.diffs.includes(q.difficulty));
+  /* 'due': cards due for review, most overdue first, then unseen cards in random order */
+  function dueSplit() {
+    const base = filtered();
+    const due = base.filter(q => isDue(q.id)).sort((a, b) => dueOf(stat(a.id)) - dueOf(stat(b.id)));
+    return { due, fresh: shuffle(base.filter(q => !stat(q.id).n)) };
+  }
   function pool() {
-    return live().filter(q => prefs.topics.includes(q.topic)
-      && (prefs.type === 'all' || q.type === prefs.type)
-      && prefs.diffs.includes(q.difficulty)
-      && (prefs.pool === 'all' || (prefs.pool === 'unseen' && !stat(q.id).n) || (prefs.pool === 'missed' && stat(q.id).last === 0)));
+    if (prefs.pool === 'due') { const { due, fresh } = dueSplit(); return due.concat(fresh); }
+    return filtered().filter(q => prefs.pool === 'all' || (prefs.pool === 'unseen' && !stat(q.id).n) || (prefs.pool === 'missed' && stat(q.id).last === 0));
   }
   function renderSetup() {
     const LQ = live();
@@ -144,13 +159,19 @@
     syncSeg('#diff-seg', prefs.diffs.map(String));
     syncSeg('#len-seg', [prefs.len]);
     syncSeg('#pool-seg', [prefs.pool]);
+    syncSeg('#opts-seg', [prefs.opts]);
     const n = pool().length;
     const len = prefs.len === 'all' ? n : Math.min(n, +prefs.len);
-    $('#pool-count').textContent = n ? `${len} of ${n} matching questions` : 'No questions match these settings';
+    if (prefs.pool === 'due') {
+      const { due, fresh } = dueSplit();
+      const nd = Math.min(due.length, len);
+      $('#pool-count').textContent = n ? `${len} questions: ${nd} due for review, ${len - nd} new` : 'Nothing due and nothing new for these settings';
+    } else $('#pool-count').textContent = n ? `${len} of ${n} matching questions` : 'No questions match these settings';
     $('#start-btn').disabled = !n;
     const seenAll = LQ.filter(q => stat(q.id).n).length;
     const rightAll = LQ.filter(q => stat(q.id).last === 1).length;
-    $('#stats-strip').textContent = (seenAll ? `So far: ${seenAll} of ${LQ.length} questions seen, ${rightAll} answered correctly on the latest attempt. ` : '')
+    const dueAll = LQ.filter(q => isDue(q.id)).length;
+    $('#stats-strip').textContent = (seenAll ? `So far: ${seenAll} of ${LQ.length} questions seen, ${rightAll} answered correctly on the latest attempt, ${dueAll} due for review today. ` : '')
       + (removed.size ? `${removed.size} card${removed.size > 1 ? 's' : ''} removed in this browser (listed at the end of Browse).` : '');
     show('setup');
   }
@@ -165,13 +186,14 @@
       savePrefs(); renderSetup();
     }));
   }
-  bindSeg('#type-seg', 'type'); bindSeg('#diff-seg', 'diffs', true); bindSeg('#len-seg', 'len'); bindSeg('#pool-seg', 'pool');
+  bindSeg('#type-seg', 'type'); bindSeg('#diff-seg', 'diffs', true); bindSeg('#len-seg', 'len'); bindSeg('#pool-seg', 'pool'); bindSeg('#opts-seg', 'opts');
   $('#topics-all').addEventListener('click', () => { prefs.topics = TOPICS.map(t => t.id); savePrefs(); renderSetup(); });
   $('#topics-none').addEventListener('click', () => { prefs.topics = []; savePrefs(); renderSetup(); });
   $('#start-btn').addEventListener('click', () => {
-    let list = shuffle(pool());
+    // the due pool is already in priority order, so cut it before shuffling
+    let list = prefs.pool === 'due' ? pool() : shuffle(pool());
     if (prefs.len !== 'all') list = list.slice(0, +prefs.len);
-    start(list.map(q => q.id));
+    start(shuffle(list).map(q => q.id));
   });
 
   /* ---------- run ---------- */
@@ -183,7 +205,7 @@
   function renderQuestion() {
     const q = Q[run.ids[run.i]];
     const order = shuffle(q.options.map((_, i) => i));
-    run.order = order; run.answered = false;
+    run.order = order; run.answered = false; run.hidden = prefs.opts === 'hide';
     $('#progress-fill').style.width = `${100 * run.i / run.ids.length}%`;
     const right = run.results.filter(r => r.ok).length;
     $('#run-score').textContent = `${right}/${run.results.length} correct`;
@@ -196,10 +218,25 @@
         el('span', { class: 'qnum' }, `${run.i + 1} / ${run.ids.length}`)),
       q.setup ? el('div', { class: 'setup-box' }, el('b', {}, q.type === 'predict' ? 'The experiment' : 'Context'), q.setup) : null,
       el('p', { class: 'qtext' }, q.question),
-      el('div', { class: 'opts' }, order.map((oi, k) =>
+      run.hidden ? el('div', { class: 'commit', id: 'commit' },
+        el('textarea', { id: 'guess', rows: 2, placeholder: 'Your answer before you see the options (optional, not saved). Ctrl/⌘+Enter to continue.',
+          onkeydown: e => { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); showOptions(); } } }),
+        el('div', { class: 'next-row' },
+          el('span', { class: 'kbd' }, 'Enter ↵'),
+          el('button', { class: 'primary', id: 'show-opts-btn', onclick: showOptions }, 'Show options'))) : null,
+      el('div', { class: 'opts' + (run.hidden ? ' hidden' : '') }, order.map((oi, k) =>
         el('button', { class: 'opt', 'data-oi': oi, onclick: () => answer(oi) }, el('span', { class: 'k' }, String(k + 1)), el('span', {}, q.options[oi])))),
       el('div', { id: 'reveal' }));
-    card.querySelector('.opt').focus({ preventScroll: true });
+    (run.hidden ? $('#show-opts-btn') : card.querySelector('.opt')).focus({ preventScroll: true });
+  }
+  function showOptions() {
+    if (!run || !run.hidden) return;
+    run.hidden = false;
+    const g = $('#guess');
+    if (g) { g.readOnly = true; g.tabIndex = -1; }
+    const r = $('#commit .next-row'); if (r) r.remove();
+    const opts = $('#q-card .opts'); opts.classList.remove('hidden');
+    opts.querySelector('.opt').focus({ preventScroll: true });
   }
   function answer(oi) {
     if (run.answered) return;
@@ -358,6 +395,11 @@
     if (e.target.matches('input, select, textarea')) return;
     if (e.key === 'Escape') { $('#lightbox').classList.add('hidden'); return; }
     if ($('#view-run').classList.contains('hidden') || !run) return;
+    if (run.hidden) {
+      if (e.key === 'Enter' && document.activeElement && document.activeElement.id === 'show-opts-btn') return; // button handles it
+      if (e.key === 'Enter') { e.preventDefault(); showOptions(); }
+      return;
+    }
     if (!run.answered && /^[1-4]$/.test(e.key)) {
       const b = document.querySelectorAll('#q-card .opt')[+e.key - 1];
       if (b) { e.preventDefault(); b.click(); }

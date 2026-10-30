@@ -39,6 +39,7 @@
           <button data-v="all" class="on">Both</button>
           <button data-v="predict">Predict the result</button>
           <button data-v="concept">Concept check</button>
+          <button data-v="synthesis">Synthesis</button>
         </div>
       </div>
       <div class="setup-block">
@@ -61,8 +62,16 @@
         <h2>Pool</h2>
         <div class="seg" id="pool-seg">
           <button data-v="all" class="on">Everything</button>
+          <button data-v="due" title="Spaced repetition: cards due for review first, then new ones">Due today</button>
           <button data-v="unseen">Unseen</button>
           <button data-v="missed">Missed before</button>
+        </div>
+      </div>
+      <div class="setup-block">
+        <h2>Options</h2>
+        <div class="seg" id="opts-seg">
+          <button data-v="show" class="on">Show at once</button>
+          <button data-v="hide" title="Answer in your head (or the box) before the options appear">After I answer</button>
         </div>
       </div>
     </div>

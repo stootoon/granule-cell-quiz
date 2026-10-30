@@ -1,6 +1,6 @@
 # Granule Cell Quiz
 
-An interactive quiz on olfactory bulb granule cells (GCs), built from papers in my Zotero library and the olfactory bulb chapter of Shepherd's *The Synaptic Organization of the Brain*. There are 176 questions across eight topics:
+An interactive quiz on olfactory bulb granule cells (GCs), built from papers in my Zotero library and the olfactory bulb chapter of Shepherd's *The Synaptic Organization of the Brain*. There are 192 questions across eight topics:
 
 - anatomy and synapses
 - dendritic computation
@@ -11,12 +11,14 @@ An interactive quiz on olfactory bulb granule cells (GCs), built from papers in 
 - adult neurogenesis
 - learning
 
-There are two kinds of question. **Predict the result** describes an experiment and asks what happened. **Concept check** asks about a mechanism or fact. Each answer shows the figure panel from the paper, with a DOI link and a `zotero://` link that opens the item in Zotero.
+There are three kinds of question. **Predict the result** describes an experiment and asks what happened. **Concept check** asks about a mechanism or fact. **Synthesis** names several papers without giving their results and asks what they imply together; these often end on an open question. Each answer shows the figure panel from the paper, with a DOI link and a `zotero://` link that opens the item in Zotero.
 
 ## Use
 
 - Open `index.html` in a browser. It also works straight from the file system, with no server.
-- **Quiz tab:** pick topics, question type, difficulty and length. The "Missed before" pool re-asks questions you got wrong last time. Keyboard: `1`–`4` answer, `Enter` goes to the next question, `Esc` closes a zoomed figure.
+- **Quiz tab:** pick topics, question type, difficulty and length. The "Missed before" pool re-asks questions you got wrong last time.
+- **Due today (spaced repetition):** each card sits in a box. A right answer moves it up a box and a wrong one sends it back to the first; it comes due again after 1, 3, 7, 16, 35, 75 or 160 days, depending on the box. The "Due today" pool shows due cards first, most overdue first, then fills the session with unseen cards. Any quiz mode updates the schedule.
+- **Options: After I answer:** hides the options until you have answered in your head or in the box, which tests recall rather than recognition. `Enter` (or `Ctrl/⌘+Enter` in the box) shows them. Keyboard: `1`–`4` answer, `Enter` goes to the next question, `Esc` closes a zoomed figure.
 - **Browse tab:** every card with its answer, explanation and figure, searchable. Use it as a literature review.
 - **Papers tab:** each source paper and the cards that use it.
 - **Removing a card:** "Remove this card", at the bottom of any answer, hides that card from quizzes and Browse. Removed cards are listed at the end of Browse with their IDs, to restore them or to delete them from `data.js` for good.
