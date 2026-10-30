@@ -27,6 +27,10 @@
   let store = { stats: {}, prefs: {} };
   try { const s = JSON.parse(localStorage.getItem(KEY)); if (s && s.stats) store = s; } catch (e) { /* private mode etc. */ }
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) { } };
+  /* cards the user removed in this browser; excluded from quizzes, counts and Browse */
+  const removed = new Set((store.removed || []).filter(id => Q[id]));
+  const setRemoved = (id, on) => { on ? removed.add(id) : removed.delete(id); store.removed = [...removed]; save(); };
+  const live = () => QS.filter(q => !removed.has(q.id));
   const stat = id => store.stats[id] || { n: 0, c: 0, last: null };
   const record = (id, ok) => {
     const s = stat(id); s.n++; if (ok) s.c++; s.last = ok ? 1 : 0; s.t = Date.now();
@@ -71,6 +75,19 @@
     return el('figure', { class: 'panel' }, wrap,
       el('figcaption', {}, el('b', {}, `${f.label}. `), f.caption));
   }
+  function removeNode(q) {
+    const row = el('div', { class: 'remove-row' });
+    const paint = () => {
+      const off = removed.has(q.id);
+      row.innerHTML = '';
+      if (off) row.append(`Removed from quizzes and Browse in this browser (${q.id}). `);
+      row.append(el('button', { class: 'link', onclick: () => { setRemoved(q.id, !off); paint(); } }, off ? 'Undo' : 'Remove this card'));
+      const card = row.closest('.bcard');
+      if (card) card.classList.toggle('removed', removed.has(q.id));
+    };
+    paint();
+    return row;
+  }
   function answerBody(q, withAnswer) {
     return [
       withAnswer ? el('div', { class: 'answer' }, '✓ ' + q.options[q.answer]) : null,
@@ -79,6 +96,7 @@
       figureNode(q),
       citeNode(q.source, q.figure),
       alsoNode(q),
+      removeNode(q),
     ].filter(Boolean);
   }
 
@@ -99,17 +117,18 @@
 
   /* ---------- setup ---------- */
   function pool() {
-    return QS.filter(q => prefs.topics.includes(q.topic)
+    return live().filter(q => prefs.topics.includes(q.topic)
       && (prefs.type === 'all' || q.type === prefs.type)
       && prefs.diffs.includes(q.difficulty)
       && (prefs.pool === 'all' || (prefs.pool === 'unseen' && !stat(q.id).n) || (prefs.pool === 'missed' && stat(q.id).last === 0)));
   }
   function renderSetup() {
+    const LQ = live();
     const nPapers = Object.keys(P).length;
-    $('#setup-lead').textContent = `${QS.length} questions from ${nPapers} papers in your library on how granule cells work: their synapses and dendrites, their place in the bulb circuit, their inputs from cortex and neuromodulatory centres, adult neurogenesis, brain state and learning. Every answer shows the figure panel it comes from.`;
+    $('#setup-lead').textContent = `${LQ.length} questions from ${nPapers} papers in your library on how granule cells work: their synapses and dendrites, their place in the bulb circuit, their inputs from cortex and neuromodulatory centres, adult neurogenesis, brain state and learning. Every answer shows the figure panel it comes from.`;
     const chips = $('#topic-chips'); chips.innerHTML = '';
     TOPICS.forEach(t => {
-      const qs = QS.filter(q => q.topic === t.id);
+      const qs = LQ.filter(q => q.topic === t.id);
       const seen = qs.filter(q => stat(q.id).n);
       const right = qs.filter(q => stat(q.id).last === 1).length;
       const on = prefs.topics.includes(t.id);
@@ -119,7 +138,7 @@
       },
         el('div', { class: 'name' }, t.name, el('span', { class: 'count' }, seen.length ? `${right}/${qs.length} right` : `${qs.length} questions`)),
         el('div', { class: 'blurb' }, t.blurb),
-        el('div', { class: 'mastery' }, el('i', { style: `width:${100 * right / qs.length}%` }))));
+        el('div', { class: 'mastery' }, el('i', { style: `width:${qs.length ? 100 * right / qs.length : 0}%` }))));
     });
     syncSeg('#type-seg', [prefs.type]);
     syncSeg('#diff-seg', prefs.diffs.map(String));
@@ -129,9 +148,10 @@
     const len = prefs.len === 'all' ? n : Math.min(n, +prefs.len);
     $('#pool-count').textContent = n ? `${len} of ${n} matching questions` : 'No questions match these settings';
     $('#start-btn').disabled = !n;
-    const seenAll = QS.filter(q => stat(q.id).n).length;
-    const rightAll = QS.filter(q => stat(q.id).last === 1).length;
-    $('#stats-strip').textContent = seenAll ? `So far: ${seenAll} of ${QS.length} questions seen, ${rightAll} answered correctly on the latest attempt.` : '';
+    const seenAll = LQ.filter(q => stat(q.id).n).length;
+    const rightAll = LQ.filter(q => stat(q.id).last === 1).length;
+    $('#stats-strip').textContent = (seenAll ? `So far: ${seenAll} of ${LQ.length} questions seen, ${rightAll} answered correctly on the latest attempt. ` : '')
+      + (removed.size ? `${removed.size} card${removed.size > 1 ? 's' : ''} removed in this browser (listed at the end of Browse).` : '');
     show('setup');
   }
   function syncSeg(sel, on) { document.querySelectorAll(sel + ' button').forEach(b => b.classList.toggle('on', on.includes(b.dataset.v))); }
@@ -240,7 +260,7 @@
   function browseCard(q) {
     const s = stat(q.id);
     const mark = s.n ? (s.last ? ' ✓' : ' ✗') : '';
-    const d = el('details', { class: 'bcard', id: 'card-' + q.id, style: topicStyle(q.topic) },
+    const d = el('details', { class: 'bcard' + (removed.has(q.id) ? ' removed' : ''), id: 'card-' + q.id, style: topicStyle(q.topic) },
       el('summary', {},
         el('div', { class: 'meta', style: 'margin:0' },
           el('span', { class: 'badge topic' }, T[q.topic].name),
@@ -268,15 +288,27 @@
     const topic = sel.value;
     const list = $('#browse-list'); list.innerHTML = '';
     let total = 0;
+    const LQ = live();
     TOPICS.forEach(t => {
       if (topic && t.id !== topic) return;
-      const qs = QS.filter(q => q.topic === t.id && (!term || hay(q).includes(term)));
+      const qs = LQ.filter(q => q.topic === t.id && (!term || hay(q).includes(term)));
       if (!qs.length) return;
       total += qs.length;
       list.append(el('div', { class: 'group-head', style: topicStyle(t.id) }, el('h3', {}, t.name), el('span', {}, `${qs.length} cards · ${t.blurb}`)));
       qs.forEach(q => list.append(browseCard(q)));
     });
     if (!total) list.append(el('div', { class: 'empty' }, 'Nothing matches that search.'));
+    if (removed.size && !term && !topic) {
+      const ids = [...removed].sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+      const copy = el('button', { class: 'link', onclick: () => {
+        const done = () => { copy.textContent = 'Copied'; };
+        try { navigator.clipboard.writeText(ids.join(' ')).then(done, () => {}); } catch (e) { }
+      } }, 'Copy IDs');
+      list.append(
+        el('div', { class: 'group-head removed-head' }, el('h3', {}, 'Removed'),
+          el('span', {}, `${ids.length} card${ids.length > 1 ? 's' : ''}, hidden in this browser only. To delete them for good, pass on the IDs: `, el('code', {}, ids.join(' ')), ' ', copy)),
+        ...ids.map(id => browseCard(Q[id])));
+    }
     show('browse');
     if (focusId) {
       const c = document.getElementById('card-' + focusId);
@@ -297,7 +329,7 @@
   function renderPapers() {
     const term = $('#paper-search').value.trim().toLowerCase();
     const uses = {};
-    QS.forEach(q => [q.source, ...(q.also || [])].forEach(k => { (uses[k] = uses[k] || []).includes(q.id) || uses[k].push(q.id); }));
+    live().forEach(q => [q.source, ...(q.also || [])].forEach(k => { (uses[k] = uses[k] || []).includes(q.id) || uses[k].push(q.id); }));
     const keys = Object.keys(P).sort((a, b) => P[a].author.localeCompare(P[b].author) || P[a].year.localeCompare(P[b].year));
     const list = $('#paper-list'); list.innerHTML = '';
     let n = 0;
@@ -339,6 +371,12 @@
     if (!window.confirm('Forget all answers recorded in this browser?')) return;
     store.stats = {}; save(); renderSetup();
   });
+
+  /* ---------- build stamp (version.js is rewritten with the commit hash at deploy) ---------- */
+  const sha = window.BUILD;
+  $('#build').replaceChildren(/^[0-9a-f]{40}$/.test(sha || '')
+    ? el('a', { href: `https://github.com/stootoon/granule-cell-quiz/commit/${sha}`, target: '_blank', rel: 'noopener', title: 'Commit this page was built from' }, sha.slice(0, 7))
+    : 'local copy');
 
   renderSetup();
 })();

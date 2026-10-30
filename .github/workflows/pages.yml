@@ -1,0 +1,38 @@
+# Deploys the site to GitHub Pages, stamping the commit hash into version.js
+# and cache-busting the scripts and stylesheet so the page and its data match.
+name: Deploy to Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Stamp commit hash
+        run: |
+          echo "window.BUILD = '${GITHUB_SHA}';" > version.js
+          v="${GITHUB_SHA::7}"
+          sed -i -E "s/(src|href)=\"(version|data|app)\.js\"/\1=\"\2.js?v=${v}\"/g; s/href=\"style\.css\"/href=\"style.css?v=${v}\"/" index.html
+          grep -n "?v=" index.html
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4

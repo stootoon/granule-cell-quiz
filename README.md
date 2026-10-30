@@ -1,6 +1,6 @@
 # Granule Cell Quiz
 
-An interactive quiz on olfactory bulb granule cells (GCs), built from papers in my Zotero library. There are 107 questions across eight topics:
+An interactive quiz on olfactory bulb granule cells (GCs), built from papers in my Zotero library. There are 130 questions across eight topics:
 
 - anatomy and synapses
 - dendritic computation
@@ -19,14 +19,17 @@ There are two kinds of question. **Predict the result** describes an experiment 
 - **Quiz tab:** pick topics, question type, difficulty and length. The "Missed before" pool re-asks questions you got wrong last time. Keyboard: `1`–`4` answer, `Enter` goes to the next question, `Esc` closes a zoomed figure.
 - **Browse tab:** every card with its answer, explanation and figure, searchable. Use it as a literature review.
 - **Papers tab:** each source paper and the cards that use it.
+- **Removing a card:** "Remove this card", at the bottom of any answer, hides that card from quizzes and Browse. Removed cards are listed at the end of Browse with their IDs, to restore them or to delete them from `data.js` for good.
+- **Build stamp:** the short hash next to the title is the commit the live site was built from, linked to GitHub. A local copy shows "local copy".
 
-Progress is kept in the browser's `localStorage`, so it is per browser and per device.
+Progress and removed cards are kept in the browser's `localStorage`, so they are per browser and per device.
 
 ## Files
 
 - `index.html`, `style.css`, `app.js`: the app (vanilla JS, no dependencies).
 - `data.js`: questions and paper metadata (`window.QUIZ`).
 - `img/`: one cropped figure panel per question, named by question id.
+- `version.js`: the build stamp. `.github/workflows/pages.yml` overwrites it with the commit hash when it deploys to GitHub Pages, and adds that hash to the script and stylesheet URLs so a cached page can't mix old and new files.
 
 ## Copyright note
 
