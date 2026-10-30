@@ -853,10 +853,10 @@ window.QUIZ = {
    "setup": "",
    "question": "What is the basic shape of an olfactory bulb granule cell?",
    "options": [
-    "A spiny dendritic tree in the GCL plus a GABAergic axon that branches widely in the EPL",
-    "Smooth dendrites in the EPL plus a conventional axon that descends deep into the GCL",
-    "No axon: one radial apical dendrite climbs into the EPL and carries large spines (gemmules); shorter spiny basal dendrites stay in the GCL",
-    "A bipolar cell whose single axon-like process ends in boutons on mitral somata in the MCL"
+    "A spiny dendritic tree confined to the GCL plus a GABAergic axon that branches widely in the EPL to contact M/T dendrites",
+    "Smooth, aspiny dendrites in the EPL plus a conventional axon with an initial segment that descends deep into the GCL",
+    "No axon: a radial apical dendrite bearing large spines (gemmules) in the EPL, and short spiny basal dendrites in the GCL",
+    "A bipolar cell with one dendrite in the GCL and one axon-like process ending in boutons on mitral somata in the MCL"
    ],
    "answer": 2,
    "explanation": "In Golgi-stained rat bulb, granule cells have small somata (6-10 µm) and no process that can be identified as an axon. A stout 'peripheral' process runs radially into the EPL, where it branches and carries large, bulbous appendages, the gemmules. One to four finer, varicose deep dendrites extend into the GCL. In EM the peripheral process looks like a dendrite, with no axon initial segment, and its gemmules form the reciprocal synapses with mitral/tufted dendrites. So the granule cell's output has to come from its dendrites, not from an axon.",
@@ -881,10 +881,10 @@ window.QUIZ = {
    "setup": "",
    "question": "Apart from the reciprocal synapses on its EPL gemmules, where on a granule cell do axon terminals make asymmetric (excitatory-type) and symmetric (inhibitory-type) synapses?",
    "options": [
-    "Asymmetric contacts on spines (GCL spines, deep-dendrite varicosities, a few gemmules); symmetric contacts on dendritic shafts and the soma",
-    "Asymmetric contacts on the soma and dendritic shafts; symmetric contacts mainly on the spines and gemmules",
-    "Both kinds are confined to the EPL gemmules; the soma and deep dendrites in the GCL receive no synapses",
-    "Asymmetric contacts only on the apical dendrite in the EPL; symmetric contacts only on the basal dendrites"
+    "Asymmetric on spines (GCL spines, deep-dendrite varicosities, a few gemmules); symmetric on dendritic shafts and the soma",
+    "Asymmetric on the soma and proximal dendritic shafts; symmetric mainly on GCL spines, deep-dendrite varicosities and gemmules",
+    "Both kinds sit on the EPL gemmules beside the reciprocal synapses; the soma and deep dendrites in the GCL are bare of synapses",
+    "Asymmetric on the apical dendrite in the EPL (shaft and gemmules); symmetric on the basal dendrites and their spines in the GCL"
    ],
    "answer": 0,
    "explanation": "In rat bulb EM, every granule cell spine in the GCL gets at least one asymmetric synapse with spheroidal vesicles. These synapses also cluster on the varicosities of the deep dendrites and appear on a small fraction of EPL gemmules. Symmetric synapses with small flattened vesicles sit almost only on the shafts of the peripheral process and deep dendrites and on the soma. In lesion experiments, all extrinsic (centrifugal) fibres made asymmetric synapses on granule cells. Price and Powell proposed that the intrinsic asymmetric inputs come from mitral/tufted axon collaterals and the symmetric ones from short-axon cells. The proximal part of the granule cell in the GCL is therefore a separate input zone, apart from the dendrodendritic gemmules in the EPL.",
@@ -908,10 +908,10 @@ window.QUIZ = {
    "setup": "",
    "question": "What does a typical granule cell spine (gemmule) in the EPL look like and contain?",
    "options": [
-    "A small stubby spine with no organelles that receives one excitatory synapse and releases nothing",
-    "A thin-necked spine that releases GABA but receives no excitatory synapse of its own",
-    "A sessile bouton on the dendritic shaft that contains only dense-core vesicles",
-    "A large head on a long, thin neck, usually with a mitochondrion and ~1,700 vesicles; it both receives from and releases onto the same M/T dendrite"
+    "A small stubby spine that receives an excitatory synapse from an M/T dendrite; its GABA output is made from the shaft below",
+    "A thin-necked spine that releases GABA onto M/T dendrites, while its excitatory input arrives on the adjacent dendritic shaft",
+    "A sessile bouton on the dendritic shaft, packed with dense-core vesicles, that releases peptide onto nearby M/T somata",
+    "A large head on a long, thin neck, often with a mitochondrion; it receives from and releases onto the same M/T dendrite"
    ],
    "answer": 3,
    "explanation": "Woolf et al. serially reconstructed mouse granule cell spines. The heads were large (mean 0.58 µm³) on long, thin necks (mean 1.73 µm long, 0.23 µm wide). Over 70% contained a mitochondrion. Each head held an estimated 100 to 5,500 vesicles (mean ~1,700, about 11% of head volume). Every fully reconstructed spine received an asymmetric synapse from an M/T dendrite and made a symmetric synapse back onto the same dendrite, and no inhibitory synapse onto a spine was ever seen. Each spine is therefore a self-contained input-output unit, and the mitochondrion reflects its presynaptic role.",
@@ -936,10 +936,10 @@ window.QUIZ = {
    "setup": "Serial-section electron microscopy of the EPL in juvenile (P30-35) mice. Seventeen granule cell dendritic branches carrying more than one spine were fully reconstructed in 3D, and the mitral/tufted dendrite contacted by each spine was identified.",
    "question": "How are the spines of one granule cell branch distributed among M/T dendrites?",
    "options": [
-    "Neighbouring spines converge onto the same M/T dendrite, forming multi-contact connections",
-    "Each spine contacts a different M/T dendrite; no M/T dendrite is contacted twice",
-    "About half the spines contact the same M/T dendrite as their nearest neighbour",
-    "Only the largest spine contacts an M/T dendrite; the others contact other granule cells"
+    "Neighbouring spines converge onto the same M/T dendrite, forming multi-contact connections of 3-5 spines each",
+    "Each spine contacts a different M/T dendrite, so one branch samples many M/T cells with about one contact each",
+    "About half the spines share an M/T dendrite with their nearest neighbour; the rest contact separate dendrites",
+    "Only the largest spine on each branch contacts an M/T dendrite; the smaller spines contact other GC dendrites"
    ],
    "answer": 1,
    "explanation": "On all 17 branches, every spine contacted a different M/T profile. In Fig. 3C, six spines on one branch contact six different M/T dendrites. All four doubly branched spines found also sent their two heads to two different M/T dendrites. Granule cell connectivity is therefore divergent: one granule cell samples many mitral/tufted cells with roughly one reciprocal contact each, which is the anatomical basis for lateral inhibition.",
@@ -961,10 +961,10 @@ window.QUIZ = {
    "setup": "Serial EM montages spanning the full EPL of adult mouse olfactory bulb. Asymmetric (M/T-to-interneuron, excitatory) and symmetric (interneuron-to-M/T, inhibitory) dendrodendritic synapses were counted in the outer and inner EPL. In 64 reciprocal pairs, the length of each membrane specialization and the number of vesicles within 100 nm of it were measured.",
    "question": "How do the two halves of the reciprocal synapse compare?",
    "options": [
-    "The excitatory M/T-to-GC half is larger, with longer specializations and more vesicles",
-    "The two halves are matched in specialization length and vesicle number",
+    "The excitatory M/T-to-GC half is larger (longer specialization, more vesicles), and excitatory synapses are more numerous",
+    "The two halves are matched in specialization length (~300 nm) and vesicle number, and are equally dense across the EPL",
     "The inhibitory GC-to-M/T half is larger (longer specialization, more vesicles), but excitatory synapses are more numerous",
-    "Inhibitory synapses are both larger and more numerous, outnumbering excitatory ones about 2:1"
+    "The inhibitory half is larger, and inhibitory synapses also outnumber excitatory ones by about 2:1 across the EPL"
    ],
    "answer": 2,
    "explanation": "Symmetric (GC-to-M/T) specializations were longer than asymmetric ones: 397 vs 309 nm in the outer EPL and 389 vs 264 nm in the inner EPL. They also had more nearby vesicles; about 75% of pairs showed this. Asymmetric synapses were the more numerous, though: 10.1 vs 5.25 per 100 µm² in the outer EPL and 9.3 vs 3.44 per 100 µm² in the inner EPL. Symmetric synapses were denser in the outer than the inner EPL. The inhibitory output half is the structurally larger partner in each pair, while M/T-to-GC excitatory contacts outnumber GC-to-M/T outputs.",
@@ -988,10 +988,10 @@ window.QUIZ = {
    "setup": "Rat olfactory bulb slices; whole-cell voltage clamp of mitral cells in TTX and normal extracellular Mg2+ (1.3 mM). A brief depolarizing step to the mitral cell triggers glutamate release from its dendrites, followed by a slow barrage of GABA-A IPSCs back onto it (dendrodendritic inhibition, DDI). Either the NMDA receptor antagonist APV or the AMPA/kainate receptor antagonist DNQX is then bath-applied.",
    "question": "What happens to dendrodendritic inhibition?",
    "options": [
-    "APV and DNQX each reduce DDI to about 20% of control",
-    "DNQX abolishes DDI, while APV has little effect",
-    "APV abolishes DDI, while DNQX has little effect",
-    "Neither drug alone has much effect; only both together block DDI"
+    "APV and DNQX each cut DDI to about 20% of control; together, to ~7%",
+    "DNQX cuts DDI to about 10% of control, while APV leaves it near 95%",
+    "APV cuts DDI to about 10% of control, while DNQX leaves it near 95%",
+    "Each drug alone leaves DDI near 70% of control; only both together block it"
    ],
    "answer": 0,
    "explanation": "In normal Mg2+, DNQX reduced DDI to 21.2% of control and APV to 19.6%; the two together reduced it to 7.0%. Removing Mg2+ doubled DDI (peak 2.4 vs 1.2 nA). In 0 Mg2+, APV cut DDI to 8.7% but DNQX only to 67.5%, and adding back 1.3 mM Mg2+ blocked it to 4.5%. NMDA receptors on the granule spine are therefore the main trigger for GABA release. Under physiological Mg2+, AMPA receptors are needed to supply the depolarization that relieves the Mg2+ block.",
@@ -1015,10 +1015,10 @@ window.QUIZ = {
    "setup": "Rat olfactory bulb slices in low-Mg2+, TTX-containing solution. Mitral cells are loaded with caged Ca2+ (DM-nitrophen) through the patch pipette. A UV flash on the secondary dendrite releases Ca2+, so glutamate is released without voltage-gated Ca2+ channels in the mitral cell, and a feedback IPSP appears in the same cell. Voltage-gated Ca2+ channels are then blocked with Cd2+ + Ni2+ (100 µM each). This cocktail abolishes both the spike-evoked feedback IPSP and IPSPs evoked by stimulating granule cells directly.",
    "question": "What happens to the uncaging-evoked feedback IPSP?",
    "options": [
-    "It is abolished, just like the spike-evoked feedback IPSP",
-    "It reverses into a depolarizing glutamatergic response",
-    "It becomes much slower, delayed by hundreds of milliseconds",
-    "It largely survives (~80% of control): Ca2+ entering through NMDA receptors can trigger GABA release"
+    "It is abolished, like the spike-evoked IPSP, because GABA release needs voltage-gated Ca2+ entry",
+    "It reverses into a depolarizing response, as glutamate spillover now dominates the feedback",
+    "It survives but slows, delayed by hundreds of ms as release shifts to Ca2+ from internal stores",
+    "It largely survives (~80% of control), as NMDA receptor Ca2+ entry can drive GABA release"
    ],
    "answer": 3,
    "explanation": "Cd2+/Ni2+ removed the spike-evoked feedback IPSP (Fig. 3A) and the IPSP evoked by stimulating granule cells directly (Fig. 3B). The uncaging-evoked IPSP was only slightly reduced (Fig. 3C; about 80% of control in the summary, n = 10). That same IPSP was completely blocked by APV, barely affected by CNQX, and unaffected by thapsigargin plus ryanodine. In granule cells, Cd2+/Ni2+ fully blocked voltage-gated Ca2+ currents but only slightly reduced NMDA currents. Ca2+ entering through NMDA receptors can therefore trigger GABA release directly from the spine as local feedback. Release driven by granule cell spikes (Fig. 3B) still needs voltage-gated Ca2+ channels.",
@@ -1042,10 +1042,10 @@ window.QUIZ = {
    "setup": "Paired whole-cell recordings from two neighbouring mitral cells (about 50 µm apart) in rat olfactory bulb slices, in TTX (1 µM) and Mg2+-free solution, so that no Na+ action potentials can occur anywhere in the circuit. A depolarizing voltage step is applied to cell 1 while cell 2 is left unstimulated.",
    "question": "What is recorded in cell 2?",
    "options": [
-    "Nothing: without spikes, inhibition stays confined to the stimulated mitral cell",
-    "A time-locked barrage of GABA-A IPSCs that APV abolishes: lateral inhibition without spikes",
-    "A gap-junction coupling current that is insensitive to glutamate receptor blockers",
-    "Only a glutamatergic EPSC from direct mitral-to-mitral dendritic release"
+    "Nothing: without Na+ spikes, inhibition stays confined to the depolarized mitral cell via its own spines",
+    "Time-locked GABA-A IPSCs that APV abolishes: lateral inhibition through shared GC dendrites without spikes",
+    "GABA-A IPSCs that persist in APV, because periglomerular cells release GABA onto the tufts of both cells",
+    "A slow outward current carried by K+ released from cell 1, insensitive to both APV and bicuculline"
    ],
    "answer": 1,
    "explanation": "Depolarizing cell 1 evoked self-inhibition in cell 1 and time-locked IPSCs in cell 2. APV blocked both, and both partly recovered after washout. The IPSCs in cell 2 reversed at 0 mV and were blocked by bicuculline, so they were GABA-A mediated. This lateral inhibition was found in about 10% of 40 pairs tested. Glutamate from one mitral dendrite can therefore depolarize shared granule cell dendrites enough to release GABA onto another mitral cell with no axonal or granule cell Na+ spikes, as Rall and Shepherd had predicted.",
@@ -1069,10 +1069,10 @@ window.QUIZ = {
    "setup": "Rat olfactory bulb slices (P9-17), whole-cell voltage clamp. Granule-to-mitral IPSCs are recorded in mitral cells with glutamate receptors blocked, and mitral-to-granule EPSCs are recorded in granule cells. Both are evoked by pairs of EPL stimuli separated by 25 ms to 30 s.",
    "question": "What short-term plasticity does each side of the reciprocal synapse show?",
    "options": [
-    "Both sides facilitate strongly at intervals shorter than 200 ms",
-    "GC-to-MC inhibition facilitates, while MC-to-GC excitation depresses",
-    "GC-to-MC inhibition always depresses (recovering over ~6 s); MC-to-GC excitation varies between cells and slightly facilitates on average",
-    "Both sides depress equally and recover fully within about 100 ms"
+    "Both sides facilitate strongly at intervals under 200 ms and return to baseline within about 1 s",
+    "GC-to-MC inhibition facilitates (recovery ~1 s); MC-to-GC excitation depresses in every cell tested",
+    "GC-to-MC inhibition depresses (recovery ~6 s); MC-to-GC excitation varies, slightly facilitating on average",
+    "Both sides depress by a similar amount at every interval and recover fully within about 100 ms"
    ],
    "answer": 2,
    "explanation": "The GC-to-MC synapse showed marked paired-pulse depression at every interval from 25 ms to 10 s, with recovery time constant about 6 s and full recovery by 30 s. The MC-to-GC synapse varied between cells: some granule cells facilitated and others depressed. On average it depressed slightly at 25 ms and facilitated slightly at longer intervals (fit: 45 ms depression and 150 ms facilitation time constants). In 20 Hz trains, GC-to-MC IPSCs fell to about 20% within three pulses. After 100 Hz bursts, the MC-to-GC synapse recovered within about 300 ms, whereas the GC-to-MC synapse took seconds. During sniff-locked bursts, granule cell inhibitory output fatigues quickly, so mitral cells can partly escape autoinhibition.",
@@ -1094,10 +1094,10 @@ window.QUIZ = {
    "setup": "",
    "question": "Rall and Shepherd built a compartmental model to reconstruct field potentials in the rabbit olfactory bulb. What mechanism did the model lead them to propose for mitral cell inhibition?",
    "options": [
-    "Mitral axon collaterals excite granule somata, which fire spikes that travel down a granule axon to mitral somata",
-    "Periglomerular cells inhibit the mitral tuft, and this inhibition spreads passively down to the soma",
-    "Mitral cells inhibit one another directly with GABA co-released from their own lateral dendrites",
-    "Mitral dendrites excite granule gemmules, which release inhibitory transmitter back onto the same and neighbouring mitral dendrites, with no spikes required"
+    "Mitral axon collaterals excite granule somata in the GCL, which fire spikes that travel down a granule axon to mitral somata",
+    "Periglomerular cells inhibit the mitral tuft, and this inhibition spreads electrotonically down the primary dendrite to the soma",
+    "Mitral cells inhibit one another directly, via GABA co-released from their own lateral dendrites onto neighbouring mitral cells",
+    "Mitral dendrites excite granule gemmules, which release inhibitory transmitter back onto the same and nearby mitral dendrites"
    ],
    "answer": 3,
    "explanation": "The late field potential after an antidromic volley could not be produced by mitral cells and required current from the granule cell population. Its timing and location led Rall and Shepherd to propose that mitral secondary dendrites excite granule dendrites, which then inhibit the mitral dendrites. Fig. 15A shows the sequence: the depolarized mitral dendrite excites a gemmule (I-II), the depolarized gemmule activates an inhibitory synapse back onto the mitral dendrite (II-III), and the mitral dendrite is hyperpolarized (III). Because granule dendrites are shared, the same mechanism gives lateral inhibition of neighbouring mitral cells (Fig. 15B). They proposed that synaptic release at both contacts could be driven by graded depolarization, without action potentials. Electron micrographs then showed reciprocal synapses of exactly this kind.",
@@ -1122,10 +1122,10 @@ window.QUIZ = {
    "setup": "Two-photon Ca2+ imaging (OGB-1) along the apical dendrite of rat olfactory-bulb granule cells in acute slices while single Na+ action potentials are evoked by brief somatic current injection.",
    "question": "How does the amplitude of the AP-evoked dendritic Ca2+ transient vary along the GC apical dendrite?",
    "options": [
-    "It decays steeply with distance, so distal spines in the EPL get almost no Ca2+",
-    "It is largest at the soma and declines gradually to about half in the EPL",
-    "It increases from the soma towards the mitral cell layer and then plateaus throughout the EPL",
-    "It is restricted to the proximal dendrite below the mitral cell layer"
+    "It decays steeply with distance (length constant ~40 µm), so distal EPL spines get little Ca2+",
+    "It peaks at the soma and falls gradually to about half that amplitude in the distal EPL",
+    "It rises from the soma towards the mitral cell layer, then stays roughly constant across the EPL",
+    "It is confined to the GCL dendrite, as Na+ spikes fail to invade beyond the mitral cell layer"
    ],
    "answer": 2,
    "explanation": "Unlike in pyramidal neurons, AP-evoked Ca2+ transients did not decrement with distance: normalized amplitudes rose from the granule cell layer and reached a plateau at the start of the EPL (n = 98 cells), where the reciprocal spines sit. Spine and adjacent-dendrite transients were essentially equal (spine/dendrite ratio 1.08 ± 0.49, n = 152 pairs), and decay was slow (τ ≈ 780 ms at room temperature, ≈ 410 ms at 34–36°C). A GC Na+ spike therefore delivers a robust, fairly uniform Ca2+ signal to all of its output synapses, the substrate for 'global' lateral inhibition.",
@@ -1149,10 +1149,10 @@ window.QUIZ = {
    "setup": "Rat olfactory bulb slices, whole-cell current clamp of granule cells with two-photon Ca2+ imaging in dendrites and spines. Before evoking a single somatic AP, the cell is held for ~500 ms at different membrane potentials between about −90 and −50 mV; the AP-evoked Ca2+ transient and the spike afterdepolarization (ADP) are measured.",
    "question": "How does the pre-spike membrane potential affect the AP-evoked Ca2+ transient?",
    "options": [
-    "Hyperpolarization strongly enhances it and depolarization suppresses it, following T-type channel inactivation",
-    "Depolarization enhances it because NMDA receptors are relieved from Mg2+ block",
-    "It is all-or-none and independent of pre-spike potential, like an axonal bouton signal",
-    "Only the ADP changes; the Ca2+ transient amplitude stays constant"
+    "Hyperpolarization enlarges it and depolarization shrinks it, via T-type Ca2+ channel inactivation",
+    "Depolarization enlarges it, as relief of the NMDA receptor Mg2+ block adds Ca2+ entry to the spike",
+    "It is all-or-none and independent of pre-spike potential, much like Ca2+ entry at an axonal bouton",
+    "Only the ADP varies with holding potential; the spike's Ca2+ transient keeps a constant amplitude"
    ],
    "answer": 0,
    "explanation": "AP-evoked Ca2+ transients (and the ADP) shrank with depolarization and grew with hyperpolarization, following a Boltzmann inactivation curve with V½ ≈ −76 mV and slope k ≈ 10 mV, with a stronger dependence in spines than in dendrites. The modulation developed with τ ≈ 290 ms and was largely abolished by Ni2+ or mibefradil, which also cut the Ca2+ transient to ~50%, identifying T-type (low-voltage-activated) Ca2+ channels. Mibefradil also reduced AP-evoked GC→MC IPSPs by ~48%. Because GCs rest near −70 mV, on the steep part of this curve, slow background polarization can change how much GABA a GC spike releases.",
@@ -1174,10 +1174,10 @@ window.QUIZ = {
    "setup": "Rat OB slices; electrical stimulation of a single glomerulus activates its mitral/tufted cells, which excite a GC (stimulus kept below the GC’s Na+ spike threshold). Ca2+ is imaged by line scans through a responsive GC spine and its parent dendrite.",
    "question": "What does the Ca2+ signal produced by a single activated M/TC input look like?",
    "options": [
-    "A small Ca2+ rise that spreads evenly along ~50 µm of dendrite around the spine",
-    "A large Ca2+ transient confined to the spine head, with almost nothing in the adjacent dendrite",
-    "No detectable Ca2+ signal unless the GC fires a Na+ action potential",
-    "A global Ca2+ transient throughout the whole GC dendritic tree"
+    "A small Ca2+ rise that spreads evenly along ~50 µm of dendrite on either side of the spine",
+    "A large Ca2+ transient in the spine head, with little or no signal in the adjacent dendrite",
+    "No detectable Ca2+ signal, as GC spines lack NMDA receptors and need a Na+ AP for Ca2+ entry",
+    "A global Ca2+ transient of similar size in spines and dendrites across the whole apical tree"
    ],
    "answer": 1,
    "explanation": "Responsive spines showed stochastic transients (failure rate ~47%) of 40 ± 21% ΔF/F in the spine head but only ~3% in the adjacent dendrite, i.e. strict compartmentalization by the long GC spine neck (mean neck length ~2.6 µm). The Ca2+ came from NMDA receptors (APV reduced it to ~51%), voltage-gated Ca2+ channels and Ca2+-induced Ca2+ release from stores (thapsigargin reduced it to ~57%). If sufficient for release, this supports a purely local mode of GC output: recurrent inhibition of the exciting M/TC without any lateral spread.",
@@ -1201,8 +1201,8 @@ window.QUIZ = {
    "setup": "In rat OB slices, stronger glomerular stimulation produces large GC EPSPs that, without triggering a Na+ action potential, are often accompanied by an all-or-none Ca2+ signal of similar size in spines and dendrites throughout the apical dendrite (a 'low-threshold spike', LTS).",
    "question": "Which conductance generates this global subthreshold Ca2+ spike?",
    "options": [
-    "NMDA receptors on the activated spines",
-    "TTX-sensitive dendritic Na+ channels",
+    "NMDA receptors in the activated reciprocal spines",
+    "TTX-sensitive Na+ channels in the apical dendrite",
     "Ca2+-induced Ca2+ release from internal stores",
     "T-type (low-voltage-activated) Ca2+ channels"
    ],
@@ -1228,10 +1228,10 @@ window.QUIZ = {
    "setup": "Rat OB slices, GC whole-cell recording with two-photon Ca2+ imaging. In the same cell, Na+ spikes are evoked either synaptically by glomerular stimulation of mitral/tufted cells (glAP) or by brief somatic current injection (sAP). The afterpotential at the soma and dendritic/spine Ca2+ transients are compared.",
    "question": "How do synaptically evoked spikes differ from current-evoked spikes?",
    "options": [
-    "They are identical; a spike is a spike regardless of how it is triggered",
-    "They fail to backpropagate into the EPL and give smaller dendritic Ca2+ signals",
-    "They are followed by a long-lasting depolarization and produce larger, slower global Ca2+ transients",
-    "They are followed by a deep afterhyperpolarization that truncates the Ca2+ transient"
+    "None: both are followed by the same brief ADP (~40 ms) and evoke identical dendritic Ca2+ transients",
+    "They fail to backpropagate into the EPL, so their dendritic Ca2+ signals are about half as large",
+    "A long-lasting depolarization follows them, and their global Ca2+ transients are larger and slower",
+    "A deep afterhyperpolarization follows them and cuts the dendritic Ca2+ transient short by a third"
    ],
    "answer": 2,
    "explanation": "glAPs were followed by a long-lasting depolarization (LLD; half-duration 222 ± 257 ms, range 28–1400 ms) compared with the ADP of sAPs (40 ± 20 ms), and evoked dendritic Ca2+ transients ~1.4× larger and slower (τ½ ≈ 1.1 s) throughout dendrites and spines. The LLD and extra Ca2+ required synaptic NMDA receptor activation (APV cut LLD duration to 36%), a non-selective cation current I_CAN (flufenamic acid-sensitive), and T-type Ca2+ channels that globalize the signal. In active spines, local synaptic and global spike Ca2+ summed at least linearly. This slow global Ca2+ signal is a candidate driver of asynchronous GABA release lasting hundreds of ms.",
@@ -1255,10 +1255,10 @@ window.QUIZ = {
    "setup": "Mouse OB slices. Mitral cells are voltage-clamped (QX-314 intracellular, Mg2+-free bath) and briefly stepped from −70 to 0 mV for 20 ms to release glutamate onto GC spines; the resulting barrage of recurrent dendrodendritic IPSCs is recorded in wild-type mice and in mice lacking both TRPC1 and TRPC4 channels (in which GC excitability, AP shape and EPSPs are unchanged).",
    "question": "How does deletion of TRPC1/4 change recurrent dendrodendritic inhibition of mitral cells?",
    "options": [
-    "Recurrent inhibition becomes larger and longer because GCs are more excitable",
-    "The late, asynchronous component is lost: the IPSC barrage decays several-fold faster",
-    "Recurrent inhibition is completely abolished, including the fast component",
-    "No change, because TRPC channels only act in mitral cells"
+    "The peak IPSC roughly halves, but the decay of the barrage is unchanged (τ½ still ~280 ms)",
+    "The slow asynchronous tail is lost: the barrage decays several-fold faster, with a similar peak",
+    "Recurrent inhibition is abolished, both the fast synchronous peak and the asynchronous tail",
+    "Nothing changes, since TRPC1/4 act in mitral cells rather than in the granule cell spines"
    ],
    "answer": 1,
    "explanation": "In TRPC1/4 double-knockout mice the recurrent IPSC barrage decayed much faster (τ½ 70 ± 30 vs 280 ± 140 ms in WT) and its integral was ~3× smaller (43 vs 143 nA·ms), while peak amplitude was not significantly different. In the same mice the NMDAR-dependent long-lasting depolarization after synaptic GC spikes and its extra global Ca2+ entry were absent (glAP and sAP Ca2+ signals became equal); single TRPC1 or TRPC4 deletion only partially reduced the LLD, and GC-specific NR1 deletion abolished it. Thus NMDAR → TRPC1/4 → slow Ca2+ entry specifically supports asynchronous GABA release.",
@@ -1282,10 +1282,10 @@ window.QUIZ = {
    "setup": "Whole-cell recordings from frog (Rana pipiens) granule cells in an intact hemisected forebrain preparation reveal fast 3–21 mV 'spikelets' (time to peak < 4 ms) at the soma, blocked by intracellular QX-314 and by hyperpolarization. Two widely separated dendrites (D1, D2) of the same cell are Ca2+-imaged simultaneously.",
    "question": "What are these spikelets, and where do they produce Ca2+ influx?",
    "options": [
-    "Na+-dependent dendritic spikes that fail near the soma and cause Ca2+ influx only in the branch where they originate",
-    "Large unitary EPSPs that cause Ca2+ influx only in the single activated spine",
-    "Backpropagating somatic APs that cause Ca2+ influx in all dendrites simultaneously",
-    "T-type Ca2+ spikes that cause Ca2+ influx in the soma and proximal dendrite only"
+    "Na+-dependent dendritic spikes that decay before the soma, driving Ca2+ entry in their own branch",
+    "Large unitary EPSPs that drive Ca2+ entry in the single activated spine but not its parent dendrite",
+    "Backpropagating somatic APs that drive Ca2+ entry in every dendrite at once, D1 and D2 alike",
+    "T-type Ca2+ spikes that drive Ca2+ entry in the soma and the proximal dendrites within ~50 µm"
    ],
    "answer": 0,
    "explanation": "The spikelets were Na+-dependent dendritic spikes (D-spikes): fast like APs, blocked by QX-314 and partial AMPA receptor block, only ~18% reduced by Ni2+. Each produced Ca2+ transients in spines and dendrite comparable to a full AP, but only in a subset of distal branches, with different D-spike classes tied to different branches and no Ca2+ within 50–80 µm of the soma. A D-spike less than ~5–6 ms before a somatic AP blocked AP backpropagation into that branch (at longer intervals the two Ca2+ signals summed). GCs thus have an intermediate, branch-level output mode between single-spine and whole-cell inhibition.",
@@ -1309,9 +1309,9 @@ window.QUIZ = {
    "setup": "Acute olfactory bulb slices from juvenile rats (P11–17). Two-photon uncaging of glutamate at a single GC spine mimics a unitary M/TC input; the spine Ca2+ transient is imaged and the uncaging-evoked EPSP is recorded at the soma, before and after bath application of 500 nM TTX. The GC does not fire an action potential.",
    "question": "What does blocking voltage-gated Na+ channels do to these single-spine responses?",
    "options": [
-    "Nothing, because Na+ channels only matter when the soma reaches spike threshold",
-    "The somatic EPSP disappears but the spine Ca2+ transient is unchanged",
-    "The spine Ca2+ transient increases because Na+ channels normally shunt the spine",
+    "Nothing, since Na+ channels contribute only once the soma reaches action potential threshold",
+    "The somatic EPSP falls by about half, but the spine Ca2+ transient stays the same size",
+    "The spine Ca2+ transient grows by about 30%, as Na+ channels normally shunt the spine head",
     "The spine Ca2+ transient drops by about 40% and the somatic EPSP rises more slowly"
    ],
    "answer": 3,
@@ -1336,10 +1336,10 @@ window.QUIZ = {
    "setup": "Rat OB slices: glutamate uncaging at a single GC spine (evoking a local spine spike) is paired with a somatic current-evoked global AP at intervals Δt = −10, 0 or +10 ms (negative = AP first). Spine Ca2+ for the paired stimulus is compared with the arithmetic sum of the two responses alone (summation efficiency, SE).",
    "question": "How do local spine-spike and global AP Ca2+ signals combine in the spine as a function of timing?",
    "options": [
-    "Strongly supralinear at Δt = 0 ms, as for NMDAR-dependent coincidence detection in pyramidal spines",
-    "Sublinear at perfect coincidence (Δt = 0), becoming linear to supralinear when the spine input leads by ~10 ms",
-    "Exactly linear at all intervals, because spine and dendrite are separate compartments",
-    "Sublinear at all intervals tested, because the AP always inactivates spine channels"
+    "Strongly supralinear at Δt = 0 ms, as in NMDAR-dependent coincidence detection in cortical spines",
+    "Sublinear at exact coincidence (Δt = 0), turning linear to supralinear when the spine input leads by 10 ms",
+    "Linear at every interval (SE ≈ 1.0), because the long spine neck isolates the spine from the dendrite",
+    "Sublinear at every interval tested (SE ≈ 0.6), because the AP inactivates spine Ca2+ channels each time"
    ],
    "answer": 1,
    "explanation": "Pairing at Δt = 0 ms gave sublinear summation (SE = 0.75 ± 0.16), Δt = −10 ms was still mostly sublinear (0.85), and Δt = +10 ms was supralinear (1.12). A compartmental model reproduced this: SE ≈ 0.5–0.75 within a ~15 ms window around coincidence, caused by spine Na+ channels (spine spike and AP occlude each other), with NMDARs not essential, and maximal supralinearity (~1.2) at +40–60 ms. With natural synaptic input, a GC spike follows EPSP onset by ~10 ms (9.8 ± 8.4 ms), which explains why local and global Ca2+ signals sum roughly linearly in practice (SE ≈ 1.15). This differs from Hebbian NMDAR coincidence detection in cortical spines.",
@@ -1364,10 +1364,10 @@ window.QUIZ = {
    "setup": "Holographic two-photon glutamate uncaging at increasing numbers (1–12) of reciprocal spines on one GC dendrite in juvenile rat slices, with somatic whole-cell recording and dendritic Ca2+ imaging.",
    "question": "Roughly how many simultaneously active spines are needed to leave the purely local regime?",
    "options": [
-    "About 2 spines for any non-local signal, and 4 for a global Na+ spike",
-    "About 20 spines for a dendritic Ca2+ spike, and more than 50 for a global Na+ spike",
-    "About 5 spines for a regional dendritic Ca2+ spike, ~6–7 for a dendritic Na+ spike, ~9 for a global Na+ spike",
-    "Non-local signals only appear together with a global Na+ spike, at about 9 spines"
+    "About 2 spines for a regional Ca2+ spike, ~3 for a dendritic Na+ spike, ~4 for a global Na+ spike",
+    "About 20 spines for a regional Ca2+ spike, ~35 for a dendritic Na+ spike, over 50 for a global AP",
+    "About 5 spines for a regional Ca2+ spike, ~6–7 for a dendritic Na+ spike, ~9 for a global Na+ spike",
+    "None below ~9 spines: dendritic Ca2+ and Na+ spikes appear only together with the global somatic Na+ spike"
    ],
    "answer": 2,
    "explanation": "In the same GCs, regional dendritic Ca2+ spikes appeared at 5.1 ± 1.4 coactive spines, dendritic Na+ spikes (D-spikes, seen in ~2/3 of cells) at 6.5 ± 2.7, and global Na+ spikes at 8.9 ± 1.7 (across the full dataset 5.5 ± 2.1 vs 9.0 ± 1.6 spines; somatic thresholds −67.8 vs −60.2 mV). Ca2+-spike signals decayed along the dendrite with a length constant of ~60–70 µm, so they are regional rather than global. Somatic summation was linear until D-spike onset, then supralinear, mainly driven by NMDA receptors, with smaller contributions from dendritic Na+ and Ca2+ channels; local spine spikes barely mattered. Fewer than 10 coactive reciprocal spines can therefore trigger non-local Ca2+ entry and potentially lateral GABA release, so thresholds for GC-mediated lateral inhibition are low.",
@@ -1391,10 +1391,10 @@ window.QUIZ = {
    "setup": "Juvenile rat OB slices (VGAT-Venus) in physiological 1 mM Mg2+. A mitral cell is voltage-clamped while glutamate is uncaged by two-photon light at a single GC spine apposed to its lateral dendrite, mimicking unitary MC input; uncaging-evoked reciprocal IPSCs (urIPSCs) are recorded in the MC. The NMDAR blocker D-APV (25 µM) is then washed in.",
    "question": "What happens to single-spine-evoked reciprocal GABA release when GC NMDA receptors are blocked?",
    "options": [
-    "It is largely abolished (to ~20% of control), as strongly as by blocking Na+ or HVA Ca2+ channels",
-    "It is unaffected, because release is driven solely by the Na+ spine spike and HVA Ca2+ channels",
-    "Only the asynchronous tail is lost; the fast synchronous urIPSC is unchanged",
-    "It increases, because NMDARs normally shunt the spine head"
+    "It is largely abolished (to ~20% of control), about as strongly as by TTX or HVA Ca2+ block",
+    "It is unaffected, since release is driven by the Na+ spine spike and HVA Ca2+ channels alone",
+    "Only the asynchronous tail is lost; the fast synchronous urIPSC amplitude stays near control",
+    "It roughly doubles, because NMDARs normally shunt the spine head and limit the spine spike"
    ],
    "answer": 0,
    "explanation": "Single-spine activation evoked synchronous and asynchronous reciprocal GABA release (release probability ≈ 0.34; recurrent inhibition lasting ~180 ms on average). APV reduced urIPSC amplitude to 0.22 ± 0.21 of control and the asynchronous area to 0.40, comparable to TTX (0.17) and to ω-conotoxin MVIIC block of HVA Ca2+ channels (0.08). Simulations showed NMDAR and HVACC Ca2+ currents overlapping in time during the spine spike, and immunogold EM found NMDARs at the GABAergic presynaptic membrane of the spine, often contiguous with the glutamatergic synapse. Local GABA output thus needs the coincidence of spine spike and glutamate binding to presynaptic NMDARs.",
@@ -1418,10 +1418,10 @@ window.QUIZ = {
    "setup": "In vivo whole-cell recordings from granule cells in ketamine/xylazine-anesthetized mice during single sniff-like odour presentations. GCs carry a tonic GABA_A current that gabazine or furosemide (an antagonist of α4/α6-containing extrasynaptic GABA_A receptors) removes, without altering phasic IPSCs. Odour responses are compared before and after furosemide.",
    "question": "How does removing tonic inhibition change GC odour responses?",
    "options": [
-    "No change, because GC output is set by phasic inhibition from deep short-axon cells",
-    "Responses become smaller because GC input resistance falls",
-    "Only spontaneous firing increases; odour-evoked responses stay subthreshold",
-    "Many responses that were subthreshold become full action potentials, and spikes per sniff roughly triple"
+    "No change, because GC spiking is gated by phasic inhibition from deep short-axon cells instead",
+    "Responses shrink, because input resistance falls once the tonic GABA_A conductance is removed",
+    "Only spontaneous firing rises; odour-evoked responses stay subthreshold, as in control conditions",
+    "Many subthreshold responses become full APs, and spikes per sniff roughly triple (~1 to ~3.5)"
    ],
    "answer": 3,
    "explanation": "Under control conditions most odour responses were subthreshold (58% subthreshold, 22% APs, 14% spikelets), and odour-evoked phasic inhibition was rare (18% of presentations). Blocking tonic inhibition shifted the holding current (~24–42 pA), raised input resistance (339 → 496 MΩ), and increased the fraction of responses containing full APs from ~10% to ~40%, with spikes per odour-evoked sniff going from 1.1 to 3.5 (five trials). The tonic current carried ~3× more charge than evoked phasic IPSCs. Ambient GABA is therefore a gain knob that may switch GCs between local subthreshold (recurrent) and spiking (lateral) inhibition.",
@@ -1443,10 +1443,10 @@ window.QUIZ = {
    "setup": "",
    "question": "Rat GCs receive two anatomically distinct glutamatergic inputs: distal dendrodendritic synapses from mitral/tufted cells in the EPL, and proximal axodendritic synapses in the GCL that come largely from piriform-cortex feedback. How do the two inputs differ in short-term plasticity (paired pulses, 50 ms apart)?",
    "options": [
-    "Both depress, with distal inputs depressing more strongly than proximal ones",
-    "Distal inputs facilitate (PPR ~1.5) while proximal inputs depress (PPR ~0.7)",
-    "Distal inputs depress (PPR ~0.7) while proximal inputs facilitate (PPR ~1.5-1.7)",
-    "Both facilitate equally; the two inputs differ only in their EPSC rise times"
+    "Both depress (PPR ~0.6-0.8), with distal dendrodendritic inputs depressing more",
+    "Distal inputs facilitate (PPR ~1.5) while proximal piriform inputs depress (PPR ~0.7)",
+    "Distal EPL inputs depress (PPR ~0.7), while proximal GCL inputs facilitate (PPR ~1.5-1.7)",
+    "Both facilitate (PPR ~1.3); they differ mainly in EPSC kinetics, distal ones rising faster"
    ],
    "answer": 2,
    "explanation": "With two-photon-guided minimal stimulation, distal EPL inputs showed paired-pulse depression (PPR 0.74 minimal, 0.67 supraminimal) and slower EPSCs, whereas proximal GCL inputs facilitated (PPR 1.74 minimal, 1.50 supraminimal) and rose faster. In combined bulb-piriform slices, stimulating anterior piriform cortex gave fast facilitating GC EPSCs (PPR 1.62) while antidromic mitral-cell (LOT) activation gave depressing ones (PPR 0.55). Bursts of cortical input could relieve the Mg2+ block of NMDA receptors at distal spines and so gate dendrodendritic inhibition onto mitral cells, which makes cortical feedback a gain control on bulbar lateral inhibition.",
@@ -1471,10 +1471,10 @@ window.QUIZ = {
    "setup": "Paired mitral-cell to granule-cell recordings in rat slices show that a unitary dendrodendritic EPSP is small, has variable release probability (0.4 to ~1, mean 0.74) and depresses during trains. These measured properties, plus recorded mitral/tufted spike trains, were fed into a model of EPSP summation in a GC.",
    "question": "With realistic jitter between mitral cells (20 ms SD of first-spike latency), roughly how many simultaneously active presynaptic mitral cells does the model need to make a GC fire on half of the trials?",
    "options": [
-    "About 2-3, so a single glomerulus's sister mitral cells suffice",
-    "About 20-22, a large fraction of the ~65 spines a GC has in the EPL",
-    "About 60, i.e. essentially every dendrodendritic input the GC has",
-    "About 5, comparable to cortical pyramidal cells"
+    "About 2-3, so the sister mitral cells of a single glomerulus suffice",
+    "About 20-22, a large share of the ~65 spines a GC has in the EPL",
+    "About 60, i.e. nearly every one of the GC's dendrodendritic inputs",
+    "About 5-6, because NMDA spikes in the gemmules amplify each unitary EPSP"
    ],
    "answer": 1,
    "explanation": "The model needed 21.7 active mitral cells for 50% spiking and 28.8 for reliable (95%) spiking at 20 ms jitter; even near-perfect synchrony (1 ms jitter) still required 19.5 (50%) to 25.5 (95%). GCs have on average ~65 spines in the EPL, so a large share of their inputs must be co-active. Swapping the depressing dendrodendritic dynamics for the facilitating dynamics of cortical feedback roughly halved the requirement (21.7 to 12.3), and each added cortical input reduced the number of required dendrodendritic inputs by more than one (about 10 cortical inputs brought it close to 1). So GCs fire only with widespread concerted M/T activity or when local input coincides with piriform feedback.",
@@ -1498,10 +1498,10 @@ window.QUIZ = {
    "setup": "Whole-cell recordings from mouse GCs (superficial and deep) in acute bulb slices while a single glomerulus is activated by weak electrical stimulation of olfactory sensory neuron axons. Each GC is voltage-clamped alternately at the reversal potential of inhibition (to isolate EPSCs) and of excitation (to isolate IPSCs), and peri-stimulus histograms of synaptic events are built.",
    "question": "How do the time courses of excitation and inhibition onto the GC compare?",
    "options": [
-    "Both are brief and synchronous, with excitation leading inhibition by about 7 ms",
-    "Excitation is a single brief volley; inhibition is a long asynchronous barrage",
-    "Both are asynchronous barrages lasting several hundred milliseconds",
-    "Excitation is an asynchronous barrage lasting hundreds of ms; inhibition is one brief synchronous volley"
+    "Both are brief and synchronous: EPSCs at ~6 ms, then IPSCs ~7 ms later, all within ~20 ms",
+    "Excitation: 1-2 synchronous EPSCs at ~6 ms. Inhibition: an asynchronous barrage lasting ~300 ms",
+    "Both are asynchronous barrages lasting hundreds of ms, with inhibition decaying more slowly",
+    "Excitation: asynchronous, lasting hundreds of ms. Inhibition: 1-2 synchronous IPSCs at ~13 ms"
    ],
    "answer": 3,
    "explanation": "EPSCs started about 6 ms after stimulation and continued as an asynchronous barrage for hundreds of milliseconds (PSTH decay time constant 273 ms in superficial GCs, 135 ms in deep GCs), reflecting the distributed spike times of mitral/tufted cells. IPSCs were present in 32/33 GCs but were synchronous: usually 1-2 IPSCs with mean onset 13 ms (PSTH decay constant 20 ms in superficial, 55 ms in deep GCs), lagging excitation by ~7 ms, as expected for disynaptic feedforward inhibition. The inhibition came from deep short-axon cells (including Blanes cells), which fire with short, reliable latency to glomerular input. It targets both proximal and distal GC dendrites, follows 4 Hz sniff-like input, increases along with excitation when more glomeruli are activated, and in simulations broadens GC spike latencies and limits local gemmule depolarization.",
@@ -1526,10 +1526,10 @@ window.QUIZ = {
    "setup": "Calcium imaging of fura-2-loaded GC populations in mouse bulb slices shows that glomerular stimulation activates GCs at widely spread latencies (0 to ~1000 ms, mean ~370 ms), even though mitral cells respond almost synchronously.",
    "question": "When a GC can be activated from two different glomeruli, how does its activation latency behave?",
    "options": [
-    "Reliable across trials for a given glomerulus, but different for the two glomeruli",
-    "Identical for both glomeruli, because latency is an intrinsic property of each GC",
-    "Random from trial to trial; only the population's mean latency is stable",
-    "Always shorter for whichever glomerulus lies closer to the GC's position"
+    "Reliable from trial to trial for each glomerulus, but unrelated between the two glomeruli",
+    "Identical for both glomeruli, since latency is set by each GC's own A-type K+ current",
+    "Jittered by hundreds of ms across trials; only the population mean (~370 ms) is stable",
+    "Shorter for whichever glomerulus lies closer to the GC, reflecting conduction delays"
    ],
    "answer": 0,
    "explanation": "In 68 GCs activated by both glomeruli, repeated stimulation of the same glomerulus produced latencies on the diagonal (reliable), whereas latencies evoked by the two glomeruli were unrelated. Each GC had a low probability of being activated, but when it fired its timing was reliable, and coactivation across GCs was no higher than chance. The long latencies were not explained by slow calcium rise times. Blocking A-type K+ current with 4-AP shortened them (mean 368 ms to 182 ms at 10 mM), implicating I_A in delaying GC firing. GC-mediated inhibition therefore carries glomerulus-specific timing over hundreds of milliseconds, the time scale of slowly evolving odor-evoked mitral-cell patterns.",
@@ -1551,10 +1551,10 @@ window.QUIZ = {
    "setup": "Paired whole-cell recordings in mouse bulb slices from pairs of mitral cells disynaptically coupled through shared granule cells. On alternate sweeps the 'presynaptic' MC is driven at a fixed high rate (60-100 Hz) while current steps produce F-I curves in the 'postsynaptic' MC.",
    "question": "How does the lateral inhibition depend on the postsynaptic MC's own firing rate?",
    "options": [
-    "Strongest at low postsynaptic rates and declining steadily as the cell fires faster",
-    "A constant fractional reduction at all postsynaptic rates (divisive scaling)",
+    "Strongest at low postsynaptic rates (<30 Hz) and declining steadily as the cell fires faster",
+    "A constant fractional reduction (~18%) at all postsynaptic rates, i.e. divisive gain scaling",
     "Present only in an intermediate band (~35-110 Hz), absent at low and very high rates",
-    "Absent at all rates, because a single MC cannot recruit lateral inhibition"
+    "Present only at high postsynaptic rates (>110 Hz), where GC NMDA receptors are unblocked"
    ],
    "answer": 2,
    "explanation": "15 of 29 pairs showed lateral inhibition, and only within a window of postsynaptic rates (35-110 Hz across pairs, peak at ~81 Hz, mean peak reduction 18% or 8.7 Hz; each pair's window ~32 Hz wide), often with no visible IPSPs from the presynaptic cell alone. Raising the presynaptic rate from 50 to 100 Hz moved the window to lower postsynaptic rates. Stimulating the GCL directly produced no such low-rate gating. The gating therefore comes from GCs being recruited cooperatively by coactive mitral cells. Lateral inhibition is strongest between cells that are active together rather than between neighbours, and in simulations this decorrelates similar activity patterns.",
@@ -1578,10 +1578,10 @@ window.QUIZ = {
    "setup": "Pairs of mitral cells (different glomeruli) in mouse bulb slices are driven by DC current injection. Spike-count correlation is computed for bin sizes from 1 to 1000 ms, comparing simultaneous recording (cells share lateral inhibition) with the same cells' spike trains recorded on separate sweeps (no shared inhibition).",
    "question": "How does shared inhibition change the correlation between the two mitral cells?",
    "options": [
-    "It decreases correlation at every timescale",
-    "It increases fast (<30 ms) correlation but decreases slow (>100 ms) correlation",
-    "It increases correlation at every timescale",
-    "It decreases fast synchrony but increases slow firing-rate correlation"
+    "Correlation falls across timescales, most strongly for bins under 30 ms",
+    "Fast (<30 ms) correlation rises; slow (>100 ms) correlation falls",
+    "Correlation rises across timescales, most strongly for bins over 100 ms",
+    "Fast (<30 ms) correlation falls; slow (>100 ms) correlation rises"
    ],
    "answer": 1,
    "explanation": "Peak changes per pair were +0.016 for bins <30 ms (more synchrony) and -0.14 for bins >100 ms (decorrelation); n=12 pairs. The difference in firing rate between the two cells grew, with a consistent 'winner' and 'loser'. Shuffling trials abolished the fast correlation but kept the slow decorrelation, so synchrony depends on the trial-specific timing of shared IPSCs while decorrelation reflects reproducible competition. Models showed this needs fast, shared, activity-dependent inhibition, and that fast correlation with slow decorrelation improves both odor discrimination and spike propagation to cortex.",
@@ -1605,10 +1605,10 @@ window.QUIZ = {
    "setup": "In vivo intracellular recordings from identified mitral and tufted cells in urethane-anesthetized, double-tracheotomized rats, in which nasal airflow can be switched on or off independently of breathing. GABAA-mediated lateral IPSPs (presumed GC dendrodendritic) are evoked by microstimulating the olfactory nerve layer at distant sites, timed to the preferred respiratory phase.",
    "question": "What happens when nasal airflow is removed?",
    "options": [
-    "Lateral IPSPs grow, because interneurons are released from sensory drive",
-    "Nothing changes; lateral inhibition is set purely by intrinsic bulb circuitry",
-    "Spiking becomes faster and arrhythmic, but IPSP size is unchanged",
-    "Sniff-coupled spiking vanishes, mitral firing nearly stops, and mitral lateral IPSPs shrink by ~40%"
+    "Lateral IPSPs grow by ~40%, because sniff-phase gating of inhibition is lifted",
+    "Mitral firing persists unchanged, and lateral IPSPs are the same size as with airflow",
+    "Mitral cells fire faster and arrhythmically, while lateral IPSP size is unchanged",
+    "Mitral cells nearly stop firing, and their lateral IPSPs shrink by about 40%"
    ],
    "answer": 3,
    "explanation": "Nasal airflow provided the excitatory synaptic input behind respiration-coupled membrane oscillations and spiking, and it did so even after transecting the lateral olfactory tract. Without airflow, rhythmic coupling disappeared, mitral cells nearly stopped spiking (tufted cells kept firing), and evoked lateral IPSPs in mitral cells fell by 41.9% (n=11), while tufted IPSPs became less phase-modulated. With airflow, lateral IPSPs were 50% (mitral) and 73% (tufted) smaller in a cell's non-preferred respiratory phase, but the preferred phase differed between cells. Sniff-driven sensory input therefore keeps the bulb's lateral inhibitory network engaged and modulates it rhythmically.",
@@ -1630,10 +1630,10 @@ window.QUIZ = {
    "setup": "Optogenetic activation of one glomerulus (M72-ChR2) while measuring F-I curves of nearby mitral (MC) or tufted (TC) cells in mouse bulb slices reveals activity-dependent lateral inhibition in both cell types.",
    "question": "How does the effective firing-rate range of lateral inhibition differ between TCs and MCs?",
    "options": [
-    "TCs are inhibited only at low rates (~10-43 Hz), MCs at intermediate rates (~34-79 Hz)",
-    "MCs are inhibited only at low rates, TCs only at high rates (>80 Hz)",
-    "Both are inhibited over the same intermediate window (~35-80 Hz)",
-    "TCs receive no lateral inhibition at any rate; only MCs do"
+    "TCs are inhibited at low rates (~10-43 Hz), and MCs at intermediate rates (~34-79 Hz)",
+    "MCs are inhibited at low rates (~10-43 Hz), TCs at intermediate rates (~34-79 Hz)",
+    "Both are inhibited over the same intermediate window (~35-80 Hz), set by deep GCs",
+    "TCs are inhibited at high rates (>80 Hz), MCs over their whole range (~10-80 Hz)"
    ],
    "answer": 0,
    "explanation": "Across 16 MCs, rates of 34±11 to 79±22 Hz were reduced; across 12 TCs only 10±4 to 43±8 Hz (both bounds significantly lower). Absolute reductions were similar (~8 Hz), although MCs received larger inhibitory currents. The difference fits the GC subtypes: superficial GCs, which put their gemmules in the superficial EPL among TC dendrites, fired far more often to glomerular activation, received stronger excitation and were more excitable than deep (MC-associated) GCs. Making GCs more excitable with the mGluR agonist DHPG moved the MC window down (31-73 Hz to 16-49 Hz). In models this lets TCs and MCs discriminate odors best in different concentration ranges, so they act as parallel channels.",
@@ -1658,9 +1658,9 @@ window.QUIZ = {
    "setup": "Whole-cell recordings from GCs in rat bulb slices. Two-photon-guided focal stimulation activates either proximal GCL inputs (fast, facilitating, partly piriform feedback) or distal EPL dendrodendritic inputs. Synaptic stimulation is paired with postsynaptic GC spikes (50 pairings at 20 Hz) at different intervals, and EPSP slope is followed for ~25 min.",
    "question": "What long-term plasticity results?",
    "options": [
-    "Both inputs potentiate with pre-before-post (+10 ms) pairing; post-before-pre has no effect",
-    "Proximal: LTP at +10 ms and LTD at -10 ms; the same +10 ms protocol depresses distal inputs",
-    "Proximal inputs never change; only distal dendrodendritic inputs show Hebbian LTP",
+    "Both inputs potentiate with +10 ms pairing (NMDA-dependent); -10 ms pairing has no effect",
+    "Proximal: LTP at +10 ms, LTD at -10 ms; the same +10 ms pairing depresses distal inputs",
+    "Proximal inputs are unchanged at any interval; distal inputs show NMDA-dependent LTP at +10 ms",
     "Proximal: LTD at +10 ms and LTP at -10 ms (anti-Hebbian); distal inputs are unaffected"
    ],
    "answer": 1,
@@ -1685,10 +1685,10 @@ window.QUIZ = {
    "setup": "Rat bulb slices: whole-cell recordings from GCs while stimulation of one glomerulus activates its mitral/tufted cells, which excite the GC through dendrodendritic synapses. A theta-burst protocol (gamma-frequency bursts repeated at theta, mimicking sniffing) is delivered to the glomerulus, and GC EPSPs are monitored for 30 min.",
    "question": "What happens to the M/T-to-GC EPSP after theta-burst stimulation?",
    "options": [
-    "Robust LTP (about two-fold), like that at proximal cortical inputs",
-    "No lasting change; only transient depression during the train",
-    "LTD in most cells (to ~75% of control) that is blocked by APV",
-    "LTD that persists in APV, so it is NMDA-receptor independent"
+    "NMDA-dependent LTP (about two-fold), like that at proximal cortical inputs",
+    "Depression during the train only; EPSPs recover to ~100% of control within 5 min",
+    "NMDA-receptor-dependent LTD in most cells (to ~75% of control), prevented by APV",
+    "LTD (to ~75% of control) that persists in APV, so it is NMDA-receptor independent"
    ],
    "answer": 2,
    "explanation": "Theta-burst stimulation induced LTD in 10 of 14 GCs (to 73±13% of control; 82±19% including all cells), with fast onset. The NMDA-receptor antagonist APV prevented it. A single burst ('single sniff') could instead induce either LTP or LTD, only in the stimulated glomerular pathway, and quantal analysis linked these changes to the number of release sites. Gamma-only trains were less effective. Local dendrodendritic inputs and proximal cortical inputs therefore follow different plasticity rules, and theta bursts potentiate the cortical pathway (Gao and Strowbridge).",
@@ -1712,10 +1712,10 @@ window.QUIZ = {
    "setup": "Awake, head-fixed Vgat-Cre mice with Cre-dependent ArchT expressed in the granule cell layer, so light silences GCs. LFP is recorded in the bulb, and whole-cell recordings are made from mitral/tufted cells, with and without light, at baseline and during odor-evoked hyperpolarizations.",
    "question": "What does silencing GCs do?",
    "options": [
-    "Reduces gamma LFP power but leaves M/T baseline firing and odor-evoked slow inhibition unchanged",
-    "Abolishes sniff-locked theta firing and odor-evoked inhibition but leaves gamma intact",
-    "Greatly raises M/T firing rates and abolishes all odor-evoked hyperpolarizations",
-    "Increases gamma power by disinhibiting mitral and tufted cells"
+    "Gamma power drops; M/T baseline firing and odor-evoked hyperpolarizations are unchanged",
+    "Sniff-locked theta firing and odor-evoked hyperpolarizations vanish; gamma power is unchanged",
+    "M/T baseline firing roughly doubles and odor-evoked hyperpolarizations disappear",
+    "Gamma power rises as M/T cells are disinhibited; odor-evoked hyperpolarizations are unchanged"
    ],
    "answer": 0,
    "explanation": "In awake mice, GC silencing significantly reduced baseline gamma (40-100 Hz) LFP power (n=11) but did not change M/T baseline firing or odor-evoked hyperpolarizations (n=8 cell-odor pairs, P=0.94). Under anesthesia it likewise reduced odor-evoked gamma and the regularity of tufted-cell spiking at 65-100 Hz (spike-autocorrelogram power 0.2 vs 0.08 x10^-6 Hz^-1) without changing firing rate (42.5 vs 43.8 Hz). Sniff-coupled theta structure and odor-evoked inhibition depended instead on glomerular-layer inhibition. GCs therefore control fast (gamma) timing, and glomerular-layer circuits control slow (theta) timing.",
@@ -1739,9 +1739,9 @@ window.QUIZ = {
    "setup": "Mice trained in a go/no-go task first on pure carvone or limonene enantiomers, then on progressively closer binary mixtures (75/25, 68/32...), receive bilateral intrabulbar picrotoxin at a low dose (0.5 mM). In head-fixed recordings this dose boosts low-gamma power (mean gamma frequency ~71 to ~61 Hz) and long-range mitral-cell synchrony.",
    "question": "How are discrimination performance and mitral-cell firing rates affected?",
    "options": [
-    "Mixture discrimination improves because mitral-cell synchrony is enhanced",
-    "Mice fail even pure enantiomers because mitral cells fire in epileptic bursts",
-    "Behaviour is unaffected, consistent with unchanged mitral-cell firing rates",
+    "Close-mixture discrimination improves with the extra synchrony; mitral firing rates are unchanged",
+    "Even pure enantiomers fail, because mitral cells fire in epileptiform bursts at ~2x baseline",
+    "Both pure pairs and close mixtures are solved normally; mitral firing rates are unchanged",
     "Pure pairs are still solved, but close mixtures fail; mitral firing rates are unchanged"
    ],
    "answer": 3,
@@ -1766,10 +1766,10 @@ window.QUIZ = {
    "setup": "Awake rats sampling odors while LFPs are recorded in the bulb and piriform cortex; drugs are infused into one bulb. A model predicted that gamma needs NMDA-receptor-dependent dendrodendritic GABA release, whereas odor-evoked beta (15-30 Hz) relies on high GC excitability (set by centrifugal input) and voltage-gated Ca2+ channel-mediated GABA release.",
    "question": "What does intrabulbar infusion of the NMDA-receptor antagonist APV do to odor-evoked bulb oscillations?",
    "options": [
-    "It abolishes both beta and gamma oscillations",
-    "It nearly abolishes low and high gamma but leaves beta largely intact",
-    "It abolishes beta but leaves gamma intact",
-    "It enhances gamma by removing NMDA-driven GC inhibition"
+    "Both beta and gamma are nearly abolished, as both need NMDA receptors",
+    "Low and high gamma are nearly abolished, while beta power is largely spared",
+    "Beta is nearly abolished, while low and high gamma are largely spared",
+    "Gamma power increases, because NMDA-driven GC inhibition is removed"
    ],
    "answer": 1,
    "explanation": "APV (100 uM) almost completely abolished low- and high-gamma power in both anterior and medial bulb recordings, and gamma in ipsilateral piriform cortex as well. Beta power was largely unaffected; the only effect was a small decrease for one odor at the infusion site. Beta is therefore generated by a partly separate mechanism, consistent with GC excitability and NMDA-independent GABA release. Lowering GC excitability with the muscarinic antagonist scopolamine reduced beta evoked by a strong (high-volatility) odor but increased beta evoked by a weak one, as the model predicted.",
@@ -1793,10 +1793,10 @@ window.QUIZ = {
    "setup": "In anesthetized mice, two-photon-targeted loose-patch recordings were made from EPL parvalbumin (PV) interneurons and blind recordings from granule cells, each tested with five odors; cell-type-specific rabies tracing mapped which mitral cells connect to each type.",
    "question": "How do EPL PV interneurons and GCs compare?",
    "options": [
-    "PV cells are narrowly tuned and contact only sister mitral cells; GCs are broadly tuned",
-    "Both are broadly tuned; they differ only in how far their connections spread",
-    "PV cells are broadly tuned with input from widely spread MCs; GCs are selective and locally connected",
-    "Both are sparsely tuned; PV cells differ only in firing persistently after odor offset"
+    "PV cells: narrow tuning, inputs from sister MCs of one glomerulus. GCs: broad, widely connected",
+    "Both: broad tuning (most cells respond to 3+ of 5 odors); they differ mainly in connection spread",
+    "PV cells: broad tuning, inputs from MCs across the bulb. GCs: selective, locally connected",
+    "Both: sparse tuning (~10% respond to 3+ odors); PV cells differ mainly in persistent firing"
    ],
    "answer": 2,
    "explanation": "93% (28/30) of EPL PV neurons responded to 3 or more of 5 odors and 33% to all 5, compared with 11% (3+ odors) and 0% (all 5) of GCs (n=27). PV-neuron odor responses were mostly excitatory and often persistent. Rabies tracing showed PV neurons receive input from mitral cells spread widely across the bulb, so each M/T cell is disynaptically linked to more than 100 others through them. Mitral-GC reciprocal connections, by contrast, were spatially narrow. PV cells therefore provide broad, nonselective feedback inhibition, while GCs provide selective, more local, odor-specific inhibition.",
@@ -1818,10 +1818,10 @@ window.QUIZ = {
    "setup": "In Koulakov and Rinberg's network model, GCs try to represent each odor's glomerular input to mitral cells as a weighted sum of their own GC-to-MC synaptic weight vectors, with the GC firing rates as the coefficients.",
    "question": "In this model, what do mitral cells transmit to cortex, and why is it sparse?",
    "options": [
-    "The residual between input and GC reconstruction; GC rates cannot be negative, so the reconstruction is incomplete",
-    "A copy of the glomerular input scaled down by uniform GC inhibition; sparseness comes from thresholds",
-    "The GC firing rates themselves, relayed through mitral-cell axons",
-    "A dense, complete code, because GCs outnumber MCs and can represent any input exactly"
+    "The residual of input minus GC reconstruction; it is sparse because GC rates cannot go negative",
+    "The input scaled down by uniform GC inhibition; it is sparse because of high mitral spike thresholds",
+    "A copy of the GC firing rates, relayed by mitral axons; it is sparse because GCs fire rarely",
+    "The GC reconstruction of the input itself; it is sparse because of the cost on GC activity"
    ],
    "answer": 0,
    "explanation": "Network dynamics minimize the representation error plus a cost on GC activity, and a mitral cell's odor response equals its glomerular input minus the GC reconstruction. Because GCs greatly outnumber mitral cells, an unconstrained code could cancel any input and silence MCs. GC rates cannot be negative, however, so inputs outside the cone spanned by the GC weight vectors can only be approximated. The leftover error appears in a sparse subset of mitral cells, which also respond transiently. Cortical input that brings particular GCs near threshold changes which components are cancelled, offering a top-down route to redundancy reduction.",
@@ -1843,10 +1843,10 @@ window.QUIZ = {
    "setup": "In vivo widefield GCaMP6 imaging of the dorsal bulb in urethane-anesthetized adult mice, with the indicator targeted either to young, functionally immature adult-born GCs (Dlx5/6-Cre, imaged ~2 weeks after labelling) or to mature GCs (Crhr1-Cre). Odor-evoked activation maps are compared with mitral-cell maps (Thy1-GCaMP3).",
    "question": "How does the GC 'inhibitory sensory map' change as GCs mature?",
    "options": [
-    "It sharpens into small glomerulus-sized foci, as excitatory maps do",
-    "It is unchanged: mature and immature GCs are activated over the same area",
-    "It keeps its size but moves its centroid to a different region of the bulb",
-    "It broadens: mature GCs are activated over twice the area and respond to more odors"
+    "It sharpens: mature GCs are activated over ~half the area, in glomerulus-sized foci",
+    "It is stable: mature and immature GCs cover the same area with the same peak response",
+    "It shifts: map size is unchanged, but its centroid moves to a different part of the bulb",
+    "It broadens: mature GCs are activated over about twice the area and respond to more odors"
    ],
    "answer": 3,
    "explanation": "The area activated at 50% or more of maximal response was more than twice as large for mature (Crhr1) as for immature (Dlx5/6) GCs (P=0.0004), with unchanged peak response and similar centroid. The same Dlx5/6 cohort imaged at 5-6 weeks also showed larger maps, and single mature GCs responded to more odors. Mature GCs received more, and stronger, synaptic input from distant connections. Broadening depended on experience: naris occlusion prevented it, and go/no-go training expanded maps early for the trained odors (S+ and S-) but not novel ones. This runs opposite to the refinement typical of excitatory maps.",
@@ -1868,10 +1868,10 @@ window.QUIZ = {
    "setup": "5T4 knockout mice. 5T4 (an oncofetal glycoprotein) is needed for dendritic branching of 5T4+ GCs, a mostly embryonic/neonatally born GC subtype in the mitral and superficial granule layers. In knockouts, nonbursting external tufted cells receive less GC inhibition and 5T4 GCs receive less excitation, while inhibition of mitral cells is normal. Mice are tested in a habituation-dishabituation task with eugenol at 0.63-630 uM.",
    "question": "How do the knockout mice perform?",
    "options": [
-    "Detection is normal at every concentration; only innate fear of fox odor is affected",
-    "Detection threshold rises >100-fold (no response at 6.3 or 63 uM), and discrimination learning is impaired",
-    "They are hypersensitive and detect 0.63 uM eugenol, which wild-type mice ignore",
-    "They are anosmic and fail to respond even to 630 uM eugenol"
+    "Detection is normal at every dose, but innate freezing to fox odor (TMT) is reduced",
+    "Detection threshold rises >100-fold, and odor discrimination learning is impaired",
+    "They are hypersensitive: they detect 0.63 uM eugenol, which wild-type mice ignore",
+    "They are anosmic: even 630 uM eugenol draws no investigation, and food finding fails"
    ],
    "answer": 1,
    "explanation": "Wild-type mice investigated eugenol at 6.3 and 63 uM, but knockouts did not respond until 630 uM, which puts their detection threshold more than 100-fold higher. They also froze less and avoided less at a low dose of the fox-odor component TMT, and they were impaired at odor discrimination learning (eugenol vs pentanol; carvone enantiomers) and at finding food against a background odor. Food finding without a background odor and novel-object recognition were normal. Bulb-specific 5T4 knockdown reproduced the deficits, linking one GC subtype, which targets tufted-cell circuits, to odor sensitivity and discrimination.",
@@ -1893,10 +1893,10 @@ window.QUIZ = {
    "setup": "Chronic two-photon GCaMP3 imaging of the same ~340 mitral cells (PCdh21-Cre mice, AAV-FLEX-GCaMP3) in head-fixed mice, first awake and then after inducing anesthesia (urethane or ketamine); seven structurally diverse odours presented passively.",
    "question": "How does anesthesia change mitral-cell odour tuning?",
    "options": [
-    "Tuning narrows: each mitral cell responds to fewer odours",
-    "Tuning broadens: each mitral cell responds to more odours, and more strongly",
-    "Tuning is unchanged; only response latency shortens",
-    "Mitral cells stop responding to odours altogether"
+    "Tuning narrows: each mitral cell responds to fewer odours, more weakly",
+    "Tuning broadens: mitral cells respond to more odours, and more strongly",
+    "Tuning breadth is unchanged; responses just become more temporally diverse",
+    "Responses become weaker and slower, but the same odours drive each cell"
    ],
    "answer": 1,
    "explanation": "Under anesthesia the cumulative distribution of effective odours per mitral cell shifts rightward (broader tuning) and peak responses of cell-odour pairs get larger; the awake code is sparser. Awake responses are also temporally diverse (onsets tile the 4-s odour and beyond), whereas anesthetized responses are time-locked to odour onset, and awake ensembles classify odours with fewer responses (15 vs 25 responses for equal performance in the first second). The change was the same with urethane and ketamine and was not explained by altered sensory input, pointing to brain state rather than drug pharmacology.",
@@ -1920,10 +1920,10 @@ window.QUIZ = {
    "setup": "Two-photon GCaMP3 imaging of granule-cell-layer neurons (non-conditional AAV in wild-type mice) in head-fixed mice; the same ~336 cells are imaged awake and then after anesthesia (urethane or ketamine), measuring spontaneous activity and responses to seven odours.",
    "question": "What does anesthesia do to granule-cell activity?",
    "options": [
-    "It increases GC activity, mirroring the stronger mitral-cell responses",
-    "It leaves spontaneous GC activity intact but makes odour responses longer-lasting",
-    "Spontaneous GC activity virtually disappears, and GCs respond to fewer odours with weaker responses",
-    "It changes GC response timing but not the number of responsive cells"
+    "GC activity increases: more spontaneous transients and broader odour tuning, like mitral cells",
+    "Spontaneous GC activity is unchanged, but odour responses become larger and last longer",
+    "Spontaneous GC activity nearly vanishes, and GCs respond to fewer odours, more weakly",
+    "GC response timing shifts toward inhalation, but the number of responsive cells is unchanged"
    ],
    "answer": 2,
    "explanation": "In awake mice many GCs show frequent spontaneous Ca2+ transients that virtually vanish under anesthesia; odour-evoked responses also collapse (819 responsive cell-odour pairs awake vs 300 anesthetized), tuning curves shift leftward (fewer effective odours) and peak dF/F falls. This is the opposite of mitral cells, which become broader and stronger under anesthesia, consistent with anesthesia removing GC-mediated inhibition. Awake GC tuning breadth was similar to awake mitral-cell tuning. Single-unit recordings agree: awake GCs fire ~7.4 spikes/s at baseline vs ~1.9 spikes/s under anesthesia, with stronger, broader odour tuning.",
@@ -1948,10 +1948,10 @@ window.QUIZ = {
    "setup": "Intracellular recordings (with dye fills) from granule cells of Nembutal-anesthetized rats, odours delivered with an artificial sniff paradigm through a tracheal cannula; the depth of each cell below the mitral cell layer was determined for 12 cells.",
    "question": "Which granule cells fired action potentials in response to odours?",
    "options": [
-    "Mainly superficial GCs near the mitral cell layer; deeper GCs mostly gave subthreshold depolarizations",
-    "Mainly deep GCs; superficial GCs gave only subthreshold depolarizations",
-    "All GCs spiked to odours regardless of depth",
-    "Superficial GCs were inhibited by odours, deep GCs were excited"
+    "Mostly superficial GCs; deeper GCs tended to depolarize without spiking",
+    "Mostly deep GCs; superficial GCs tended to depolarize without spiking",
+    "GCs at all depths spiked equally; depth predicted only response latency",
+    "Superficial GCs were hyperpolarized by odours; deep GCs fired spikes"
    ],
    "answer": 0,
    "explanation": "Of 20 GCs tested with odours, 15 were excited: 8 fired spikes (5 on every sniff, 3 only on the first sniff) and 7 showed only depolarizations (transient per sniff or sustained), while just 1 was inhibited and 4 did not respond. Spiking odour responses were found superficial to most non-spiking responses (p = 0.04), even though the non-spiking cells could fire to electrical stimulation. Because GCs can release GABA from their spines without somatic spikes, subthreshold-responding GCs may still inhibit mitral/tufted cells, and superficial vs deep GCs may play different roles.",
@@ -1973,10 +1973,10 @@ window.QUIZ = {
    "setup": "In vivo whole-cell current-clamp recordings from granule cells in urethane-anesthetized, freely breathing rats (~2 Hz respiration); odours are applied for 2-4 s and responses compared across successive respiration cycles.",
    "question": "How do GC odour-evoked depolarizations change across successive respiration cycles during the odour?",
    "options": [
-    "They grow progressively with each cycle (facilitation)",
-    "They stay constant on every cycle, like mitral/tufted-cell EPSPs",
-    "They appear only after odour offset",
-    "They are largest on the first cycle and then adapt to roughly 60% of that size"
+    "They grow on each cycle, reaching ~150% of the first by the third",
+    "They stay constant on every cycle, matching the reliable M/T EPSPs",
+    "They are weak during the odour and largest just after odour offset",
+    "The first cycle is largest; later cycles adapt to roughly 60% of it"
    ],
    "answer": 3,
    "explanation": "GCs showed respiration-coupled depolarizations, but the response on the second cycle was only 64.2 ± 7.9% of the first (n = 10), with further cycles similarly reduced; in contrast, odour-evoked EPSPs in mitral/tufted cells stayed reliable throughout the odour. Lateral IPSPs in mitral/tufted cells showed the same first-cycle dominance. GCs received a ~35 Hz barrage of spontaneous EPSPs yet rarely fired at rest (Vrest ≈ -65 mV; one cell needed ~23 mV depolarization to reach threshold), so most odour responses were subthreshold.",
@@ -1998,10 +1998,10 @@ window.QUIZ = {
    "setup": "Juxtacellular (loose-patch) recordings from identified granule cells in head-fixed mice, either awake or anesthetized (isoflurane or ketamine-xylazine), with respiration monitored. Coupling of spikes to the breathing cycle is quantified by a vector strength r (0 = uniform across the cycle, 1 = all spikes at one phase).",
    "question": "How does respiratory coupling of GC spiking in awake mice compare with anesthesia?",
    "options": [
-    "Stronger: awake GCs lock tightly to peak inhalation",
-    "Much weaker: awake GCs fire throughout the cycle, at different preferred phases",
-    "Equally strong but shifted to the exhalation phase",
-    "Absent in both states; GC spikes never follow breathing"
+    "Stronger (r ≈ 0.8): awake GCs lock tightly to just after peak inhalation",
+    "Much weaker (r ≈ 0.2): awake GCs fire across the cycle at varied phases",
+    "Similar strength (r ≈ 0.6), but the preferred phase shifts to exhalation",
+    "Absent in both states: GC spikes are uncorrelated with breathing (r ≈ 0)"
    ],
    "answer": 1,
    "explanation": "Coupling strength fell from r = 0.59 ± 0.2 under anesthesia (n = 16) to 0.20 ± 0.20 when awake (n = 18). Anesthetized GCs fired synchronously in a narrow window just after peak inspiration (median lag ~57 ms), whereas awake GCs had widely spread preferred phases, and odours did not shift these phases. Awake GCs also fired more (7.4 vs 1.9 spikes/s) and had stronger, broader odour tuning. The authors conclude that, in wakefulness, GCs probably shape mitral/tufted output through broad lateral interactions rather than by imposing respiratory timing.",
@@ -2023,10 +2023,10 @@ window.QUIZ = {
    "setup": "Whole-cell recordings of spontaneous subthreshold membrane potential in granule cells of awake head-fixed mice during basal breathing (no odour), with respiration recorded by a nasal thermocouple; membrane potential is averaged over phase-normalized respiratory cycles.",
    "question": "What does the GC membrane potential show relative to the respiratory cycle?",
    "options": [
-    "No modulation: inputs with different phase preferences cancel out",
-    "Modulation at the same phase in every GC, locked to inhalation onset",
-    "Significant phase modulation in most GCs, with a preferred phase that differs from cell to cell",
-    "Modulation only during fast sniffing, not during basal breathing"
+    "No net modulation, because inputs with different phase preferences cancel",
+    "Modulation in most GCs, all at one shared phase locked to inhalation onset",
+    "Modulation in most GCs, with a preferred phase that differs between cells",
+    "Modulation appears only during fast sniffing, and is absent at basal breathing"
    ],
    "answer": 2,
    "explanation": "18 of 21 GCs (and 6 of 8 mitral/tufted cells) showed significant respiratory phase modulation of their subthreshold potential, of similar size in both cell types. Preferred phase varied widely between GCs (e.g. 5.9 vs 2.2 rad in two cells) but stayed stable within a cell when breathing rate increased. The modulation was carried mainly by large-amplitude, fast-rising EPSPs (thought to include cortical feedback) rather than small, slow EPSPs. So although awake GC spiking is only weakly locked to breathing, GC synaptic input is rhythmic, which could time dendrodendritic GABA release.",
@@ -2050,10 +2050,10 @@ window.QUIZ = {
    "setup": "Two-photon GCaMP3 imaging of hundreds of granule-cell somata in anesthetized mice with 20 odours; in separate OMP-GCaMP3 mice, the fraction of dorsal glomeruli activated by each odour (0-30%) was measured.",
    "question": "How does total GC population activity relate to the amount of glomerular input an odour evokes?",
    "options": [
-    "It scales roughly in proportion to the fraction of glomeruli activated, and each GC responds strongly to only a few odours",
-    "It stays roughly constant across odours, as expected for winner-take-all normalization",
-    "It decreases for odours that activate many glomeruli, because GCs inhibit each other",
-    "It is unrelated to glomerular input and is set by cortical feedback"
+    "It scales with the fraction of glomeruli activated, while each GC responds to few odours",
+    "It stays roughly constant across odours, as expected for global gain normalization",
+    "It falls for odours that activate many glomeruli, because GCs inhibit one another",
+    "It is unrelated to glomerular input, and most GCs respond to most of the 20 odours"
    ],
    "answer": 0,
    "explanation": "Summed GC activity correlated strongly with the fraction of glomeruli activated (r = 0.80 ± 0.05, 6 animals), as did the fraction of active GCs (0.81) and population sparseness (0.78). Individually, a GC responded significantly to only ~3 of the 20 odours. With increasing concentration, population activity rose, but some GCs showed non-monotonic responses that disappeared with bicuculline, revealing local inhibition among GCs. The authors argue that GCs perform specific, local operations rather than global gain normalization.",
@@ -2075,10 +2075,10 @@ window.QUIZ = {
    "setup": "Two-photon imaging of odour responses in hundreds of granule-cell somata in the dorsal bulb of anesthetized mice; pairwise tuning similarity and the spatial spread of responding GCs were analysed (237,705 cell pairs, 6 animals).",
    "question": "How are odour-responsive GCs organised in space?",
    "options": [
-    "Tight chemotopic clusters: neighbouring GCs have near-identical tuning",
-    "Completely random, regardless of how many glomeruli an odour activates",
-    "One column of GCs under each active glomerulus, with no responses elsewhere",
-    "Tuning similarity barely changes with distance, but odours that activate few glomeruli recruit spatially clustered GCs"
+    "In chemotopic clusters: GCs within ~50 µm of each other have near-identical tuning",
+    "Randomly: active GCs are scattered, whether an odour activates few glomeruli or many",
+    "In columns under each active glomerulus, with few responsive GCs between columns",
+    "Dispersed overall, but odours activating few glomeruli recruit locally clustered GCs"
    ],
    "answer": 3,
    "explanation": "Tuning similarity between GC pairs was almost flat with separation out to ~300 µm, close to a shuffled control except for a slight decline at the largest distances. However, for odours that activated few glomeruli, active GCs were clustered: their mean pairwise separation was well below the ~127 µm expected for random GCs, and it approached that value as glomerular activation became denser (p < 0.001). So a single glomerulus probably recruits a local patch of GCs, but overlapping patches from functionally dissimilar neighbouring glomeruli make the layer look salt-and-pepper.",
@@ -2100,10 +2100,10 @@ window.QUIZ = {
    "setup": "The AMPA-receptor subunit GluA2 is deleted selectively in ~40% of olfactory-bulb granule cells (Cre virus in GluA2-floxed mice). In slices this boosts Ca2+ influx in GC spines and enhances recurrent inhibition of mitral cells. Mice are then trained in a go/no-go task on simple odour pairs (amyl acetate vs ethyl butyrate) and similar binary mixtures (60/40 vs 40/60); accuracy and odour discrimination time are measured.",
    "question": "What happens to the mice's behaviour?",
    "options": [
-    "Accuracy for similar mixtures rises, but discrimination time is unchanged",
-    "Similar mixtures are discriminated faster; accuracy, simple-odour timing, learning and memory are unchanged",
-    "Both simple odours and mixtures are discriminated faster, at lower accuracy",
-    "Discrimination of similar mixtures slows because mitral cells are over-inhibited"
+    "Accuracy on similar mixtures rises from ~80% to ~95%, but discrimination time is unchanged",
+    "Similar mixtures are discriminated ~50 ms faster; accuracy and simple-odour timing are unchanged",
+    "Simple odours and similar mixtures are both discriminated ~50 ms faster, at lower accuracy",
+    "Similar mixtures are discriminated ~60 ms slower, as mitral cells are over-inhibited"
    ],
    "answer": 1,
    "explanation": "GluA2-deleted mice discriminated similar mixtures ~50 ms faster (257 ± 15 vs 311 ± 12 ms), roughly halving the extra time controls need for mixtures compared with simple odours. Simple-odour times (212 vs 223 ms), accuracy (~95-98%), learning and 2-week memory were unaffected. In slices, recurrent IPSPs were larger (4.55 vs 2.76 mV) and slower (decay 1199 vs 575 ms). The converse manipulation, deleting NMDA receptors (GluN1) in GCs, slowed mixture discrimination (378 vs 316 ms).",
@@ -2125,10 +2125,10 @@ window.QUIZ = {
    "setup": "The GABA-A receptor β3 subunit, the only β subunit that granule cells express, is deleted in the granule cell layer of young mice (Cre virus injected at P21; ~63% of GCs). This nearly abolishes GABA-A currents in GCs, removing inhibition of the GCs themselves. Mitral-cell recurrent inhibition is then measured in slices, and mice are trained in go/no-go discrimination of simple odours and similar binary mixtures.",
    "question": "What are the circuit and behavioural consequences?",
    "options": [
-    "Mitral-cell recurrent inhibition weakens and discrimination slows",
-    "Mitral-cell recurrent inhibition strengthens, but discrimination is unchanged",
-    "Mitral-cell recurrent inhibition strengthens, and both simple odours and mixtures are discriminated faster at unchanged accuracy",
-    "Mitral-cell recurrent inhibition strengthens; mixtures are discriminated faster but less accurately"
+    "Recurrent inhibition of mitral cells weakens, and discrimination of similar mixtures slows by ~40 ms",
+    "Recurrent inhibition of mitral cells strengthens, but discrimination speed and accuracy are unchanged",
+    "Recurrent inhibition of mitral cells strengthens; simple odours and mixtures are discriminated faster",
+    "Recurrent inhibition of mitral cells strengthens; mixtures are discriminated faster but less accurately"
    ],
    "answer": 2,
    "explanation": "With their own GABA-A inhibition removed, GCs inhibited mitral cells more strongly: recurrent IPSPs after a 100-Hz train were 15.7 ± 1.9 vs 6.9 ± 1.4 mV, and mitral cells failed more spikes. Odour discrimination time fell for simple odours (238 vs 284 ms) and binary mixtures (291 vs 324 ms), while accuracy (~95%) and learning were unchanged; the speed-up also held across odour dilutions and other odour pairs. Inhibition onto GCs therefore sets the gain of GC output and, through it, the speed of early olfactory processing.",
@@ -2152,10 +2152,10 @@ window.QUIZ = {
    "setup": "Awake head-restrained mice express ChR2 in granule-cell-layer interneurons (AAV; ~35% of GCL neurons). Optrode recordings of mitral/tufted (M/T) cells during similar binary mixtures (60/40 vs 40/60) are made with and without light activation of the GCL.",
    "question": "How does optogenetic GCL activation change M/T ensemble representations of similar mixtures?",
    "options": [
-    "It inhibits M/T responses in a cell- and odour-specific way and decorrelates the ensemble patterns for the two mixtures",
-    "It scales all M/T responses down uniformly, leaving pattern correlations unchanged",
-    "It synchronizes M/T cells, making the two mixture patterns more correlated",
-    "It silences M/T output entirely during the odour"
+    "Odour- and cell-specific inhibition of M/T cells that decorrelates the two mixture patterns",
+    "Uniform scaling down of all M/T responses, leaving pattern correlations unchanged",
+    "Gamma-band synchrony across M/T cells that makes the two mixture patterns more correlated",
+    "Near-complete silencing of M/T output during the odour, with responses recovering at offset"
    ],
    "answer": 0,
    "explanation": "Photostimulation significantly inhibited 38% of 228 odour-M/T cell pairs, and the inhibition was not a linear rescaling of tuning curves: it differed across odours and cells. Mean population correlation between mixture-evoked patterns dropped during the 1st and 2nd breath of the odour (P = 0.0054, P = 0.0001) but not during air (P = 0.23), so GC activation boosts pattern separation within a single sniff. Conversely, silencing GCL neurons with Gi-DREADD increased correlations, and across mice the degree of M/T (not input) decorrelation predicted discrimination learning.",
@@ -2177,10 +2177,10 @@ window.QUIZ = {
    "setup": "Head-restrained mice expressing ChR2 (or EGFP as control) in granule-cell-layer neurons learn go/no-go discrimination of similar binary mixtures (60/40 vs 40/60). An LED over both bulbs is turned on during some mixture tasks, at a power that does not disrupt licking, and off during others.",
    "question": "How does GCL photostimulation affect discrimination learning?",
    "options": [
-    "It slows learning because M/T output is over-suppressed",
-    "It has no effect on learning",
-    "It leaves learning speed unchanged but raises final accuracy",
-    "ChR2 mice learn light-on mixture tasks faster but reach the same final performance, with no advantage on light-off tasks"
+    "ChR2 mice learn light-on tasks more slowly, as M/T output is over-suppressed",
+    "ChR2 and EGFP mice learn at the same rate and plateau at the same accuracy",
+    "ChR2 mice learn at normal speed but reach a higher final accuracy with light on",
+    "ChR2 mice learn light-on tasks faster but plateau at the same final accuracy"
    ],
    "answer": 3,
    "explanation": "With light on, ChR2 mice (n = 7) climbed the learning curves for AA/EB and EB/HX mixtures faster than EGFP mice (n = 7; P = 0.015) but plateaued at similar levels. With light off (C+/C- and AC/LI mixtures) the groups did not differ (P = 0.08), and the advantage returned when light was reapplied on a new pair (HO/HA). Silencing GCL neurons pharmacogenetically (Gi-DREADD + CNO) did the opposite: less pattern separation and slower learning (n = 9 per group, P = 0.023).",
@@ -2202,10 +2202,10 @@ window.QUIZ = {
    "setup": "",
    "question": "Compared with anesthetized animals, how do mitral/tufted cells behave in awake, behaving mice (extracellular single-unit recordings)?",
    "options": [
-    "Lower spontaneous firing and stronger odour-evoked excitation",
-    "Higher spontaneous firing and weaker, sparser odour-evoked rate changes, sometimes with reversed sign",
-    "Same spontaneous firing but much stronger, longer odour responses",
-    "Silent at rest, firing only to rewarded odours"
+    "Lower spontaneous firing and larger, broader odour-evoked rate increases",
+    "Higher spontaneous firing and smaller, sparser odour-evoked rate changes",
+    "Similar spontaneous firing, but odour responses are larger and last longer",
+    "Near-silent at rest, with strong firing mostly to odours that predict reward"
    ],
    "answer": 1,
    "explanation": "In data reproduced from Rinberg et al. (2006), the same M/T cells fired faster spontaneously when awake, and odours that drove large rate increases under anesthesia evoked small or even suppressive changes in the awake animal. Other awake recordings agree; for example, only ~11% of M/T cells changed rate to odours in rats trained to discriminate. The review links this sparseness to wakefulness-dependent GC activity: GCs are nearly silent under anesthesia but strongly active when awake, so anesthesia releases M/T cells from dendrodendritic inhibition.",
@@ -2229,10 +2229,10 @@ window.QUIZ = {
    "setup": "Acute olfactory-bulb slices from Ntsr1-Cre mice with ChR2 expressed in anterior piriform pyramidal cells. Neighbouring granule cells (GCs) and deep short-axon cells (dSACs) in the GC layer are recorded (paired or sequentially) while light flashes activate the piriform feedback axons. Minimal light stimulation is then used to isolate single-fibre EPSCs in each cell type.",
    "question": "How does feedback excitation of dSACs compare with that of GCs?",
    "options": [
-    "Similar in both cell types: feedback drives GCs and dSACs equally",
-    "GCs get ~10x larger EPSCs because each feedback fibre makes stronger synapses on GCs",
-    "dSACs get ~10x larger EPSCs because many more feedback fibres converge on each dSAC",
-    "dSACs get ~10x larger EPSCs because each single-fibre synapse on a dSAC is far stronger"
+    "Similar in both: matched convergence and single-fibre strength give each cell type EPSCs of ~30 pA",
+    "GCs get ~10x larger EPSCs, because each piriform fibre makes much stronger synapses on GCs",
+    "dSACs get ~10x larger EPSCs, because many more feedback fibres converge onto each dSAC",
+    "dSACs get ~10x larger EPSCs, because each single-fibre synapse on a dSAC is ~10x stronger"
    ],
    "answer": 2,
    "explanation": "In every paired or sequential recording (17/17), the light-evoked EPSC was larger in the dSAC than in the GC: 306 ± 81 pA vs 28 ± 9 pA, about 10x. Single-fibre EPSCs were actually slightly larger in GCs (29.8 vs 17.0 pA), so the difference comes from higher convergence onto dSACs. dSACs inhibit GCs, so feedback also produces disynaptic IPSCs in GCs (about 3.5 ms after the EPSC). These IPSCs keep feedback EPSPs brief: their half-width is 6.5 ms, versus 58 ms when GABA-A receptors are blocked. Depending on its excitation/inhibition balance, a GC can be net excited (7/12 cells) or net inhibited (4/12).",
@@ -2254,10 +2254,10 @@ window.QUIZ = {
    "setup": "Urethane-anesthetized Ntsr1-Cre mice with ChR2 in layer 2/3 pyramidal cells of anterior piriform cortex. A 4-s ramping light stimulus drives sustained, gamma-rhythmic piriform activity. Single M/T units are recorded in the ipsilateral bulb, with cortical light delivered on interleaved trials either before odour (spontaneous period) or together with odour.",
    "question": "How does driving piriform cortex change M/T cell firing?",
    "options": [
-    "Strong, equal suppression of spontaneous and odour-evoked firing",
-    "Variable effects on spontaneous firing, but consistent suppression of firing during odour responses",
-    "Enhanced odour-evoked excitation, with spontaneous firing unchanged",
-    "Increased spontaneous firing, with odour responses unchanged"
+    "Strong suppression of both spontaneous and odour-evoked firing, by about the same amount",
+    "Mixed effects on spontaneous firing, but consistent suppression of firing during odours",
+    "Enhanced odour-evoked excitation that grows with concentration; spontaneous firing unchanged",
+    "A consistent rise in spontaneous firing, with odour-evoked responses left unchanged"
    ],
    "answer": 1,
    "explanation": "Across 40 odour–unit pairs (7 mice), cortical activation raised spontaneous firing in some units and lowered it in others (no significant net change). Firing during odours, in contrast, fell consistently (p < 0.001). Activation reduced odour-evoked excitation and deepened odour-evoked inhibition, and the suppression grew with odour concentration. Cortical activity also drove gamma oscillations in the bulb and disrupted odour-evoked beta. The simplest reading is that feedback amplifies GC-mediated recurrent and lateral inhibition, which needs sensory-driven M/T activity to engage.",
@@ -2279,10 +2279,10 @@ window.QUIZ = {
    "setup": "Rat olfactory-bulb slices with ChR2 in AON neurons. A mitral cell is recorded in current clamp at rest, just above threshold (+240 pA) or well above threshold (+300 pA), and a 10-ms light pulse activates AON axons.",
    "question": "Besides disynaptic inhibition, what does AON feedback do to mitral cells, and how does that shape their spiking?",
    "options": [
-    "It excites them directly: no spike at rest, a precisely timed spike near threshold, a pause then rebound when firing strongly",
-    "Nothing else: pure inhibition at every level, with longer pauses as firing rate rises",
-    "It excites them strongly enough to fire from rest, but has no effect near threshold",
-    "It hyperpolarizes them directly at rest and triggers bursts above threshold"
+    "Direct excitation: no spike from rest, a timed spike near threshold, a pause and rebound when firing hard",
+    "Nothing else: it is purely inhibitory, so pauses simply lengthen as the mitral cell's firing rate rises",
+    "Strong direct excitation: spikes from rest within ~4 ms, but no change in spike timing near threshold",
+    "Slow direct excitation via NMDA receptors that raises firing for ~100 ms at every current level"
    ],
    "answer": 0,
    "explanation": "AON axons make direct glutamatergic synapses on MCs. These EPSCs are about 18.5 pA with a 3.7 ms latency, and they persist in TTX/4-AP and after the glomerular layer is removed. They are followed by larger disynaptic IPSCs (about 316 pA, 10.5 ms latency): GCs supply most of this inhibition, and about a third comes from the glomerular layer. Near threshold, firing probability rose about 9.5x at roughly 7 ms and then dropped to 0.4x baseline. In vivo, 9/20 MCs showed a brief (<5 ms) excitation peak, and AON stimulation reduced firing overall by 58%. So AON feedback opens a narrow window for timed spikes, followed by broader GC-mediated inhibition.",
@@ -2306,10 +2306,10 @@ window.QUIZ = {
    "setup": "G-deleted rabies virus injected into the GC layer of the mouse main olfactory bulb; retrogradely labelled feedback neurons are mapped in 3D across the whole brain.",
    "question": "How are the piriform neurons that project back to the GC layer arranged within piriform cortex?",
    "options": [
-    "Randomly scattered, like the distributed bulb-to-piriform input they receive",
-    "Restricted to one narrow band in posterior piriform cortex",
-    "Uniform along the rostro-caudal axis and located mainly in layer 1",
-    "In spatially clustered patches, with most cells in anterior piriform cortex"
+    "Randomly scattered across piriform, like the distributed bulb-to-piriform input",
+    "In one narrow band in posterior piriform, with few cells in anterior piriform",
+    "Evenly spread along the rostro-caudal axis, with most cells located in layer 1",
+    "In spatially clustered patches, with cell numbers highest in anterior piriform"
    ],
    "answer": 3,
    "explanation": "Labelled feedback neurons were closer together than random (mean pairwise distance 119 vs 239 µm in an example). Clusters were stable across resamples (stability about 0.9 vs about 0.1 for random positions). Cell numbers fell from rostral to caudal, so anterior piriform supplies most of the feedback. This contrasts with the spatially unordered bulb-to-piriform input. In the AON, ipsilateral feedback cells were spread uniformly, while the smaller contralateral population (roughly a tenth as many cells) was biased toward ventral AON.",
@@ -2331,10 +2331,10 @@ window.QUIZ = {
    "setup": "Two-photon GCaMP5 imaging of anterior piriform feedback boutons in the GC layer of awake head-fixed mice, tested with a panel of 20 (or 33) odours.",
    "question": "How do individual piriform feedback boutons respond to odours?",
    "options": [
-    "Densely and broadly: most boutons are excited by most odours",
-    "Sparsely, and each bouton (and its whole axon) is consistently either enhanced or suppressed",
-    "Sparsely, with each bouton switching between enhancement and suppression from odour to odour",
-    "Sparsely, but only at odour offset and only by enhancement"
+    "Densely and broadly: most boutons are excited by most of the odours in the panel",
+    "Sparsely, and each bouton (and its whole axon) is consistently enhanced or suppressed",
+    "Sparsely, and each bouton switches between enhancement and suppression across odours",
+    "Sparsely, and mostly at odour offset, as brief enhancements that end within ~1 s"
    ],
    "answer": 1,
    "explanation": "A given odour activated only about 4.3% of GC-layer boutons, and a bouton responded to 0.85 odours on average (35% responded to at least one). Of the responsive boutons, about 40% were only enhanced and about 55% only suppressed. Boutons on the same axon shared their polarity (only 1 of 52 axons was mixed), and polarity almost never flipped across concentrations (<5%). Many responses outlasted the 4-s odour by more than 12 s. Nearby boutons were as dissimilar as distant ones, so there is no local feedback map. GCs therefore receive two distinct top-down channels: odour-specific increases and decreases of excitation.",
@@ -2358,10 +2358,10 @@ window.QUIZ = {
    "setup": "Awake head-fixed Tbx21-Cre × GCaMP3 mice. Two-photon imaging of mitral and tufted cell somata responding to 33 odours, before and after muscimol is infused through a cannula to silence anterior piriform cortex (saline infusion as control).",
    "question": "What happens to mitral versus tufted cell odour representations when piriform feedback is removed?",
    "options": [
-    "Both MCs and TCs become less responsive",
-    "TCs become more responsive and more similar to each other; MCs are unchanged",
+    "MCs and TCs both respond to fewer odours, with response amplitudes roughly halved",
+    "TCs respond to more odours and become more similar to each other; MCs barely change",
     "MCs respond to more odours and become more similar to each other; TCs barely change",
-    "MCs and TCs both become more responsive and more similar, to the same degree"
+    "MCs and TCs both respond to more odours and become more similar, to the same degree"
    ],
    "answer": 2,
    "explanation": "After piriform silencing, the number of odours each MC responded to rose from 8.4 to 13.9. Pairwise MC odour-tuning similarity rose from 0.18 to 0.49, beyond what amplitude scaling alone predicts. TCs were essentially unchanged (15.0 vs 14.6 odours; similarity 0.46 vs 0.46), and saline had no effect. Piriform feedback, acting mainly through GCs, therefore keeps mitral (but not tufted) output sparse and decorrelated.",
@@ -2385,10 +2385,10 @@ window.QUIZ = {
    "setup": "Awake mice; two-photon imaging of MC and TC responses to 20 odours before and after muscimol inactivation of ipsilateral anterior piriform cortex, ipsilateral AON or contralateral AON.",
    "question": "How do AON and piriform feedback differ in their effect on the bulb output cell each mainly controls?",
    "options": [
-    "AON silencing reshapes TC tuning, whereas piriform silencing only scales MC responses",
-    "Both mainly scale responses up without changing tuning",
-    "Both reshape the tuning of MCs and TCs equally",
-    "AON silencing scales TC responses with tuning preserved, whereas piriform silencing reshapes MC tuning"
+    "AON silencing reshapes TC tuning, whereas piriform silencing just scales MC responses up",
+    "Both mainly scale up responses of their target cells while preserving odour tuning",
+    "Both reshape MC and TC tuning equally, as neither loop is specific to one cell type",
+    "AON silencing scales TC responses, tuning intact; piriform silencing reshapes MC tuning"
    ],
    "answer": 3,
    "explanation": "Each cortical area mainly regulated its dominant bulb input, matching the feedforward biases (MC to piriform, TC to AON). Piriform silencing changed MCs but not TCs, and AON silencing affected TCs much more than MCs (contralateral AON almost exclusively TCs). The correlation between a cell's odour-response spectrum before and after silencing was 0.95 for TCs after AON silencing, consistent with pure gain change. For MCs after piriform silencing it was only 0.71, and rescaling did not recover the original tuning. AON feedback therefore acts as gain control on TCs, while piriform feedback restructures MC tuning.",
@@ -2412,10 +2412,10 @@ window.QUIZ = {
    "setup": "Awake head-fixed mice with ChR2 in anterior olfactory cortex (AON + anterior piriform) axons. M/T units are recorded during 1-s light trains (10–100 Hz) on feedback axons in the bulb, before and after local baclofen (GABA-B agonist) in the GC layer. The experiment is repeated in mice whose ChR2-expressing cortical neurons lack GABA-B receptors.",
    "question": "What does baclofen do to feedback-evoked M/T inhibition, and why?",
    "options": [
-    "Largely abolishes it in wild-type but not knockout mice, because GABA-B receptors on feedback terminals depress their input to GCs",
-    "Abolishes it in both genotypes, because GABA-B receptors act on GC dendrodendritic release sites",
-    "Strengthens it in wild-type mice, because GABA-B receptors hyperpolarize M/T cells",
-    "Has no effect, because feedback inhibition does not involve GABA-B-sensitive synapses"
+    "Abolishes it in wild-type but not knockout mice: GABA-B receptors on feedback terminals depress input to GCs",
+    "Abolishes it in both genotypes: GABA-B receptors on GC spines block their dendrodendritic GABA release",
+    "Strengthens it in wild-type mice: postsynaptic GABA-B receptors hyperpolarize M/T cells and lengthen pauses",
+    "Has no effect in either genotype, because the inhibition arises from glomerular-layer circuits"
    ],
    "answer": 0,
    "explanation": "Feedback trains inhibited 21/22 M/T cells, with bell-shaped frequency tuning peaking at 33–50 Hz (56% inhibition at 33 Hz vs 13% at 10 Hz). Baclofen cut the 33 Hz inhibition from about 53% to about 1% but had no effect in the conditional knockouts. Baclofen also halved the feedback-evoked field EPSP generated by GCs, and reduced light-evoked EPSCs in GCs in slices by about 80%. It did not change spontaneous M/T firing or the fast direct excitation of M/T cells. Presynaptic GABA-B receptors therefore gate the feedback-to-GC (feedforward inhibition) pathway while sparing direct excitation, and they were also needed for spontaneous OB beta (but not gamma) oscillations.",
@@ -2437,10 +2437,10 @@ window.QUIZ = {
    "setup": "ChR2 expressed in GABAergic (VGAT+) neurons of the AON/anterior piriform cortex; whole-cell recordings of identified OB neurons in slices during light stimulation of their axons in the bulb.",
    "question": "Which bulb neurons does the long-range GABAergic feedback from olfactory cortex contact?",
    "options": [
-    "Only glomerular-layer interneurons (periglomerular and superficial short-axon cells)",
-    "Deep short-axon cells, GCs and mitral, tufted and external tufted cells, but not glomerular interneurons",
-    "Only GCs, exactly mirroring the glutamatergic feedback",
-    "Only mitral cells, through axo-somatic synapses"
+    "Periglomerular and superficial short-axon cells in the glomerular layer, sparing deep cells",
+    "dSACs, GCs, mitral, tufted and external tufted cells, but not glomerular interneurons",
+    "GCs and dSACs, mirroring the glutamatergic feedback, but not mitral or tufted cells",
+    "Mitral and tufted cells through axo-somatic synapses, but not any bulb interneurons"
    ],
    "answer": 1,
    "explanation": "The gabazine-sensitive, NBQX-resistant IPSCs were largest in dSACs (9/12 connected). They also appeared in GCs (33/64), MCs (11/24), TCs (12/16) and external tufted cells (9/16), but never in periglomerular (0/35) or superficial short-axon cells (0/10). The source neurons cluster in the AON pars posterior, and their axons concentrate in the superficial GC layer, unlike basal-forebrain GABAergic axons, which contact only bulb interneurons. In vivo, the projection produced net subtractive inhibition of both GC-layer interneurons and M/T cells. It also separated tufted (not mitral) population odour responses, and silencing it impaired discrimination of similar mixtures.",
@@ -2462,10 +2462,10 @@ window.QUIZ = {
    "setup": "Urethane-anesthetized rats. Presumed GCs are recorded extracellularly while the lateral olfactory tract (LOT, recruiting M/T-to-GC dendrodendritic input) and piriform association fibres (AF, the centrifugal input) are stimulated alternately.",
    "question": "How do GCs driven by centrifugal (AF) input differ from GCs driven by LOT input?",
    "options": [
-    "They sit superficially near the mitral cell layer and fire earlier",
-    "They are the same cells, responding to both inputs with similar latencies",
+    "They sit superficially near the mitral cell layer and fire earlier (about 6 ms vs 21 ms)",
+    "They are the same GCs, responding to both inputs at similar latencies (about 10 ms)",
     "They sit deeper in the GC layer and fire at longer latency (about 21 ms vs 6 ms)",
-    "They sit deeper in the GC layer but fire at shorter latency than LOT-driven GCs"
+    "They sit deeper in the GC layer but fire at shorter latency (about 6 ms vs 21 ms)"
    ],
    "answer": 2,
    "explanation": "70% of cells responded to only one input (all had a preference of at least 5:1). AF-driven (type A) cells had a 21.5 ms latency at a proportional depth of 0.62; LOT-driven (type L) cells had 6.0 ms at 0.32. Type A cells were common only in rats whose AF input had previously been potentiated by repeated high-frequency stimulation (55% vs 13% of cells). A further high-frequency bout increased AF-evoked GC spiking and lengthened AF-evoked M/T inhibition, while LOT responses were unchanged. The centrifugal input onto deep GCs therefore shows long-term potentiation.",
@@ -2487,10 +2487,10 @@ window.QUIZ = {
    "setup": "Awake head-fixed mice trained in a go/no-go task to lick for any odour and withhold licking to clean air. ChR2 is expressed in AON principal neurons (Chrna7-Cre) and an optic fibre sits over the AON. Light (20 Hz, 4 s) is given either alone on rewarded blank trials or together with one chosen odour, at gradually increasing power.",
    "question": "What does AON activation do to behaviour?",
    "options": [
-    "Light alone triggers licking, as if it were an odour",
-    "It speeds up licking to the paired odour",
-    "It blocks only low odour concentrations; stronger odours overcome it",
-    "It is not perceived as an odour, but it blocks licking to the paired odour for any odour and concentration tested"
+    "Light alone triggers licking on blank trials, as if AON activity were itself an odour cue",
+    "It shortens lick latency to the paired odour, as if amplifying the odour's bulb signal",
+    "It blocks licking to weak odours, but higher odour concentrations overcome the block",
+    "Light alone is ignored, but it blocks licking to the paired odour at any concentration"
    ],
    "answer": 3,
    "explanation": "AON stimulation on blank trials never elicited licking. Paired with an odour, increasing light power first lengthened lick latency (about 0.5 to 1.5 s) and then abolished responses: about 2% responses in ChR2 mice vs about 98% in controls. Suppression worked for all 12 odorants tested and a mixture, held from 0.5% to 4.5% concentration, and could be switched between odours within a session. Activating AON terminals in the bulb (anesthetized mice) transiently reduced odour-evoked M/T spiking whatever the sign of the response, and AON activation also reduced M/T firing in awake mice.",
@@ -2512,10 +2512,10 @@ window.QUIZ = {
    "setup": "Two-photon GCaMP6f imaging of anterior piriform feedback boutons in the bulb of awake mice, compared with olfactory sensory neurons (OSNs) imaged in the epithelium of anesthetized mice. Stimuli are 16 monomolecular odorants and 84 mixtures of 2, 4, 8 or 12 of them.",
    "question": "How does mean response magnitude scale with the number of mixture components in OSNs versus feedback boutons?",
    "options": [
-    "OSN activity grows with mixture complexity, while bouton activity stays roughly constant",
-    "Both grow steadily with mixture complexity",
-    "OSN activity stays constant, while bouton activity grows",
-    "Both shrink with complexity because of mixture suppression"
+    "OSN activity grows with mixture size, while bouton activity stays about constant",
+    "Both grow steadily with mixture size, with boutons rising faster than OSNs",
+    "OSN activity stays constant, while bouton activity grows with mixture size",
+    "Both shrink with mixture size, because of mixture suppression at the odour receptors"
    ],
    "answer": 0,
    "explanation": "From single odorants to 12-component mixtures, mean OSN response magnitude rose steeply (from about 0.35 to about 0.95 mean |z|). Bouton responses stayed near 0.35–0.4, and bouton lifetime sparseness did not change with mixture size. Feedback representations of mixtures were also equally decorrelated whether or not mixtures shared ≥75% of components (0.48 vs 0.46), whereas OSN representations were more similar for overlapping mixtures (0.77 vs 0.63). Across concentrations, OSNs responded sigmoidally, while boutons were nonmonotonic with a constant fraction active. GCs therefore receive a normalized, decorrelated summary of the odour scene from cortex.",
@@ -2537,10 +2537,10 @@ window.QUIZ = {
    "setup": "Head-fixed mice perform a go/no-go rule-reversal task with an odour cue and a tone cue. Which cue is rewarded (Go) switches between blocks within a session. Anterior piriform feedback boutons in the bulb are imaged with two-photon GCaMP during the cue and delay periods, before the lick report.",
    "question": "What do the piriform feedback boutons convey?",
    "options": [
-    "Only odour identity: responses to the odour are the same across blocks, and tones evoke nothing",
-    "Only lick-related motor signals that appear after the report",
-    "Odour responses that drift slowly across days of training but not within a session",
-    "Responses to both the odour and the tone that re-shape within seconds of a rule reversal, with stronger odour responses when the odour is rewarded"
+    "Odour identity alone: odour responses are identical across blocks, and tones evoke nothing",
+    "Lick-related motor signals that appear after the report, whichever cue was presented",
+    "Odour responses that drift slowly over days of training but stay fixed within a session",
+    "Odour and tone responses that reshape within seconds of reversal, larger when odour is Go"
    ],
    "answer": 3,
    "explanation": "Both the odour and, surprisingly, the tone evoked bouton responses before the behavioural report. Odour responses were stronger when the odour was the Go cue than when it was No-Go: enhanced boutons were more positive and suppressed boutons more negative. Tone-suppressed responses also depended on contingency. Ensemble responses changed within seconds of each rule reversal and tracked behaviour. Roughly 30–50% of responsive boutons distinguished hit, correct-rejection and false-alarm trials, while other boutons stayed stable and so preserved stimulus identity. Optogenetic perturbation of feedback within the bulb disrupted task performance.",
@@ -2562,10 +2562,10 @@ window.QUIZ = {
    "setup": "Anterior piriform neurons projecting to the olfactory bulb (feedback) or to medial prefrontal cortex (feedforward) are tagged retrogradely and imaged through a GRIN lens in awake mice during passive odour presentation. Linear decoders are trained on size-matched (75-cell) pseudo-populations.",
    "question": "How does odour coding in OB-projecting piriform neurons compare with mPFC-projecting neurons?",
    "options": [
-    "OB-projecting neurons encode identity later and carry no concentration information",
-    "OB-projecting neurons encode identity earlier (half-peak decoding at about 0.8 vs 1.5 s) and more often encode concentration",
-    "The two populations are indistinguishable in timing and concentration coding",
-    "OB-projecting neurons encode only reward, not odour identity"
+    "OB-projecting neurons encode identity later (half-peak about 1.5 vs 0.8 s) and ignore concentration",
+    "OB-projecting neurons encode identity earlier (half-peak about 0.8 vs 1.5 s) and track concentration",
+    "The two populations are indistinguishable in decoding speed, peak accuracy and concentration coding",
+    "OB-projecting neurons encode reward and licking but carry little information about odour identity"
    ],
    "answer": 1,
    "explanation": "Peak identity-decoding accuracy was similar in the two populations, but OB-projecting neurons got there sooner. They reached half-peak at 0.8 s vs 1.5 s, outperformed mPFC-projecting neurons in a 0–2 s window, and reached their first calcium peak sooner. They were also more likely to show concentration and identity × concentration effects. During go/no-go learning, OB-projecting neurons encoded reward associations early in the odour period and reorganized across days, whereas mPFC-projecting neurons encoded later, aligned with behaviour, and were more stable.",
@@ -2589,10 +2589,10 @@ window.QUIZ = {
    "setup": "FosCreER mice. AON neurons active during odour exposure in a distinctive context are tagged with the inhibitory DREADD hM4D (4-OHT given on training day 5). After 12 days of odour–context training, mice receive CNO and are placed in the training context (or a novel context) with an odourless swab. Normally the missing expected odour drives extra investigation of the swab.",
    "question": "What happens when the tagged AON ensemble is silenced?",
    "options": [
-    "The context-cued increase in investigation disappears, matching novel-context levels",
-    "Mice still show the full context-cued increase in investigation",
-    "Investigation increases further, even in a novel context",
-    "Mice stop investigating everything, including novel odours"
+    "The context-cued rise in swab investigation disappears, falling to novel-context levels",
+    "Mice still show the full context-cued rise, because piriform ensembles store the memory",
+    "Investigation rises further, and a similar rise now appears in the novel context too",
+    "Mice stop investigating anything, including novel odours, as general exploration collapses"
    ],
    "answer": 0,
    "explanation": "Control mice spent about 6 s investigating the odourless swab in the training context but only about 1–1.5 s in a novel context; silencing the tagged ensemble brought investigation down to novel-context levels. Context-driven reactivation of tagged cells correlated with investigation (r = 0.67). Tagging required odour and context together; neither alone increased labelling, whereas piriform c-Fos rose with odour regardless of context. Optogenetically reactivating a chocolate-tagged AON ensemble made mice dig in an odourless novel context, even 60 days later. The AON, a major source of bulbar feedback and the only olfactory target of hippocampal input, therefore stores context-specific odour engrams.",
@@ -2614,10 +2614,10 @@ window.QUIZ = {
    "setup": "Rate model (Adams et al.) in which GCs are continually added by adult neurogenesis with random reciprocal MC synapses and random excitatory inputs from cortical cells (CCs). GC survival depends on the combined activity that MCs and CCs drive during odour/context exposure.",
    "question": "After learning, how is the cortex→GC→MC pathway organized in this model?",
    "options": [
-    "Randomly: each cortical cell inhibits an arbitrary set of MCs, giving global gain control",
-    "Cross-odour: cortical cells inhibit mainly MCs that respond to other odours",
-    "Odour-matched: cortical cells inhibit mainly the MCs that respond to the same odour, because surviving GCs have matched sensory and cortical receptive fields",
-    "Excitatory: cortical cells excite MCs directly, bypassing GCs"
+    "Randomly: each cortical cell inhibits an arbitrary set of MCs, providing global gain control",
+    "Cross-odour: cortical cells inhibit mainly MCs tuned to other odours, sharpening contrast",
+    "Odour-matched: cortical cells inhibit mainly MCs tuned to the same odour, via shared GCs",
+    "Excitatory: cortical cells excite MCs directly, bypassing GCs, to boost the learned odour"
    ],
    "answer": 2,
    "explanation": "A GC survives only if multiple MCs and CCs co-activate it, so surviving GCs link MCs and CCs with similar receptive fields, forming odour-specific bulb–cortex subnetworks. Because MC–GC synapses are reciprocal, cortical cells that represent a learned odour inhibit the MCs that carry that odour. The model predicts that context alone drives GC patterns correlated with the associated odour's GC pattern (while MC patterns are anti-correlated). It also predicts context-enhanced detection of targets amid familiar occluding or distracting odours. Finally, erasing a cortical odour memory should trigger apoptosis of the GCs tuned to that odour and degrade its discrimination.",
@@ -2639,10 +2639,10 @@ window.QUIZ = {
    "setup": "",
    "question": "Which description of the laminar targeting of the three classic neuromodulatory inputs to the rodent main olfactory bulb is correct?",
    "options": [
-    "Locus coeruleus NA densest in the glomerular layer; raphe 5-HT densest in IPL/GCL; basal-forebrain ACh confined to the EPL",
-    "Locus coeruleus NA densest in IPL/GCL, sparsest in the glomerular layer; raphe 5-HT most prominent in the glomerular layer; ACh in nearly all layers, heaviest in the glomerular layer",
-    "Locus coeruleus NA densest in the EPL; raphe 5-HT densest in the GCL; basal-forebrain ACh restricted to the GCL",
-    "Locus coeruleus NA uniform across all layers; raphe 5-HT densest in the mitral cell layer; basal-forebrain ACh restricted to the IPL"
+    "NA densest in the glomerular layer and sparse in the GCL; 5-HT most prominent in IPL/GCL; ACh in nearly all layers but peaking in the EPL and MCL",
+    "NA densest in IPL/GCL and sparsest in the glomerular layer; 5-HT most prominent in the glomerular layer; ACh in nearly all layers, peaking in the glomerular layer",
+    "NA densest in the EPL and sparsest in the GCL; 5-HT most prominent in the GCL; ACh confined to the GCL and IPL and absent from the glomerular layer",
+    "NA spread evenly across the layers; 5-HT most prominent in the mitral cell layer; ACh densest in the IPL and absent from the glomerular layer"
    ],
    "answer": 1,
    "explanation": "The LC is the sole source of bulbar NA and ~40% of rat LC neurons project to the bulb; NA fibres are heaviest from the internal plexiform layer through the granule cell layer, moderate in MCL/EPL and sparsest in the glomerular layer. Serotonergic fibres from dorsal and median raphe reach all layers but are most prominent in the glomerular layer, and cholinergic fibres from the HDB are found in nearly all layers with the heaviest density in the glomerular layer (with a second IPL peak in mouse ChAT-Cre tracing). All three are varicose, diffusely-releasing axons, contrasting with the sparse, local terminals of cortical feedback fibres (panels b vs c).",
@@ -2668,10 +2668,10 @@ window.QUIZ = {
    "setup": "",
    "question": "Low-dose muscarinic activation (2 µM carbachol) makes rat olfactory bulb granule cells more excitable. What is the cellular mechanism?",
    "options": [
-    "M2 receptors close inward-rectifier K+ channels, raising input resistance and depolarizing the resting potential",
-    "Nicotinic receptors on GC spines add a fast depolarizing current to every mitral-cell EPSP",
+    "M2 receptors close inward-rectifier K+ channels, raising input resistance and depolarizing the resting potential by ~5 mV",
+    "Nicotinic α7 receptors on GC spines add a fast Ca2+-permeable current that roughly doubles each mitral-to-GC EPSP",
     "M1 receptors abolish the post-burst AHP and unmask a Ca2+-activated nonselective cation (I_CAN) afterdepolarization",
-    "M1 receptors lower spike threshold by boosting persistent Na+ current, leaving afterpotentials unchanged"
+    "M1 receptors lower spike threshold by ~5 mV via a persistent Na+ current (I_NaP), leaving afterpotentials unchanged"
    ],
    "answer": 2,
    "explanation": "In control GCs a spike burst is followed by an AHP (−3.7 mV); 2 µM carbachol converted it to an ADP (+3.0 mV) in 81 of 96 GCs. The ADP was blocked by intracellular BAPTA, Cd2+, flufenamic acid and Na+ substitution (an I_CAN), by the M1 antagonist pirenzepine but not the M2 antagonist AF-DX 116, and was mimicked by the M1 agonist MCN-A-343; input resistance was unchanged. The higher doses used in earlier work (50 µM) instead drive GCs into depolarization block, explaining reports that ACh silences GCs.",
@@ -2693,10 +2693,10 @@ window.QUIZ = {
    "setup": "Rat olfactory bulb slices. Trains of four glomerular-layer shocks at 2.5 Hz (a sniff-like rhythm) disynaptically drive granule cells (cell-attached recordings) and evoke GABA_A IPSCs in voltage-clamped mitral cells. Responses to the first shock and in the window after the fourth shock are compared before and after bath application of 2 µM carbachol.",
    "question": "How does carbachol change granule-cell output and mitral-cell inhibition during the train?",
    "options": [
-    "Late (post-train) GC firing and mitral inhibition more than double; inhibition after the first shock is unchanged",
-    "All responses scale up uniformly by about twofold, including inhibition after the first shock",
-    "Inhibition after the first shock increases but adapts faster, so late inhibition is reduced",
-    "GC firing increases but mitral inhibition falls, because muscarinic receptors depress GABA release"
+    "Post-train GC firing and mitral inhibition more than double, while inhibition after the first shock is unchanged",
+    "Every response scales up about twofold, including first-shock inhibition, as GC excitability rises uniformly",
+    "First-shock inhibition rises about 50% but adapts faster across the train, so post-train inhibition is reduced",
+    "GC firing rises about fourfold, but mitral inhibition falls because muscarinic receptors on GC spines depress GABA release"
    ],
    "answer": 0,
    "explanation": "Carbachol did not change mitral inhibition after the first shock (inhibitory charge ~122 vs ~109, n.s.) but increased post-train inhibitory charge from ~198 to ~478 (>2-fold, n = 4); GC spikes in the post-train window rose from 2.2 to 8.5. Mitral intrinsic properties and the glutamatergic drive onto GCs were unaffected, so the change reflects the M1-mediated ADP that prolongs GC firing and counteracts the adaptation that normally builds up over successive sniffs.",
@@ -2718,10 +2718,10 @@ window.QUIZ = {
    "setup": "Whole-cell current-clamp recordings from rat main olfactory bulb granule cells in slices, with ionotropic glutamate and GABA_A receptors blocked. Noradrenaline is bath-applied at 0.1, 0.3, 1 or 10 µM and GC membrane potential and firing rate are measured; the results are compared with mitral-cell GABAergic mIPSC frequency over the same concentrations.",
    "question": "How does GC excitability depend on the noradrenaline concentration?",
    "options": [
-    "Monotonic excitation: depolarization and firing grow steadily from 0.1 to 10 µM",
-    "Monotonic inhibition: hyperpolarization and silencing grow steadily from 0.1 to 10 µM",
-    "No effect below 1 µM, then excitation only at 10 µM",
-    "Biphasic: sub-micromolar NA hyperpolarizes and slows GCs; 10 µM NA depolarizes and excites them"
+    "Monotonic: depolarization and firing grow steadily from 0.1 to 10 µM, saturating near 1 µM",
+    "Monotonic: hyperpolarization and silencing deepen steadily from 0.1 µM to a full block at 10 µM",
+    "Threshold-like: no change up to 1 µM, then α2-driven hyperpolarization and silencing at 10 µM",
+    "Biphasic: 0.1–1 µM NA hyperpolarizes and slows GCs, whereas 10 µM depolarizes and excites them"
    ],
    "answer": 3,
    "explanation": "0.1–1 µM NA hyperpolarized GCs by ~1.4–1.7 mV and reduced firing (from ~1.2 Hz to 0.5–0.7 Hz), whereas 10 µM depolarized them and roughly tripled firing; mitral mIPSC frequency followed the same U-shaped curve. The inhibitory low-dose effect is α2-mediated (mimicked by clonidine; converted to excitation by idazoxan) and the excitatory high-dose effect is α1-mediated (mimicked by phenylephrine; converted to inhibition by prazosin), with both acting through K+ conductances. Because α2 receptors have higher affinity, low tonic NA disinhibits mitral cells while strong LC release increases GC inhibition.",
@@ -2743,10 +2743,10 @@ window.QUIZ = {
    "setup": "",
    "question": "When HDB cholinergic axons are briefly activated optogenetically in mouse bulb slices, which bulb neurons receive fast monosynaptic input, and what do these axons release?",
    "options": [
-    "Granule cells, via slow muscarinic depolarization; no fast synaptic currents are evoked anywhere",
+    "Granule cells, via a slow muscarinic (M1) depolarization; no fast synaptic currents are evoked in any cell type",
     "Deep short-axon cells (mainly glomerular-layer-projecting ones), via co-released ACh (nicotinic EPSC) and GABA (IPSC)",
-    "Mitral and tufted cells, via fast nicotinic EPSCs; bulbar interneurons do not respond",
-    "Granule cells and deep short-axon cells, via glutamatergic EPSCs from VGLUT3 co-release"
+    "Mitral and tufted cells, via fast nicotinic EPSCs (mecamylamine-sensitive); bulbar interneurons do not respond",
+    "Granule cells and deep short-axon cells, via glutamatergic EPSCs from VGLUT3 co-release (NBQX-sensitive)"
    ],
    "answer": 1,
    "explanation": "Light-evoked currents were found in 19 of 22 deep short-axon cells (dSACs) in or near the IPL, and in every reconstructed glomerular-layer-projecting dSAC, but not in GCL-projecting dSACs, granule cells, mitral cells, tufted cells or EPL interneurons. The EPSC was abolished by the nicotinic antagonist mecamylamine and an IPSC with the same ~7.5 ms latency was blocked by gabazine, indicating ACh/GABA co-transmission; no glutamatergic or muscarinic currents were seen despite VGLUT3 expression in ~46% of HDB cholinergic neurons. A VGLUT3+ HDB subpopulation projects preferentially to the IPL, whereas cholinergic axons overall peak in both the glomerular layer and the IPL.",
@@ -2768,10 +2768,10 @@ window.QUIZ = {
    "setup": "Anesthetized Thy1-GCaMP3 mice; glomerular (mitral/tufted) calcium responses are imaged during a continuous 30-s odor, during which responses habituate. At 24 s the cholinergic basal forebrain is electrically stimulated for 3 s, either at 50 Hz or at 5 Hz, in the same mice.",
    "question": "What happens to the habituated glomerular responses?",
    "options": [
-    "Both frequencies suppress them further, accelerating habituation",
-    "Both frequencies restore them, roughly in proportion to pulse number",
-    "50 Hz rapidly restores them to near initial size; 5 Hz has no effect",
-    "5 Hz restores them, while 50 Hz is ineffective because of receptor desensitization"
+    "Both frequencies suppress them further, deepening habituation via nicotinic drive to GCs",
+    "Both frequencies restore them, by an amount roughly proportional to the number of pulses",
+    "50 Hz restores them to ~80% of the initial peak within a second; 5 Hz has no effect",
+    "5 Hz restores them to near initial size, while 50 Hz fails because receptors desensitize"
    ],
    "answer": 2,
    "explanation": "During the odor, responses decayed to ~35% of the initial peak; 50 Hz stimulation raised them to ~79–88% within a second, while 5 Hz left them unchanged (~30% before and after). The effect was blocked by bulbar scopolamine, so it is muscarinic. Behaviourally, 50 Hz optogenetic release of ACh in the bulb (ChAT-ChR2) reinstated investigation of a habituated odor, and a sudden change of visual context did the same in a way that bulbar scopolamine blocked.",
@@ -2794,9 +2794,9 @@ window.QUIZ = {
    "question": "How does bulbar ACh release change as the mice become proficient?",
    "options": [
     "Cue-evoked (preparatory) ACh disappears, while reward-related odor-evoked ACh persists",
-    "Both cue-evoked and odor-evoked ACh grow as the task is learned",
-    "Cue-evoked ACh persists, but odor-evoked ACh loses its CS+ versus CS− difference",
-    "All task-related ACh release in the bulb ceases once the task is mastered"
+    "Both cue-evoked and odor-evoked ACh grow, with the cue transient roughly doubling in size",
+    "Cue-evoked ACh persists, but odor-evoked ACh loses its larger response to the rewarded odor",
+    "Cue-evoked and odor-evoked ACh both fade back to baseline once the task is mastered"
    ],
    "answer": 0,
    "explanation": "In pre-proficient mice the cue reliably evoked an ACh transient before odor onset, but once the same mice were proficient the cue no longer did, whereas odor-evoked ACh remained larger for the rewarded odor. In this circuit HDB cholinergic input inhibits dopaminergic/GABAergic short-axon cells, disinhibiting olfactory sensory axons and boosting glomerular responses; silencing it removed the cue benefit, and chemogenetically reactivating HDB in proficient mice restored cue-evoked ACh and the cue-driven gain in discrimination.",
@@ -2818,10 +2818,10 @@ window.QUIZ = {
    "setup": "Anesthetized Tbx21-Cre mice expressing GCaMP6s in mitral and tufted cells; two-photon imaging of each layer. Brief electrical stimulation of the raphe (three 1-ms pulses at 10 Hz) is delivered 1 s into odor presentation, and each cell's odor tuning with raphe stimulation is compared with odor alone.",
    "question": "How does brief raphe activation change odor responses in the two output channels?",
    "options": [
-    "Both mitral and tufted cells are uniformly suppressed, which sharpens their tuning",
-    "Mitral cells are uniformly enhanced and broaden their tuning; tufted cells are unaffected",
-    "Neither changes on this time scale; raphe input only alters spontaneous activity over minutes",
-    "Tufted cells are enhanced and respond to more odors; mitral cells are bidirectionally modulated with no net change"
+    "Mitral and tufted cells are both suppressed by about half, which sharpens tuning so each responds to fewer odors",
+    "Mitral cells are enhanced and respond to more odors; tufted cells are modulated both ways with no net change",
+    "Neither changes within a trial; raphe input alters only spontaneous activity, over tens of seconds to minutes",
+    "Tufted cells are enhanced and respond to more odors; mitral cells are modulated both ways with no net change"
    ],
    "answer": 3,
    "explanation": "Raphe stimulation potentiated TC odor responses (916 of 1087 cell-odor pairs) and increased the number of effective odors per TC by a median of 3. MC responses were enhanced or suppressed depending on cell and odor, with no net change in the number of effective odors (median 0) or in the distribution of response amplitudes, which improved pattern separation. At rest both cell types were rapidly excited (TCs more strongly), and slice recordings showed raphe axons release both serotonin and glutamate.",
@@ -2845,10 +2845,10 @@ window.QUIZ = {
    "setup": "In anesthetized mice, brief electrical stimulation of the raphe strongly enhances inhalation-driven calcium responses of glomerular-layer GABAergic (periglomerular, GAD2+) and dopaminergic (short-axon, TH+) interneurons for at least 8 s. To probe the mechanism, the glutamate sensor iGluSnFR is expressed in these interneurons.",
    "question": "What did iGluSnFR imaging reveal about how raphe input enhances these interneurons?",
    "options": [
-    "Inhalation-driven glutamate signals onto PG and SA cells increase about 2.5-fold, so the boost reflects stronger excitatory drive",
-    "Glutamate signals are unchanged, so serotonin must act purely by directly depolarizing PG and SA cells",
-    "Glutamate signals fall, so the boost must reflect reduced inhibition of the interneurons themselves",
-    "Glutamate signals increase only during odorant inhalation and never during inhalation of clean air"
+    "Inhalation-linked glutamate input to PG and SA cells rises about 2.5-fold, reflecting stronger excitatory drive",
+    "Inhalation-linked glutamate input is unchanged, so serotonin must act by directly depolarizing PG and SA cells",
+    "Inhalation-linked glutamate input falls by about half, so the boost must reflect reduced inhibition of these cells",
+    "Glutamate input is unchanged, but its timing shifts earlier in the sniff, synchronizing PG and SA cell firing"
    ],
    "answer": 0,
    "explanation": "Raphe stimulation increased inhalation-linked iGluSnFR transients in GAD2+ cells from 1.3 to 3.3% ΔF/F and in TH+ cells from 2.3 to 6.1% ΔF/F, closely matching the GCaMP effects, so these interneurons receive more glutamatergic input. The 5-HT receptor antagonist methysergide partly blocked the enhancement. By contrast, mitral/tufted cells showed mainly a tonic rise in baseline calcium with little change in inhalation-linked responses, so raphe input reshapes inhibitory circuits and output neurons differently.",
@@ -2895,10 +2895,10 @@ window.QUIZ = {
    "setup": "Anesthetized, double-tracheotomized GAD2-Cre mice with ChR2 in basal-forebrain (HDB/MCPO) GABAergic neurons. Light on the dorsal bulb activates their axons while presumptive mitral/tufted cells are recorded, first without inhalation (spontaneous firing) and then during odorant inhalation, in the same units.",
    "question": "How does activating GABAergic basal-forebrain axons affect mitral/tufted firing in the two conditions?",
    "options": [
-    "It suppresses both spontaneous and odor-evoked firing",
+    "It suppresses both spontaneous firing and odor-evoked firing",
     "It suppresses spontaneous firing but enhances odor-evoked firing",
     "It enhances spontaneous firing but suppresses odor-evoked firing",
-    "It has no effect on spontaneous firing and suppresses odor-evoked firing"
+    "It spares spontaneous firing but suppresses odor-evoked firing"
    ],
    "answer": 1,
    "explanation": "In the same 53 units, stimulation lowered spontaneous firing (3.61 to 3.14 Hz) but increased odor-evoked firing (7.35 to 8.13 spikes/sniff/s); all 22 significantly modulated units increased with odor, and 48 of 53 units shifted in the positive direction from the no-sniff to the odor condition. Within the sniff cycle, firing increased at the preferred phase and decreased outside it. The fibres are densest in the glomerular and granule cell layers, and earlier slice work identified periglomerular and granule cells as their targets. Cholinergic BF axons, by contrast, raised MTC firing in all conditions.",
@@ -2920,10 +2920,10 @@ window.QUIZ = {
    "setup": "",
    "question": "Which form of adult olfactory learning requires noradrenergic receptor activation within the olfactory bulb (tested by intrabulbar infusion of the α1/β antagonist labetalol during training)?",
    "options": [
-    "Odor–reward associative learning, but not perceptual learning",
-    "Both perceptual learning and odor–reward associative learning",
-    "Neither; bulbar NA only affects spontaneous investigation of odors",
-    "Perceptual learning from passive exposure to similar odors, but not odor–reward association"
+    "Odor–reward association on a two-hole board, but not perceptual learning from odor exposure",
+    "Both perceptual learning from odor exposure and odor–reward association on a two-hole board",
+    "Neither; bulbar NA blockade only reduces habituation to repeated odor presentations",
+    "Perceptual learning from passive exposure to similar odors, but not odor–reward learning"
    ],
    "answer": 3,
    "explanation": "Ten days of passive exposure to (+)- and (−)-limonene normally lets mice discriminate the enantiomers in a drug-free habituation/dishabituation test, but labetalol infused before each daily exposure prevented this. Labetalol did not affect odor–reward learning on a two-hole board (both groups reached ~80% correct) or habituation, and did not change survival of adult-born bulb neurons during associative training.",
@@ -2972,10 +2972,10 @@ window.QUIZ = {
    "setup": "",
    "question": "Neuroblasts born in the adult subventricular zone migrate along the rostral migratory stream into the olfactory bulb. What do they become once they arrive?",
    "options": [
-    "About 50% granule cells and 50% periglomerular cells",
-    "About 70% periglomerular cells, 25% granule cells and 5% astrocytes",
+    "About 50% granule cells, 45% periglomerular cells and fewer than 5% astrocytes",
+    "About 70% periglomerular cells, 25% granule cells and fewer than 5% astrocytes",
     "About 94% granule cells, 4% periglomerular cells and fewer than 2% astrocytes",
-    "About 60% granule cells, 10% periglomerular cells and 30% astrocytes"
+    "About 60% granule cells, 10% periglomerular cells and about 30% astrocytes"
    ],
    "answer": 2,
    "explanation": "Most newly generated cells that reach the adult bulb become granule cells (~94%). Periglomerular cells make up ~4% and astrocytes fewer than 2%. Neuroblasts migrate tangentially in chains along the RMS, then radially into their target layer, where they mature. More than 30,000 new GCs reach the rodent bulb every day, so adult neurogenesis mainly keeps adding inhibitory GCs that form reciprocal dendrodendritic synapses with mitral/tufted lateral dendrites.",
@@ -2999,10 +2999,10 @@ window.QUIZ = {
    "setup": "An eGFP retrovirus is injected near the SVZ of adult mice. Labelled cells are patch-clamped in acute slices at five morphological stages: class 1, migrating tangentially in the RMS; class 2, migrating radially in the GCL; class 3, dendrite not yet past the mitral cell layer; class 4, dendrite in the EPL but almost no spines; class 5, mature and spiny. Bath-applied agonists probe functional GABA-A, AMPA and NMDA receptors. Spontaneous IPSCs and EPSCs, Na+ currents and action potentials are also measured.",
    "question": "In what order do new GCs acquire these properties?",
    "options": [
-    "Extrasynaptic GABA-A receptors, then AMPA, then NMDA receptors; next spontaneous IPSCs, then EPSCs; action potentials come last",
-    "Action potentials first, then AMPA and NMDA receptors, then spontaneous EPSCs, and finally IPSCs",
-    "NMDA receptors first, then spontaneous EPSCs, then action potentials, and finally GABA-A receptors and IPSCs",
-    "Spontaneous EPSCs and IPSCs together first, then action potentials, then extrasynaptic receptors"
+    "GABA-A receptors, then AMPA, then NMDA receptors; next spontaneous IPSCs, then EPSCs; spiking comes last",
+    "Na+ currents and spiking first, then AMPA and NMDA receptors; next spontaneous EPSCs, then IPSCs last",
+    "NMDA receptors first, then AMPA; next spontaneous EPSCs, then spiking; GABA-A receptors and IPSCs last",
+    "AMPA and NMDA receptors first; next spiking during radial migration; GABA-A receptors and IPSCs, then EPSCs, last"
    ],
    "answer": 0,
    "explanation": "Functional extrasynaptic GABA-A receptors come first: 73% of class-1 cells in the RMS have them. AMPA receptors follow (29% of class-1, 71% of class-2 cells), then NMDA receptors (none in class 1, 50% of class 2). Synaptic events start only after migration ends (class 3), and inhibition comes first: 79% of class-3 cells show sIPSCs but only 35% show sEPSCs. Spiking is acquired last: no class-3 cells spike, 20% of class-4 cells do and 88% of class-5 cells do. Adult-born GCs therefore 'listen' to the circuit for a long time before they can fire.",
@@ -3024,10 +3024,10 @@ window.QUIZ = {
    "setup": "",
    "question": "Patch-clamp recordings compared adult-born GCs at different maturation stages with GCs recorded in neonatal (P2-P4) bulb slices. What sets the maturation of adult-born GCs apart?",
    "options": [
-    "Nothing: neonatal GCs also get synaptic input first and spike late, just like adult-born GCs",
-    "Adult-born GCs spike as soon as they arrive, before any synaptic input; neonatal GCs spike only once wired",
-    "Both spike on arrival, but adult-born GCs never receive glutamatergic input",
-    "Adult-born GCs get synaptic input while they still cannot spike; neonatal GCs already spike (large Na+ currents) but are mostly synaptically silent"
+    "No difference: like adult-born GCs, neonatal GCs receive synaptic input first and gain large Na+ currents only later",
+    "Adult-born GCs spike (large Na+ currents) on arrival, before any input; neonatal GCs spike only once wired",
+    "Both spike on arrival, but adult-born GCs receive about ten times fewer synaptic events than neonatal GCs",
+    "Adult-born GCs get synaptic input before they can spike; neonatal GCs spike but are mostly synaptically silent"
    ],
    "answer": 3,
    "explanation": "Neonatal GCs had large Na+ currents (-378 pA, versus -14 pA in class-3 and -235 pA in class-4 adult-born cells). More than 70% of them fired action potentials, yet most received almost no synaptic events (0.19 Hz). Adult-born GCs reverse this order. Class-4 cells received about ten times more synaptic events than neonatal GCs, but fewer than 20% of them could spike. The authors suggest this delayed excitability is unique to adult-born neurons and lets them integrate without disrupting a working circuit.",
@@ -3049,10 +3049,10 @@ window.QUIZ = {
    "setup": "",
    "question": "Adult-born juxtaglomerular neurons (JGNs, the glomerular-layer counterpart of adult-born GCs) were imaged in vivo in mice with two-photon Ca2+ imaging after retroviral birth-dating. When do they first respond to odours?",
    "options": [
-    "Only after ~4 weeks, once they have stopped migrating and matured",
-    "Within ~48 h of arriving in the glomerular layer (by 9 days after retroviral labelling), while still migrating",
-    "Only after ~8 weeks, once they express mature markers such as TH or calbindin",
-    "Never directly: they are driven only by centrifugal input, not by odours"
+    "After ~4 weeks, once they have stopped migrating and grown mature, spiny dendritic arbours",
+    "Within ~2 days of reaching the glomerular layer (by 9 days after labelling), while still migrating",
+    "After ~8 weeks, once they express mature markers such as tyrosine hydroxylase or calbindin",
+    "Not until ~6 weeks; before that they are driven by centrifugal input rather than by odours"
    ],
    "answer": 1,
    "explanation": "At 9 days post-injection, 52% of adult-born JGNs already had odour-evoked Ca2+ transients, and the fraction rose to ~90% by days 18-20. Most of these cells had entered the glomerular layer less than 48 h earlier, and 85% changed position within the next 24 h. At days 9-11, 88% fired spontaneous action potentials. Their dose-response curves tracked the parent glomerulus (slope 1.04), even though they still expressed migratory-neuroblast markers (DCX, PSA-NCAM). In vivo, functional integration is much faster than slice data on adult-born GCs suggested. Adult-born GC dendrites were also seen to respond to odours by 6-10 dpi.",
@@ -3076,10 +3076,10 @@ window.QUIZ = {
    "setup": "A lentivirus carrying GCaMP and dTomato is injected into the RMS of adult mice; a chronic cranial window is implanted. The same identified abGC dendrites in the EPL are imaged with two-photon microscopy once a week, from 7-9 days after injection for 6-7 weeks, in anesthetized mice. Panels of 9-20 odours are used.",
    "question": "How do the odour responses of individual abGCs change over this period?",
    "options": [
-    "They start silent and gradually gain odour responses as synapses form",
-    "They do not change: each cell's tuning is fixed from its first response",
-    "They start strong and broadly tuned; most then lose responses and become more selective over ~3 weeks, while a minority broadens",
-    "Response amplitudes grow steadily while tuning width stays constant"
+    "They start silent and gain odour responses over ~3 weeks as spines and synapses form",
+    "Tuning is fixed from the first response; only amplitudes fluctuate from week to week",
+    "They start strong and broad; most then narrow and weaken over ~3 weeks, a minority broadens",
+    "Response amplitudes grow steadily over ~6 weeks while tuning width stays roughly constant"
    ],
    "answer": 2,
    "explanation": "abGC dendrites responded to odours as early as 6-8 dpi. Young dendrites (7-10 dpi) had larger and broader responses than mature ones (35-45 dpi). Tracked individually, cells lost odour tuning and amplitude mostly in the first ~3 weeks. 51.5% narrowed their tuning, 15.8% broadened and 32.7% did not change. Many responses disappeared completely, so refinement is selective pruning, not uniform scaling. Mature abGCs end up resembling resident GCs. This gives a brief window in which new GCs are broadly driven.",
@@ -3103,10 +3103,10 @@ window.QUIZ = {
    "setup": "abGCs are labelled through an RMS lentivirus and their dendrites imaged weekly in vivo (two-photon GCaMP) for 7 weeks. From shortly after injection, one group of mice has the imaging odours placed in small containers in the home cage (odour enrichment); controls do not.",
    "question": "How does enrichment alter the functional maturation of abGCs?",
    "options": [
-    "abGCs stay strongly and broadly responsive for longer, so refinement is delayed",
-    "abGCs narrow their tuning faster and become selective within the first week",
-    "abGCs stop responding to the enriched odours (habituation) but respond normally to others",
-    "No change: functional refinement is purely cell-intrinsic"
+    "abGCs stay strongly and broadly responsive for longer, delaying refinement by several weeks",
+    "abGCs narrow their tuning faster and become selective for the enriched odours within ~1 week",
+    "abGCs habituate to the enriched odours, losing those responses but responding normally to others",
+    "No lasting change: enriched and control abGCs refine on the same schedule, set cell-intrinsically"
    ],
    "answer": 0,
    "explanation": "On the first imaging day, control and enriched abGCs did not differ. From week 2, enriched abGCs had larger responses for several weeks, returning to control levels only by week 7. Their odour tuning was broader and their lifetime sparseness higher in every week after week 1. Week-to-week tuning similarity was also lower, meaning tuning stayed more dynamic, until weeks 6-7. Sensory experience therefore extends the window in which young abGCs are highly excitable and broadly tuned, the period when they are most plastic.",
@@ -3128,10 +3128,10 @@ window.QUIZ = {
    "setup": "A GFP lentivirus labels neuroblasts in the RMS of adult mice. Acute bulb slices are cut 2, 8 or 12 weeks later. Whole-cell recordings are made from GFP+ GCs and unlabelled resident GCs. EPSCs are evoked by stimulating proximal glutamatergic inputs in the granule cell layer, with GABA-A receptors blocked. Theta-burst stimulation (TBS) is then delivered.",
    "question": "Which GCs show long-term potentiation of these proximal excitatory inputs?",
    "options": [
-    "All GCs equally, regardless of age",
-    "Only resident GCs; young abGCs show depression instead",
-    "Only abGCs at least 12 weeks old, once fully integrated",
-    "Young (2-week-old) abGCs; the ability fades by 12 weeks and is absent in resident GCs"
+    "Young abGCs and resident GCs equally, with ~40% potentiation in both",
+    "Resident GCs; young abGCs show NMDA-dependent depression instead",
+    "abGCs at least 12 weeks old, once integrated; younger abGCs show none",
+    "2-week-old abGCs; it fades by 12 weeks and is absent in resident GCs"
    ],
    "answer": 3,
    "explanation": "TBS potentiated EPSCs to 138 +/- 11% in 2-week-old abGCs (8 of 11 cells), lasting at least 1 h, versus 95 +/- 7% in resident GCs. LTP was weaker at 8 weeks (6 of 13 cells) and nearly gone at 12 weeks (103 +/- 6%, 3 of 11 cells). It was pathway-specific (absent for distal EPL inputs) and NMDA-receptor-independent (still 129% with AP5). It needed postsynaptic Ca2+ (BAPTA unmasked depression) and was expressed presynaptically (PPR fell). Young abGCs thus open a transient window of plasticity at their proximal, largely centrifugal, inputs.",
@@ -3155,10 +3155,10 @@ window.QUIZ = {
    "setup": "",
    "question": "Mature spines of adult-born GCs can move several microns toward an active mitral-cell dendrite. The move is preceded by thin spine-head filopodia (SHF) growing toward the active dendrite. Which MC-derived signal sets the direction of SHF growth and spine relocation?",
    "options": [
-    "Glutamate acting on GC NMDA receptors",
-    "Activity-dependent BDNF release from the MC; glutamate acting on AMPA receptors only stabilises SHF",
-    "GABA released by the GC itself, acting back through autoreceptors",
-    "Glutamate acting on GC AMPA receptors alone"
+    "Glutamate acting on GC NMDA receptors; BDNF only prolongs filopodial lifetime",
+    "BDNF released by the active MC; glutamate via AMPA receptors only stabilises SHF",
+    "GABA released by the GC spine itself, acting back on GABA-B autoreceptors",
+    "Glutamate acting on GC AMPA receptors; BDNF is needed only for spine survival"
    ],
    "answer": 1,
    "explanation": "At baseline, 3-8% of abGC spines relocated, and 95% of relocating spines carried SHF. Stimulating one MC with a physiological firing pattern raised relocation of SHF-bearing spines from 3.7% to 25.9%. AMPA iontophoresis prolonged SHF lifetime but did not steer them, whereas a BDNF puff caused directional SHF growth and relocated 38% of SHF-bearing spines. Stimulating BDNF-knockout MCs still lengthened SHF lifetime but produced no directional growth or relocation. Early-born GCs (labelled at P10) had fewer SHF and no relocation. Spine relocation lets adult-born GCs rewire quickly onto active MCs.",
@@ -3180,10 +3180,10 @@ window.QUIZ = {
    "setup": "",
    "question": "Chronic in vivo two-photon imaging followed dendritic spines of adult-born GCs from 3 weeks to 14 months of age, at 2-day intervals. How stable are their spines, compared with neocortical pyramidal neurons imaged the same way?",
    "options": [
-    "Fully stable (>95% per 2 days) once the cell is ~2 months old, like cortex",
-    "Stability rises steadily and reaches cortical levels by ~1 year",
-    "Stability rises from ~33% to ~60% per 2 days by ~2 months, then plateaus even at 14 months, far below cortex (~99%)",
-    "Spines become less stable with age as the cell nears elimination"
+    "Over 95% stable per 2 days once the cell is ~2 months old, matching cortical neurons",
+    "Stability rises steadily from ~30% and reaches cortical levels (~99%) by ~1 year",
+    "Rises from ~33% to ~60% stable per 2 days by ~2 months, then plateaus, far below cortex",
+    "Stability falls from ~60% to ~30% per 2 days with age as the cell nears elimination"
    ],
    "answer": 2,
    "explanation": "The share of spines stable over 2 days rose from 33.5% (22-30 dpi) to 48% (40-48 dpi) and ~60% (64-72 dpi), then plateaued: 57.5% at 3 months and 66.8% at 14 months, versus 98.8% in motor-cortex pyramidal neurons. GCs born in early postnatal life (P14) had the same turnover (58.2% versus 58.0% stable). Postsynaptic gephyrin puncta on mitral/tufted dendrites turned over at a matching rate (~6-7% new and lost per day). The GC-MC synapse population is continually rewired throughout life, while GC dendritic branches stay stable.",
@@ -3207,10 +3207,10 @@ window.QUIZ = {
    "setup": "In Nestin-CreERT2 x tTA-reporter mice, tamoxifen birth-dates a large adult-born cohort. A tTA-dependent virus then expresses the inhibitory DREADD hM4Di in abGCs, and mitral cells express GCaMP6f. When the abGCs are 4-8 weeks old (~2.5% of all GCs), MC responses to 11 odours are imaged in awake head-fixed mice before and after CNO, with saline as control.",
    "question": "What happens to mitral-cell odour responses when these young abGCs are silenced?",
    "options": [
-    "Responses are 'quenched': fewer odours evoke responses, both excitatory and suppressive responses shrink, and odour discriminability falls",
-    "Disinhibition: excitatory responses grow and suppressive responses vanish",
-    "No measurable change, since abGCs are only ~2.5% of GCs",
-    "Only suppressive responses shrink; excitatory responses are unchanged"
+    "Fewer odours evoke responses; excited and suppressed responses both shrink; discrimination worsens",
+    "Disinhibition: more odours evoke responses, excitatory responses grow, suppressive ones vanish",
+    "No measurable change, since 4-8-week-old abGCs make up only ~2.5% of all GCs in the bulb",
+    "Suppressive responses shrink; excitatory responses and the number of responsive odours are unchanged"
    ],
    "answer": 0,
    "explanation": "Silencing inhibitory abGCs counter-intuitively cut the number of responsive odours per MC (more than one fewer per cell on average). Excitatory responses became smaller and suppressive responses weaker, and saline had no effect. Population discriminability (d' between odour pairs) fell for almost all pairs. Anesthetized mice showed qualitatively similar but weaker effects. In the authors' network model, the high excitability and broad input connectivity of young abGCs boost lateral inhibition, which sharpens MC tuning and widens their dynamic range. Silencing them mainly raises MC baseline and shrinks the stimulus-evoked deviation from it.",
@@ -3232,10 +3232,10 @@ window.QUIZ = {
    "setup": "The same chemogenetic silencing of one tamoxifen-dated abGC cohort is repeated in the same awake mice and the same mitral cells at 8, 12 and 16 weeks after tamoxifen, when the abGCs are 4-8, 8-12 and 12-16 weeks old.",
    "question": "How does the effect of silencing this cohort on mitral-cell coding change as it ages?",
    "options": [
-    "It grows, because mature abGCs have more output synapses",
-    "It stays constant from 4 to 16 weeks",
-    "It peaks at 8-12 weeks, once abGCs are fully integrated, and is absent at 4-8 weeks",
-    "It wanes: strong at 4-8 weeks, weaker at 8-12 weeks, and gone by 12-16 weeks"
+    "It grows with age, as maturing abGCs form more output synapses onto MCs",
+    "It stays about the same at 4-8, 8-12 and 12-16 weeks of cohort age",
+    "It peaks at 8-12 weeks, once abGCs are integrated, and is weak at 4-8 weeks",
+    "It wanes: strong at 4-8 weeks, weaker at 8-12 weeks, gone by 12-16 weeks"
    ],
    "answer": 3,
    "explanation": "Loss of MC responses and shrinkage of excited and suppressed responses were largest when the cohort was 4-8 weeks old and weaker at 8-12 weeks. At 12-16 weeks they were essentially absent. The discriminability change index similarly returned to control levels by 16 weeks. In the model, mature abGCs behave like resident GCs, and silencing 2.5% of mature GCs leaves MC tuning unchanged. The impact comes from the juvenile excitability and input promiscuity, which fade with age. The model also suggests that half the attainable discrimination benefit is reached when young abGCs make up only 7.5% of GCs, consistent with the bulb's ~10% turnover.",
@@ -3257,10 +3257,10 @@ window.QUIZ = {
    "setup": "A computational model of the bulb (Sakelaris et al.) combines several mechanisms. Mitral cells and GCs form reciprocal synapses that are made, consolidated and removed according to Ca2+-dependent rules. New abGCs keep being added. During a 14-28-day critical period, abGCs are more plastic and excitable and need more activity to survive (apoptosis). The network is perceptually trained on 25 successive pairs of similar odours.",
    "question": "What happens if apoptosis is removed while neurogenesis and the other abGC properties are kept?",
    "options": [
-    "Old memories are overwritten faster, but new odours are still learned well",
-    "Old memories stay stable, but the growing GC population gradually loses the ability to learn new odours",
-    "Nothing changes: apoptosis only removes cells that were never used",
-    "Both learning and retention improve because more GCs are available"
+    "Old memories are overwritten faster, while new odour pairs are still learned well",
+    "Old memories stay stable, but accumulating GCs gradually stop the network learning new odours",
+    "Little changes: in the model apoptosis mostly removes abGCs that never became odour-selective",
+    "Learning and retention both improve, because a larger GC pool encodes more odour pairs"
    ],
    "answer": 1,
    "explanation": "The full model learns each new odour pair nearly as well as the first, and older memories decay gracefully. Without apoptosis, memories stay stable but flexibility collapses: accumulating GCs add so much inhibition that new abGCs are suppressed and cannot become odour-selective. Also removing young-abGC hyperexcitability worsens flexibility further and harms stability. A non-neurogenic network with only synaptic plasticity learns but overwrites old memories. Neurogenesis without age-dependent properties gave no benefit. What resolves the flexibility-stability dilemma is maturation: plastic young cells encode quickly and then stabilise.",
@@ -3284,10 +3284,10 @@ window.QUIZ = {
    "setup": "Adult mice had a cohort of adult-born GCs labelled with a GFP lentivirus. From 18 days post-injection they were trained for 14 days on a water-rewarded odour discrimination task (OL), or received the same odours without reward contingency (odour exposure, OE) or only air (AE). Spine density was then measured on the labelled cells (29-35 days old) in five dendritic domains: apical (EPL), distal, proximal, soma and basal.",
    "question": "Where on the adult-born GC does discrimination learning increase spine density?",
    "options": [
-    "Only on the apical dendrites in the EPL, where the dendrodendritic synapses with mitral cells are",
-    "Uniformly across all dendritic domains, apical and deep alike",
-    "On the deep domains in the GCL (basal, proximal, distal) but not on the apical dendrites",
-    "Nowhere; learning changes spine shape but not spine density"
+    "On the apical dendrites in the EPL, where dendrodendritic synapses with mitral cells form",
+    "Evenly across apical, proximal, distal and basal domains, by roughly 20-30% in each",
+    "On the basal, proximal and distal dendrites in the GCL, but not on the apical dendrites",
+    "Nowhere: spine density is unchanged, but spine heads enlarge on the apical dendrites"
    ],
    "answer": 2,
    "explanation": "Compared with air- and odour-exposed controls, learning raised spine density by ~36%/22% (distal), ~37%/25% (proximal) and ~27%/16% (basal), with no change on the soma or apical (EPL) dendrites. These deep domains are where cortical feedback axons (AON/anterior piriform) synapse, and learning increased the density of cortical synapses there (proximal +54-60%) and the amplitude of minimal light-evoked cortical EPSCs, with unchanged paired-pulse ratio (a postsynaptic change). Inhibitory (gephyrin+) spines also rose in the proximal domain. So learning reshapes the top-down input side of young GCs rather than their dendrodendritic output side. (In vivo imaging in a different head-fixed task, Wu et al. 2020, did find learning-driven apical spine gains in abGCs, so the apical null result is specific to this histological study.)",
@@ -3309,10 +3309,10 @@ window.QUIZ = {
    "setup": "Mice with ChR2 in young GCs (virally labelled 3 weeks before mapping) were trained on a go/no-go odour task, pseudo-trained (odours without contingent reward) or left untrained. In OB slices, scanning photostimulation mapped which GC locations inhibit a recorded mitral cell. GCs were grouped by the bulb region they sat in: activated by the Go odour, by the NoGo odour, or by neither (identified by intrinsic imaging).",
    "question": "How does learning change the spatial spread of inhibition that young GCs from the Go-odour region give to mitral cells?",
    "options": [
-    "It narrows: fewer stimulation sites give strong inhibition, so inhibition becomes more focal",
-    "It broadens: inhibition spreads over a wider tangential area",
-    "It is unchanged; learning only alters mitral-to-GC excitation",
-    "Inhibition from Go-odour GCs disappears, while NoGo-odour GCs gain inhibition"
+    "It narrows: fewer stimulation sites give strong inhibition, making it more focal",
+    "It broadens: more distant stimulation sites now give strong inhibition, making it diffuse",
+    "It is unchanged: learning alters which GCs are excited, not how far they inhibit",
+    "It vanishes for Go-odour GCs, while GCs in the NoGo-odour region gain broad inhibition"
    ],
    "answer": 0,
    "explanation": "After training, the number of photostimulation sites giving >50% of peak inhibition onto mitral cells was lowest for Go-odour-region GCs. It was significantly lower than in untrained mice and than non-activated GCs in pseudo-trained mice, so GC inhibition became sharper and narrower. In the other direction, Go-odour GCs received stronger excitation from mitral cells after learning. EPL interneurons showed broad connectivity with mitral cells that did not change with learning. The GC changes appeared only in maturing GCs: GCs trained after they had matured showed no connectivity plasticity.",
@@ -3334,10 +3334,10 @@ window.QUIZ = {
    "setup": "Adult neurogenesis was blocked genetically (Gfap-tk mice given valganciclovir for 8 weeks), removing adult-born neurons up to ~8 weeks old. Head-fixed mice learned a difficult 8-mixture two-choice odour discrimination while mitral cells were imaged with two-photon calcium imaging. A separate cohort was imaged while passively receiving the same odours, without a task.",
    "question": "How does losing young adult-born neurons change mitral-cell odour responses?",
    "options": [
-    "Excitatory responses increase in both conditions, as expected from lost inhibition",
-    "Suppressive responses fall in both conditions",
-    "Mitral-cell responses are unchanged; only behaviour is affected",
-    "Suppressive (not excitatory) responses fall, but only while the mouse is engaged in the task"
+    "Excitatory responses rise in task and passive mice alike, reflecting lost inhibition",
+    "Suppressive responses fall in task and passive mice alike, independent of engagement",
+    "Mitral-cell responses are unchanged in both conditions; only learning speed is affected",
+    "Suppressive responses fall during the task but not during passive exposure"
    ],
    "answer": 3,
    "explanation": "During the task, ablation reduced the fraction of mitral cells with suppressive responses (p < 0.0001), while excitatory responses were not significantly changed. This lowered ensemble discriminability of the similar mixtures and slowed fine discrimination learning; easy discrimination was unaffected. During passive exposure, suppressive and excitatory fractions did not differ between ablated and control mice, and the genotype x condition interaction was significant for suppressive responses only. Young adult-born GCs therefore supply mitral-cell inhibition that is recruited by task engagement, probably through top-down input.",
@@ -3361,10 +3361,10 @@ window.QUIZ = {
    "setup": "BrdU labelled GCs born in adulthood (P60) or neonatally (P6). Two months later mice learned a difficult go/no-go discrimination, then were passively re-exposed, without reward, to either the rewarded (S+) or the unrewarded (S-) odour, and c-Fos was counted in the labelled GCs (normalized to naive mice).",
    "question": "Which GC population carries a signal for learned odour value?",
    "options": [
-    "Both adult- and neonatal-born GCs respond more to S+ than to S-",
-    "Adult-born GCs respond more to S+ than to S-; neonatal-born GCs do not",
-    "Neonatal-born GCs respond more to S+; adult-born GCs track odour identity only",
-    "Neither; GC activation by S+ and S- is the same in both populations"
+    "Both adult- and neonatal-born GCs are more strongly activated by S+ than by S-",
+    "Adult-born GCs respond more to S+ than S-; neonatal-born GCs show no difference",
+    "Neonatal-born GCs respond more to S+ than S-; adult-born GCs show no difference",
+    "Neither: both populations show the same c-Fos increase to S+ and S- over naive mice"
    ],
    "answer": 1,
    "explanation": "After learning, S+ exposure activated more adult-born GCs than S- exposure did (P = 0.0016), mostly through an increase above naive levels for S+. Neonatal-born GCs and periglomerular cells showed no S+/S- difference. Consistent with this, 40-Hz optogenetic activation of adult-born (but not neonatal-born) GCs during S+ presentations sped up learning, while activation during S- did not. In 3 of 9 mice, light alone paired with reward, with no odour, was enough to support learning.",
@@ -3389,10 +3389,10 @@ window.QUIZ = {
    "setup": "Two-photon imaging through a chronic window followed the same apical (EPL) dendritic segments of virus-labelled young adult-born GCs (abGCs, ~4-6 weeks old) or of resident GCs (rGCs) every other day for 9 days. Head-fixed mice either learned a difficult odour-mixture discrimination for water reward or passively received the same odours with identical handling and water restriction.",
    "question": "How did apical spine density change over the 9 days?",
    "options": [
-    "It rose similarly in abGCs and rGCs, in both task and passive mice",
-    "It rose in passive mice only, reflecting odour exposure without reward",
-    "It rose by ~60% in abGCs during learning, only ~15% in passive abGCs, and little in rGCs",
-    "It fell in abGCs during learning as spines were pruned to sharpen tuning"
+    "It rose by a similar ~30% in abGCs and rGCs, in task and passive mice alike",
+    "It rose most in passive abGCs (~40%), reflecting odour exposure without reward",
+    "It rose ~60% in abGCs during learning, ~15% in passive abGCs, and little in rGCs",
+    "It fell by ~25% in abGCs during learning, as spines were pruned to sharpen tuning"
    ],
    "answer": 2,
    "explanation": "Apical spine density of abGCs rose by ~60% during learning, through more spine formation and less elimination, compared with ~15% in passive mice. rGCs showed only a small rise in both conditions. Basal abGC spines also rose ~40% with learning. The increase was largest in abGC dendrites with excitatory responses to the learned odours and correlated with behavioural improvement. In parallel, abGC odour responses shifted towards stronger excitation with learning, whereas rGC excitatory responses initially weakened. (This differs from a histological study, Lepousez et al. 2014, which found learning-induced spine gains only in deep GCL domains, not apical dendrites.)",
@@ -3416,10 +3416,10 @@ window.QUIZ = {
    "setup": "Two-photon imaging showed that piriform-cortex feedback boutons in the GC layer are more active during task learning than during passive odour exposure. Piriform glutamatergic feedback axons in the OB were then optogenetically silenced during learning, or activated (ChrimsonR, during the odour period) while mice only passively received the odours, and apical spines of young adult-born GCs were tracked.",
    "question": "What role does piriform feedback play in learning-induced plasticity of adult-born GCs?",
    "options": [
-    "It is necessary and sufficient: silencing it blocks the spine increase, and pairing it with passive odours induces one",
-    "It is necessary but not sufficient: silencing blocks plasticity, but activation during passive exposure does nothing",
-    "It is irrelevant; abGC plasticity is driven by mitral-cell activity alone",
-    "It opposes plasticity: silencing feedback enhances the learning-induced spine increase"
+    "Necessary and sufficient: silencing it blocks the spine gain; activating it with passive odours induces one",
+    "Necessary but not sufficient: silencing it blocks the spine gain; activating it with passive odours does nothing",
+    "Not needed: abGC spine gains are driven by mitral-cell input, and silencing feedback leaves them intact",
+    "Opposing: silencing it enhances the spine gain, and activating it with passive odours prunes spines"
    ],
    "answer": 0,
    "explanation": "Silencing piriform feedback terminals during learning suppressed the apical spine increase of abGCs, down to passive-exposure levels. Pairing feedback activation with odours during passive exposure for 9 days raised abGC spine density (~30%), above light-during-ITI and no-opsin controls. On day 10, without light, it also left more abGCs with stronger excitatory odour responses. In naive slices, piriform feedback evoked larger, faster EPSCs in abGCs than in resident GCs. This explains why abGCs are the cells that read the behavioural context.",
@@ -3443,10 +3443,10 @@ window.QUIZ = {
    "setup": "Fibre photometry recorded population GCaMP6s signals from VGAT+ GCs in head-fixed mice. Mice first learned a go/go task (both odours rewarded), then a go/no-go task with the same kind of odour pair (one rewarded, one not). The separation of GC responses to the two odours (auROC and ΔF/F difference) was compared once mice were proficient.",
    "question": "How well were the two odours separated in GC population responses?",
    "options": [
-    "Equally in both tasks, because odour identity is fixed",
-    "Better in go/go, because both odours are rewarded and attended",
-    "In neither task; GC population responses are identical for different odours",
-    "Better in go/no-go, where the two odours differ in value"
+    "Equally well in both tasks, since the odours' chemical identity does not change",
+    "Better in go/go, where both odours are rewarded and so both are attended",
+    "Not at all in either task: GC population responses to the two odours were identical",
+    "Better in go/no-go, where the two odours predict different outcomes"
    ],
    "answer": 3,
    "explanation": "GC population responses to odours were excitatory only (mean ΔF/F ~2.9%). In go/no-go, S+/S- separation rose from naive to proficient (auROC, P = 0.012; ΔF/F difference, P = 0.0098). Go/go training produced no such increase. With the same odour pairs, auROC and ΔF/F difference were higher in go/no-go than in go/go (P = 0.015 and 0.027). GC signals also told correct rejections from false alarms on the same S- odour, so they reflect odour value or behavioural outcome, not just identity.",
@@ -3470,10 +3470,10 @@ window.QUIZ = {
    "setup": "Two-photon imaging of mitral and tufted cells in head-fixed mice proficient at a difficult go/no-go discrimination of odour mixtures. Odours lasted 1 s, followed by a 2-s trace period before reward.",
    "question": "Where does a reward-related (S+ vs S-) signal appear in OB output neurons, and what does that imply about its source?",
    "options": [
-    "In tufted cells' glomerular tufts, implying an origin in sensory input or glomerular circuits",
-    "As widespread inhibition in mitral-cell somata (not tufted cells, not apical tufts), implying deep perisomatic inhibition such as from GCs",
-    "As stronger excitation in both mitral and tufted cells, implying neuromodulatory gain increase",
-    "As inhibition locked to licking onset, implying a motor-related artefact"
+    "In tufted cells' apical tufts, as S+ excitation, implying it arrives with sensory input or glomerular circuits",
+    "In mitral-cell somata but not their apical tufts, as S+ inhibition, implying deep perisomatic inhibition such as GCs",
+    "In mitral and tufted somata alike, as S+ excitation, implying a neuromodulatory gain increase during reward",
+    "In mitral-cell somata, as inhibition locked to licking onset, implying a motor-related or respiratory artefact"
    ],
    "answer": 1,
    "explanation": "S+ evoked widespread inhibition in mitral-cell somata (post-odour mean ΔF/F -0.048 for S+ vs +0.034 for S-), diverging ~0.8 s after odour onset and locked to the odour, not to licks. Tufted cells responded alike to S+ and S-. The divergence was absent in mitral apical tufts but present in somata and nearby lateral dendrites. It vanished under pseudo-conditioning and after muscimol silencing of anterior piriform cortex. Dendritic gemmules of deep-EPL (putatively mitral-targeting) adult-born GCs responded more positively to S+ than mitral-cell input alone predicted, suggesting an extra top-down drive to these GCs.",
@@ -3495,10 +3495,10 @@ window.QUIZ = {
    "setup": "Mice were passively enriched with (+)/(-)-limonene for 1 h daily for 10 days, a non-associative (perceptual learning) protocol that makes these similar odours, and the overlapping pair pentanol/butanol, discriminable in a habituation/dishabituation test. In one group, the antimitotic AraC was infused into the subventricular zone before and during enrichment; controls received saline.",
    "question": "What happens to perceptual learning when OB neurogenesis is blocked?",
    "options": [
-    "Learning is intact; only odour detection thresholds change",
-    "Learning is intact but forgotten within days",
-    "Learning is abolished: AraC mice still fail to discriminate the similar odours after enrichment",
-    "Learning is enhanced because fewer immature cells add noise"
+    "Learning is intact; AraC mice discriminate, but their detection thresholds rise",
+    "Learning occurs in AraC mice, but the discrimination is forgotten within days",
+    "Learning is abolished: AraC mice still confuse the similar odours after enrichment",
+    "Learning is enhanced, since fewer immature GCs add noise to mitral-cell codes"
    ],
    "answer": 2,
    "explanation": "Saline-infused enriched mice came to discriminate (+)/(-)-limonene and pentanol/butanol, whereas AraC mice, with almost no new BrdU+ GCs, still confused both pairs after enrichment. Enrichment alone increased the survival of new GCs (but not periglomerular cells) and their Zif268 activation by the enrichment odour. It also raised GAD65/67 expression, and AraC lowered GAD65/67 in the GCL. Perceptual learning therefore works by adding new inhibitory GCs to the circuits activated by the experienced odours.",
@@ -3522,10 +3522,10 @@ window.QUIZ = {
    "setup": "BrdU-labelled newborn cells were ~2 weeks old when mice began an associative odour-reward task (find the reward using an odour cue). One group trained spaced (4 trials/day over 5 days); another trained massed (30 successive trials in one day); both groups reached similar end-of-training performance. Pseudo-conditioned controls received unpaired odour and reward. Retention was tested 5 days later and BrdU+ cells were counted in the GC layer.",
    "question": "Which training schedule increased the survival of adult-born GCs?",
    "options": [
-    "Only spaced training, which was also the only schedule remembered 5 days later",
-    "Only massed training, because it gave more trials per day",
-    "Both, since final performance was the same",
-    "Neither; associative learning does not affect adult-born GC survival"
+    "Only spaced training, the schedule still remembered 5 days later",
+    "Only massed training, which packed 30 trials into one day and so more practice",
+    "Both schedules equally, since they reached the same final performance",
+    "Neither; survival matched pseudo-conditioned controls in both groups"
    ],
    "answer": 0,
    "explanation": "Spaced conditioning raised BrdU+ cell density in the GC layer above pseudo-conditioned controls, and spaced mice remembered the task at day 5. Massed conditioning did not change BrdU+ density, and massed mice had forgotten the task by day 5 despite similar end-of-training performance. Infusing the protein-synthesis inhibitor anisomycin into the OB after each spaced session blocked learning across days and also prevented the survival increase, without changing baseline survival. Consolidation inside the OB therefore links learning-dependent survival of new GCs to long-term memory.",
@@ -3549,10 +3549,10 @@ window.QUIZ = {
    "setup": "Mice received AraC (antimitotic) or saline in the subventricular zone, starting 16 days before a 5-day associative odour-reward task and continuing through training; retention was tested 5 days after training. AraC removed newborn cells from the GC and glomerular layers.",
    "question": "Which stage of olfactory associative memory needs adult-born OB neurons?",
    "options": [
-    "Acquisition only: AraC mice never learn, but retention of what they learn is normal",
-    "Neither stage; AraC affects only odour detection",
-    "Both stages equally",
-    "Long-term retention: AraC mice learn normally but have forgotten the task 5 days later"
+    "Acquisition: AraC mice fail to learn, but whatever they learn is retained normally",
+    "Neither stage: AraC mice learn and retain normally, though odour detection falls",
+    "Both stages: AraC mice learn more slowly and also forget faster by day 5",
+    "Long-term retention: AraC mice learn normally but have forgotten by day 5"
    ],
    "answer": 3,
    "explanation": "AraC and saline mice had indistinguishable learning curves (latency and % correct) over 5 days of conditioning. At the 5-day retention test, saline mice still performed at end-of-training levels, while AraC mice had returned to pre-training latencies. In untreated mice, learning increased survival of new GCs in odour-specific clusters of the GC layer, and these cells were Zif268-activated on recall. Raising learning strength with D-cycloserine increased both new-GC survival and retention.",
@@ -3576,10 +3576,10 @@ window.QUIZ = {
    "setup": "BrdU was given 2, 5 or 9 weeks before a short go/no-go discrimination test. Fos expression in BrdU+/NeuN+ GCs was compared between untouched controls (C), mice exposed to the same odours with random reinforcement (unpaired, U) and mice that learned the discrimination (paired, P).",
    "question": "At what age are adult-born GCs recruited by odour exposure, and at what age by discrimination learning?",
    "options": [
-    "Both are strongest in 9-week-old, fully mature neurons",
-    "Odour exposure recruits mostly 2-week-old neurons; learning adds recruitment of 5- (and 9-) week-old neurons",
-    "Learning recruits mostly 2-week-old neurons; odour exposure recruits 5-9-week-old neurons",
-    "Age does not matter; ~15% of newborn GCs are recruited at every age"
+    "Both peak in 9-week-old, fully mature neurons; younger cells respond weakly to either",
+    "Exposure recruits mostly 2-week-old neurons; learning adds recruitment at 5 and 9 weeks",
+    "Learning recruits mostly 2-week-old neurons; exposure recruits 5- to 9-week-old ones",
+    "Age does not matter: about 15% of newborn GCs are recruited at 2, 5 and 9 weeks"
    ],
    "answer": 1,
    "explanation": "With odour exposure alone (U), Fos+ newborn neurons fell with age: ~14.9% at 2 weeks, ~7.6% at 5 weeks, ~3.1% at 9 weeks. Learning (P vs U) did not add recruitment at 2 weeks (12.9% vs 14.9%) but nearly doubled it at 5 weeks (14.1% vs 7.6%) and increased it at 9 weeks (5.3% vs 3.1%). Pre-existing GCs were not differentially recruited by learning. When 5-week-old cells used during learning were 9 weeks old a month later, they were not reactivated by long-term memory recall. The window for recruitment by associative learning thus opens once new GCs are ~5 weeks old.",
@@ -3601,10 +3601,10 @@ window.QUIZ = {
    "setup": "ChR2 was expressed in adult-born GCs by lentiviral injection into the rostral migratory stream of adult mice; ~3 months later an LED over the bulb activated them during go/no-go learning. Light (5-ms pulses at 40 Hz for 500 ms) started at odour onset on every trial. Mice learned either an easy pair (dissimilar odours) or a difficult pair (enantiomers or similar binary mixtures).",
    "question": "How does activating adult-born GCs during odour sampling affect learning?",
    "options": [
-    "It speeds learning of both easy and difficult discriminations equally",
-    "It slows learning, because extra inhibition blurs mitral-cell codes",
-    "It speeds learning of the difficult discrimination only, leaving easy learning unchanged",
-    "It has no effect on learning but improves performance after learning"
+    "It speeds learning of easy and difficult discriminations to a similar degree",
+    "It slows difficult learning, as extra inhibition blurs similar mitral-cell codes",
+    "It speeds learning of the difficult pair, while easy learning is unchanged",
+    "It leaves learning speed unchanged but raises accuracy once criterion is reached"
    ],
    "answer": 2,
    "explanation": "Paired 40-Hz activation left easy-task learning unchanged (P = 0.61) but markedly sped up the difficult task (P = 0.0008), with fewer blocks to criterion. Fewer blocks correlated with more ChR2+ cells. There was no benefit with 10-Hz light, with light delayed 500 ms after odour onset, or when the activated neurons were born in early postnatal life. 40-Hz stimulation produced stronger GABAergic inhibition of mitral cells than 10 Hz, and paired 40-Hz activation also improved memory of a difficult task 50 days later.",
@@ -3628,10 +3628,10 @@ window.QUIZ = {
    "setup": "GCs born either neonatally (P6) or in adulthood (P60) were labelled with tdTomato, and ChR2 was expressed in neurons of the anterior olfactory cortex (AON/anterior piriform), whose glutamatergic and GABAergic axons project to the bulb. Mice then did 21 days of go/no-go learning, pseudo-learning (random reward) or neither. Slice recordings at 60-80 days after labelling measured light-evoked monosynaptic EPSCs and IPSCs from cortical axons in the labelled GCs.",
    "question": "How did learning change cortical inputs to the two GC populations?",
    "options": [
-    "Cortical GABAergic IPSCs grew in mature adult-born GCs only; EPSCs and neonatal-born GCs were unchanged",
-    "Cortical EPSCs grew in both populations; IPSCs were unchanged",
-    "Both EPSCs and IPSCs grew in neonatal-born GCs only",
-    "Cortical IPSCs shrank in adult-born GCs, disinhibiting them"
+    "Cortical IPSCs grew in adult-born GCs; EPSCs, and neonatal-born GCs, were unchanged",
+    "Cortical EPSCs grew in adult- and neonatal-born GCs alike; IPSCs were unchanged",
+    "EPSCs and IPSCs both grew in neonatal-born GCs; adult-born GCs were unchanged",
+    "Cortical IPSCs shrank in adult-born GCs, disinhibiting them; EPSCs were unchanged"
    ],
    "answer": 0,
    "explanation": "In mature adult-born GCs, learning increased light-evoked cortical IPSC amplitude compared with control and pseudo-learning mice (P = 0.014 and 0.024), while EPSCs did not change (unlike younger, ~1-month-old abGCs, in which learning strengthened cortical excitation; Lepousez et al. 2014). Neonatal-born GCs showed no change in either current, and cortical IPSCs onto mitral cells were not potentiated. With GABAergic projections labelled selectively (vGAT-Cre), both minimal and maximal IPSCs increased, with unchanged paired-pulse ratio, and the number of cortical VGAT+ synapses on abGCs rose, mainly on the proximal dendrite. Optogenetically activating these AON GABAergic fibres during odour sampling impaired acquisition and reversal of odour-reward associations.",
