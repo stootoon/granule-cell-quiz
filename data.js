@@ -1026,6 +1026,14 @@ window.QUIZ = {
    "title": "α2-Adrenergic modulation of Ih in adult-born granule cells in the olfactory bulb",
    "journal": "Frontiers in Cellular Neuroscience",
    "doi": "10.3389/fncel.2022.1055569"
+  },
+  "APE7Z5MD": {
+   "key": "APE7Z5MD",
+   "author": "Shepherd, Chen & Greer",
+   "year": "2004",
+   "title": "Olfactory Bulb",
+   "journal": "The Synaptic Organization of the Brain, 5th ed., ch. 5 (Oxford University Press)",
+   "doi": ""
   }
  },
  "questions": [
@@ -1325,6 +1333,118 @@ window.QUIZ = {
     "6P8WGUEB",
     "HZVVYZQR",
     "GTVWVR5G"
+   ]
+  },
+  {
+   "id": "anatomy-12",
+   "topic": "anatomy",
+   "type": "concept",
+   "difficulty": 2,
+   "setup": "HRP fills and Golgi impregnations of rodent bulb sort granule cells into three main types by where their peripheral dendrites branch in the EPL. Mitral and tufted cells also differ in depth: mitral secondary dendrites run mainly in the deep and middle EPL, tufted cell dendrites more superficially.",
+   "question": "How do the three granule cell types line up with the output cells they can reach?",
+   "options": [
+    "Deep GCs branch among tufted dendrites and superficial GCs among mitral dendrites; intermediate GCs stay in the GCL",
+    "All three branch through the whole EPL; they differ in soma depth and spine density, not in which M/T dendrites they meet",
+    "Superficial GCs branch among tufted dendrites, deep GCs among mitral dendrites; intermediate GCs span all EPL levels",
+    "Superficial GCs contact PG cells in the glomerular layer, while deep and intermediate GCs share the mitral dendrites"
+   ],
+   "answer": 2,
+   "explanation": "Superficial GCs (Mori's type GIII) have peripheral dendrites that ramify mainly in the superficial EPL, among the dendrites of tufted cells. Deep GCs (GII) send their dendrites mainly to the deep EPL, among mitral cell dendrites. Intermediate GCs (GI) ramify at all levels of the EPL. Mitral cells themselves come in two types: type I send their secondary dendrites into the deepest EPL, and type II (displaced) mitral cells into the middle EPL. The chapter therefore concludes that mitral and tufted cells have both segregated and overlapping microcircuits through GCs: superficial GCs control tufted cells, deep GCs control mitral cells, and the third group interacts with both. Shepherd had proposed in 1972 that GCs at different depths play different roles in bulb circuits.",
+   "takeaway": "GC depth sorts their partners: superficial GCs pair with tufted cells, deep GCs with mitral cells, and intermediate GCs with both, giving partly separate mitral and tufted inhibitory circuits.",
+   "source": "APE7Z5MD",
+   "figure": {
+    "file": "img/anatomy-12.png",
+    "label": "Fig. 5.2C",
+    "page": 3,
+    "caption": "Local interneurons of the mammalian bulb (after Mori, 1987): the three granule cell types GI, GII and GIII, with their somata in the GRL and peripheral dendrites (d) in different parts of the EPL, plus periglomerular (PG) and short-axon (SA) cells."
+   },
+   "also": [
+    "EB8VKZ7C",
+    "DGZ8MWXQ"
+   ]
+  },
+  {
+   "id": "anatomy-13",
+   "topic": "anatomy",
+   "type": "concept",
+   "difficulty": 1,
+   "setup": "",
+   "question": "Roughly how many intrinsic neurons are there for each mitral cell in the olfactory bulb (order-of-magnitude estimates)?",
+   "options": [
+    "About 50-100 granule cells, 20 PG cells and 1 short-axon cell for each mitral cell",
+    "About 5-10 granule cells, 2 PG cells and 20 short-axon cells for each mitral cell",
+    "About 1,000 granule cells, 500 PG cells and 50 short-axon cells per mitral cell",
+    "About 20 granule cells, 50-100 PG cells and 1 short-axon cell for each mitral cell"
+   ],
+   "answer": 0,
+   "explanation": "Shepherd's (1972) order-of-magnitude estimates are PG to mitral 20:1, granule to mitral 50-100:1 and short-axon to mitral 1:1. Each GC carries 50-100 spines in the EPL, so the dendrodendritic microcircuits onto each mitral cell are very dense. The input side is even more convergent: in the rabbit about 50 million sensory neurons on one side project to about 2,000 glomeruli, which connect to about 50,000 mitral and 100,000 tufted cells, giving convergence of about 25,000:1 onto glomeruli, 1,000:1 onto mitral cells and 500:1 onto tufted cells. Rodents have about 20 million sensory neurons and about 1,800 glomeruli, roughly 11,000 axons per glomerulus. The chapter stresses that these numbers are rough and that better data are needed for different species.",
+   "takeaway": "GCs outnumber mitral cells by roughly 50-100 to 1, and each has 50-100 EPL spines: the bulb devotes far more neurons to local processing than to output.",
+   "source": "APE7Z5MD",
+   "figure": {
+    "file": "img/anatomy-13.png",
+    "label": "Fig. 5.1",
+    "page": 2,
+    "caption": "Overview of the olfactory pathway: sensory neurons expressing a given receptor (M71, I7, P2) converge on glomeruli; mitral (M) and tufted (T) cells, periglomerular (PG) cells and deep (GD) and superficial (GS) granule cells in the bulb; projections to olfactory cortex pyramidal cells (P) and centrifugal fibres (c.f.) back to the bulb."
+   },
+   "also": [
+    "DGZ8MWXQ"
+   ]
+  },
+  {
+   "id": "anatomy-14",
+   "topic": "anatomy",
+   "type": "concept",
+   "difficulty": 2,
+   "setup": "Serial electron microscopy of the external plexiform layer (EPL), where the dendrites of mitral and tufted cells meet the spines of granule cells.",
+   "question": "Where do mitral cells receive synapses in the EPL?",
+   "options": [
+    "Mostly on the primary dendrite, where centrifugal axons make type 1 synapses before it reaches the glomerulus",
+    "Almost only on secondary dendrites, as halves of reciprocal pairs; the primary dendrite gets few or none",
+    "Evenly on primary and secondary dendrites, about half from GC spines and half from short-axon cell terminals",
+    "Mostly on the soma in the MCL, since the secondary dendrites only release onto GC spines and receive nothing"
+   ],
+   "answer": 1,
+   "explanation": "More than 80% of all synapses in the EPL belong to reciprocal pairs between mitral/tufted secondary dendrites and GC spines (gemmules): a type 1 mitral-to-granule synapse next to a type 2 granule-to-mitral synapse. These were the first dendrodendritic synapses identified in the nervous system. Nearly all synapses onto mitral cells in the EPL are the granule halves of these pairs, and there are few or no synapses onto the primary dendrites. The primary dendrite is therefore specialized to carry signals from the glomerulus to the soma, while the secondary dendrites handle synaptic interactions, both output and input. Axon terminals of short-axon cells and centrifugal fibres in the EPL synapse predominantly on granule spines; none were seen on mitral dendrites. A suggestion that granule inhibition might be nonsynaptic (Ramon-Moliner, 1977) was checked by Jackowski et al. (1978), who found the granule-to-mitral synapses to be roughly equal partners in the pairs.",
+   "takeaway": "Mitral cells divide labour by compartment: the primary dendrite relays glomerular input to the soma, and the secondary dendrites carry nearly all EPL synapses, as reciprocal pairs with GC spines.",
+   "source": "APE7Z5MD",
+   "figure": {
+    "file": "img/anatomy-14.png",
+    "label": "Fig. 5.4C-D",
+    "page": 14,
+    "caption": "EM of a reciprocal synapse between a granule spine (Grs) and a mitral secondary dendrite (Md), with the type 1 Md-to-Grs and type 2 Grs-to-Md synapses marked by arrows (C); summary of GC synapses (D): reciprocal synapses with M/T dendrites and centrifugal terminals (a) on the spine in the EPL, and axon terminals on the basal processes in the GRL."
+   },
+   "also": [
+    "24FS2FAP",
+    "B7AR5M7C",
+    "HZVVYZQR"
+   ]
+  },
+  {
+   "id": "anatomy-15",
+   "topic": "anatomy",
+   "type": "predict",
+   "difficulty": 2,
+   "setup": "In the mutant mouse PCD (Purkinje cell degeneration), mitral cells degenerate at about 3 months of age while tufted cells survive. The reciprocal dendrodendritic synapses in the EPL are then examined by electron microscopy.",
+   "question": "What happens to the granule cell side of the circuit?",
+   "options": [
+    "The GC spines degenerate along with the mitral cells, so reciprocal synapses fall in proportion to mitral loss",
+    "The GC spines persist as output-only sites, releasing GABA nonsynaptically once the excitatory half is gone",
+    "Reciprocal synapses between GC spines and tufted dendrites increase, as orphaned spines find tufted partners",
+    "Short-axon cell terminals take over the vacated mitral contacts, so GC spines lose their reciprocal partners"
+   ],
+   "answer": 2,
+   "explanation": "After mitral cells degenerate in PCD mice, the number of reciprocal synapses between GC spines and tufted cell dendrites increases in compensation (Greer and Halasz, 1987). This suggests that many granule spines that lost their mitral partners survive and form new afferent and efferent synapses with tufted dendrites. Sensory deprivation has the opposite effect: dendrodendritic synapses become less common, and the granule-to-mitral half is hit harder (Benson et al., 1984). In development, the mitral/tufted-to-granule synapse appears first, at about E17 in the mouse, and the granule-to-mitral synapse a day later (Hinds, 1970). Shepherd and Greer proposed that the two halves of the reciprocal pair sustain each other through trophic or feedback mechanisms.",
+   "takeaway": "The reciprocal synapse is plastic: when mitral cells die, GC spines rewire onto tufted dendrites, and without sensory input the granule-to-mitral half is lost first.",
+   "source": "APE7Z5MD",
+   "figure": {
+    "file": "img/anatomy-15.png",
+    "label": "Fig. 5.4A-B",
+    "page": 14,
+    "caption": "High-voltage EM of gold-labelled granule cell dendrites (Grd) and spines (Grs); arrows mark spine heads apposed to unlabelled mitral/tufted dendrites (Md). Spine necks can exceed 5 µm and can branch into several heads."
+   },
+   "also": [
+    "6P8WGUEB",
+    "HZVVYZQR"
    ]
   },
   {
@@ -1705,6 +1825,36 @@ window.QUIZ = {
     "3WUARE28",
     "DK7TF7MG",
     "JHX6QEKW"
+   ]
+  },
+  {
+   "id": "dendrites-15",
+   "topic": "dendrites",
+   "type": "concept",
+   "difficulty": 2,
+   "setup": "Passive computational models built from serial EM reconstructions of GC dendrites and spines (Woolf, Greer and Shepherd; Rm = 4000 ohm cm2). An excitatory synaptic conductance is applied to one spine, C, and voltage is computed in that spine, its neighbours (A, B, D), the parent branch (E) and the soma. Spines sit either in a row along the branch or on a shared stem (a complex spine).",
+   "question": "What did these models show about how a spine EPSP spreads, and what did the chapter conclude?",
+   "options": [
+    "It stays confined to spine C by the thin neck, so each spine is isolated and lateral inhibition needs GC spikes",
+    "It spreads to every spine and to the soma at near-full size, since the whole GC tree is electrotonically compact",
+    "It decrements as much from the branch into each sister spine as into the branch, so neighbours see very little",
+    "It decrements into the branch but reaches sister spines almost intact, so lateral inhibition could be passive"
+   ],
+   "answer": 3,
+   "explanation": "The EPSP was large in the activated spine C and decremented as it spread into the branch (E). Spreading back out from the branch into the other spines (A, B, D) lost very little, because of the impedance mismatch between dendrite and spines; in a complex spine, spread from C to its neighbours occurred in steps. The soma saw only a small, slow depolarization: the EPL tree alone has an electrotonic length of about 0.4, but adding the ~600 µm, ~1 µm-thick shaft gives about 1.7. The chapter concluded that spine-to-spine spread is considerable over these short distances, so lateral inhibition can be mediated by passive spread alone, graded by electrotonic decrement, and that any active properties must be limited and not propagate into the shaft. Later work in this quiz shows GC dendrites are far from passive: single spines activate Na+ channels locally (Bywalez et al., 2015), stronger input triggers a global low-threshold Ca2+ spike (Egger et al., 2005), and roughly 5 to 9 coactive spines trigger regional or global spikes (Mueller and Egger, 2020).",
+   "takeaway": "In passive EM-based models a GC spine EPSP spreads easily to sister spines, so the chapter argued lateral inhibition could be purely passive; later work showed GC dendrites are excitable.",
+   "source": "APE7Z5MD",
+   "figure": {
+    "file": "img/dendrites-15.png",
+    "label": "Fig. 5.16",
+    "page": 43,
+    "caption": "Simulated EPSPs after an excitatory conductance in spine C, measured in spines A-D, the branch (E) and the soma, for a row of spines (top) and for a single plus a complex spine (bottom). Rm = 4000 ohm cm2."
+   },
+   "also": [
+    "6P8WGUEB",
+    "HZZSKX8N",
+    "P5P6CW2S",
+    "9BTVVAS6"
    ]
   },
   {
@@ -2328,6 +2478,147 @@ window.QUIZ = {
     "VI5T7NFB",
     "F7CJS7QA",
     "2K7B46ZP"
+   ]
+  },
+  {
+   "id": "circuit-24",
+   "topic": "circuit",
+   "type": "concept",
+   "difficulty": 1,
+   "setup": "The chapter's basic circuit separates two functions, input processing and output control, which it argues every local brain region performs.",
+   "question": "Where does the bulb carry out each function relative to the mitral and tufted cells?",
+   "options": [
+    "Input processing in glomerular modules; output control by GCs on long, overlapping secondary dendrites",
+    "Both in the glomeruli, where PG and GC dendrites share each tuft; the EPL only relays spikes to the cell body",
+    "Input processing by GCs in the EPL; output control by PG cells acting on the mitral axon in the granule layer",
+    "Output control inside each glomerular column, so GC inhibition stays confined to cells of the same glomerulus"
+   ],
+   "answer": 0,
+   "explanation": "Mitral and tufted cells receive sensory input on their glomerular tufts and send output from their cell bodies, so the two functions sit at two levels. Input processing happens in the glomeruli, each a module of sensory axons expressing one receptor, M/T tufts and PG dendrites, with interglomerular PG axons linking neighbours. The primary dendrite connects this level to the second, defining a translaminar glomerular unit or olfactory column. Output control is done mainly by reciprocal dendrodendritic synapses between M/T secondary dendrites and GC spines; the granule-to-mitral synapse is the GC's only output and the main means of controlling bulb output. Unlike the glomerular modules, the secondary dendritic fields are long and overlapping, so a mitral cell is modulated by a graded sum of effects from many other output cells and its activity reflects the context of neighbouring channels. In Fig. 5.5 this lateral inhibition makes M/T response spectra overlap less than those of the receptor neurons.",
+   "takeaway": "Input is processed glomerulus by glomerulus; output is controlled across glomeruli by GCs on long, overlapping secondary dendrites, which lets lateral inhibition sharpen M/T tuning.",
+   "source": "APE7Z5MD",
+   "figure": {
+    "file": "img/circuit-24.png",
+    "label": "Fig. 5.5",
+    "page": 17,
+    "caption": "Basic circuit of the mammalian bulb. Middle: receptor neuron subsets J and K converge on glomeruli with M/T and PG dendrites (input processing), and M/T secondary dendrites form reciprocal synapses with granule cells (GR; output control). Left: molecular components of the two levels. Right: overlapping receptor neuron tuning, glomerular connectivity, and narrower M/T tuning due to lateral inhibition (black bars)."
+   },
+   "also": [
+    "KQ3SM4I7",
+    "4MBN3KZ9"
+   ]
+  },
+  {
+   "id": "circuit-25",
+   "topic": "circuit",
+   "type": "concept",
+   "difficulty": 2,
+   "setup": "Isolated turtle olfactory bulb (Jahr and Nicoll, 1982). Current injected through the recording electrode depolarizes a single mitral cell, so it is the only mitral cell activated. Its spike is followed by a slow IPSP lasting seconds. The test is repeated in TTX plus TEA, and then with the GABA-A blocker bicuculline added.",
+   "question": "What did this single-cell experiment establish, according to the chapter?",
+   "options": [
+    "The IPSP needs Na+ spikes in a population of mitral cells, as TTX abolished it while sparing the Ca2+ spike",
+    "The IPSP is a K+ afterhyperpolarization of the injected cell, as TEA abolished it and bicuculline had no effect",
+    "Its own soma-dendrites excite GCs, the IPSP feeds back onto that same cell, and GABA-A receptors carry it",
+    "The IPSP comes from axon collaterals onto glycinergic cells, as TTX blocked it and bicuculline spared it"
+   ],
+   "answer": 2,
+   "explanation": "In control, injected current evoked a fast Na+ spike followed by a slow IPSP. In TTX (blocking Na+ channels) and TEA (blocking K+ channels that would shunt Ca2+ currents), the cell still fired a broader, slower spike, presumably carried by Ca2+, and it was still followed by the IPSP. Adding bicuculline left the spike but removed the IPSP. Because the injected cell was the only active mitral cell, the chapter draws three conclusions: the mitral soma-dendritic region is presynaptic to GCs, the circuit is recurrent onto the injected cell, and the inhibitory transmitter is GABA. The chapter also reads the persistence of recurrent inhibition in TTX as implying that voltage-gated Na+ channels do not contribute to potentials in GC spines. Later work in this quiz revised that point: single GC spines do activate Na+ channels locally (Bywalez et al., 2015), and these local spikes cooperate with NMDA receptors in releasing GABA (Lage-Rupprecht et al., 2020).",
+   "takeaway": "With only one mitral cell active, a TTX-resistant, bicuculline-sensitive IPSP showed that mitral dendrites drive recurrent GABAergic inhibition from GCs back onto themselves.",
+   "source": "APE7Z5MD",
+   "figure": {
+    "file": "img/circuit-25.png",
+    "label": "Fig. 5.8",
+    "page": 25,
+    "caption": "Intracellular recordings from a turtle mitral cell: injected current (top), fast-sweep spike (middle) and slow trace showing the IPSP (bottom), in control (A), TTX + TEA (B) and TTX + TEA + bicuculline (C). From Jahr and Nicoll (1982)."
+   },
+   "also": [
+    "VI5T7NFB",
+    "HZZSKX8N",
+    "3WUARE28"
+   ]
+  },
+  {
+   "id": "circuit-26",
+   "topic": "circuit",
+   "type": "predict",
+   "difficulty": 2,
+   "setup": "Rodent olfactory bulb slice (Xiong and Chen, 2002). A mitral cell is filled with the Ca2+ dye Oregon green BAPTA-1, and Ca2+ transients are imaged at seven sites along one secondary dendrite, from site 1 near the soma to site 7 at its end, several hundred µm away. A somatic action potential is evoked alone, or together with a local IPSP evoked near site 3 by a nearby stimulating electrode.",
+   "question": "What does the spike-evoked Ca2+ signal along the dendrite look like with and without the local IPSP?",
+   "options": [
+    "Alone, it reaches the dendrite's end at full size; with the IPSP, sites beyond site 3 lose it",
+    "Alone, it fades steadily and is gone by mid-dendrite; the IPSP makes no further difference",
+    "Alone, it reaches the end; with the IPSP, it shrinks by the same amount at all seven sites",
+    "Alone, it reaches the end; with the IPSP, sites near the soma lose it and distal sites keep it"
+   ],
+   "answer": 0,
+   "explanation": "Individual secondary dendrites are typically 1-3 µm in diameter and 500-1000 µm long, with electrotonic lengths estimated at 0.5-1.0. Xiong and Chen showed that a somatic action potential invades the secondary dendrite all the way to its end (site 7). A local IPSP at site 3 blocked the invasion: Ca2+ transients persisted at sites 1-3 but were lost beyond. Other studies cited in the chapter showed that propagation is controlled by GC inhibition and by intrinsic K+ conductances. The chapter concludes that the long secondary dendrites give mitral cells a wide anatomical substrate for interacting with mitral cells in many other glomerular modules, but that their actual functional domain is constantly regulated by interactions between neighbouring modules. GC inhibition can therefore set the reach of the very dendrites that drive it.",
+   "takeaway": "Mitral secondary dendrites can carry full action potentials for hundreds of µm, but a local GC IPSP can stop them, so inhibition sets the reach of lateral interactions.",
+   "source": "APE7Z5MD",
+   "figure": {
+    "file": "img/circuit-26.png",
+    "label": "Fig. 5.15",
+    "page": 41,
+    "caption": "Ca2+ (Oregon green BAPTA-1) transients at seven sites along a mitral secondary dendrite after a somatic action potential, in control and with a local IPSP near site 3 (a); somatic patch recording of the spike with and without the IPSP (b). From Xiong and Chen (2002)."
+   },
+   "also": [
+    "VI5T7NFB",
+    "I4VAVITK"
+   ]
+  },
+  {
+   "id": "circuit-27",
+   "topic": "circuit",
+   "type": "concept",
+   "difficulty": 3,
+   "setup": "The chapter's scheme for bulb rhythms: a prolonged EPSP in the mitral tuft drives a spike, which synchronously excites the GCs it contacts; they feed back an IPSP that silences the mitral cell until the IPSP subsides and it fires again. Glutamate from the mitral dendrite activates both AMPA and NMDA receptors on GC spines, whose membrane also carries an A-type K+ current (IA).",
+   "question": "According to the chapter, what sets how long each GC-driven IPSP lasts, and hence the frequency of mitral output?",
+   "options": [
+    "The fast AMPA EPSP drives brief GABA release; IA terminates each IPSP, and NMDA receptors only modulate it",
+    "IA shunts the fast AMPA EPSP, while the slow NMDA EPSP inactivates IA and keeps GABA release going",
+    "The decay of the tuft EPSP sets it: each cycle ends when the glomerular input falls, whatever the GCs do",
+    "The mitral spike width sets it, since each spike releases a fixed GABA quantum regardless of GC receptors"
+   ],
+   "answer": 1,
+   "explanation": "In Fig. 5.7 a sustained tuft EPSP is converted into rhythmic mitral spikes: each spike synchronously activates connected GCs, whose feedback and lateral inhibition shut off the mitral cell until the IPSP subsides and the cycle repeats, so mitral output is locked to rhythmic GC activation. The chapter then explains what sets the IPSP duration (citing Schoppa and Westbrook, 1999). The AMPA component of the GC spine response is enough to relieve the Mg2+ block of NMDA receptors but is shunted by the rapid IA conductance increase. The slow NMDA depolarization inactivates IA and persists, controlling GABA release over a long time course and producing the long-lasting IPSP in the mitral secondary dendrites. The interaction of IA with the AMPA and NMDA components therefore sets the IPSP duration and so the frequency of mitral oscillations. Later work in this quiz ties GCs to bulb oscillations directly: silencing GCs reduces gamma power (Fukunaga et al., 2014), and intrabulbar APV alters odour-evoked oscillations (Osinski et al., 2017).",
+   "takeaway": "In the chapter's account, NMDA receptors and IA in GC spines set how long GC inhibition lasts, and so pace mitral cell rhythms.",
+   "source": "APE7Z5MD",
+   "figure": {
+    "file": "img/circuit-27.png",
+    "label": "Fig. 5.7",
+    "page": 24,
+    "caption": "Postulated intracellular potentials in the mitral tuft (MT), mitral soma (MC) and granule cell (Gr): a sustained tuft EPSP is converted into rhythmic mitral spikes, each followed by a GC-driven IPSP. From Shepherd (1979)."
+   },
+   "also": [
+    "B7AR5M7C",
+    "2PAEZNM6"
+   ]
+  },
+  {
+   "id": "circuit-28",
+   "topic": "circuit",
+   "type": "predict",
+   "difficulty": 2,
+   "setup": "Rabbit mitral cells are recorded in vivo from identified regions of the glomerular sheet (Yokoi et al., 1995) while the nose is stimulated with a homologous series of aliphatic aldehydes (n-CHO, C3 to C11). Each mitral cell is excited by only two or three neighbouring members of the series. Responses to the other members are examined before and after bicuculline is applied.",
+   "question": "How does the cell respond to the aldehydes just flanking its excitatory range, and what does bicuculline do?",
+   "options": [
+    "They excite it weakly; bicuculline leaves this unchanged, so its range is set by receptor tuning alone",
+    "They inhibit it; bicuculline leaves this intact, pointing to presynaptic dopamine inhibition of ORNs",
+    "They have no effect; bicuculline makes the cell respond to nearly the whole C3 to C11 series instead",
+    "They inhibit it; bicuculline abolishes this inhibition, pointing to GABA-A inhibition from GCs"
+   ],
+   "answer": 3,
+   "explanation": "Each mitral cell's molecular receptive range (MRR) covered two or three neighbouring members of a homologous series, and the members immediately flanking that range inhibited the cell. Bicuculline abolished the inhibition, showing it was mediated by GABA-A receptors, and further evidence pointed to GC interactions with mitral/tufted cells. The chapter calls this the most direct evidence that dendrodendritic lateral inhibition enhances contrast between mitral cells carrying information about different odours. It is analogous to centre-surround receptive fields, but along a molecular axis (odotopes in related compounds) rather than a spatial one: in Fig. 5.20D the cell fed by glomerulus B has a narrower range because of lateral inhibition from neighbours A and C. The chapter hypothesises that the contrast is between mitral cells of different glomeruli and proposes \"odour opponent\" interactions, a hypothesis still to be tested. The scheme assumes GCs link glomeruli with related tuning; later imaging in this quiz found odour-responsive GCs spatially dispersed overall (Wienisch and Murthy, 2016).",
+   "takeaway": "Mitral cells are inhibited by odorants just outside their molecular receptive range, via GABA-A inhibition from GCs: dendrodendritic lateral inhibition as molecular contrast enhancement.",
+   "source": "APE7Z5MD",
+   "figure": {
+    "file": "img/circuit-28.png",
+    "label": "Fig. 5.20",
+    "page": 50,
+    "caption": "Contrast enhancement between mitral cells of neighbouring glomeruli: response spectra to C3-C11 aldehydes of ORN subsets projecting to glomeruli A-C, and the narrower range of the mitral cell fed by glomerulus B (D), with flanking aldehydes inhibitory (black bars). From Yokoi et al. (1995)."
+   },
+   "also": [
+    "823BKW3X",
+    "I4VAVITK"
    ]
   },
   {
@@ -3104,6 +3395,35 @@ window.QUIZ = {
     "IUAJH9P3",
     "ZWF9FFM8",
     "44N53FH5"
+   ]
+  },
+  {
+   "id": "feedback-18",
+   "topic": "feedback",
+   "type": "concept",
+   "difficulty": 2,
+   "setup": "Central (centrifugal) fibres from several brain regions end at characteristic depths in the bulb, and on characteristic parts of the granule cell dendritic tree.",
+   "question": "According to the chapter, where on granule cells do the different central inputs end?",
+   "options": [
+    "HDB on the deep processes, anterior commissure on the EPL spines, AON only on the soma and basal dendrites",
+    "AON on the deep processes, HDB on the middle dendrite, anterior commissure on the EPL spines and glomeruli",
+    "All three converge on the GC soma with type 2 (inhibitory) synapses, leaving the EPL spines free of inputs",
+    "Anterior commissure on deep processes, AON on mid-dendrite and EPL spines, HDB mainly on the EPL spines"
+   ],
+   "answer": 3,
+   "explanation": "Anterior commissure axons distribute mainly to the deep GC processes. The anterior olfactory nucleus distributes over the middle part of the dendrites, including the spines in the EPL. The horizontal limb of the diagonal band (HDB) ends mainly on the EPL spines, with some terminals at the borders of the glomeruli. Axon collaterals of olfactory cortex pyramidal cells end mostly in the GCL, and the locus coeruleus and raphe send fibres diffusely to the GCL and specifically into the glomeruli. In the EPL, centrifugal terminals synapse predominantly on the presynaptic granule spines (none were seen on mitral dendrites), forming a triad (centrifugal terminal, granule spine, mitral dendrite) that the chapter calls the key site of central control. The chapter describes all these central synapses as type 1 (excitatory-looking). Later work in this quiz revises that for the HDB: it also sends GABAergic axons that inhibit GCs (Boehm 2020; Constantinescu 2025).",
+   "takeaway": "Central inputs are layered along the GC: commissural fibres on deep processes, AON along the middle dendrite and spines, HDB mainly on the EPL spines next to the reciprocal synapse.",
+   "source": "APE7Z5MD",
+   "figure": {
+    "file": "img/feedback-18.png",
+    "label": "Fig. 5.2A",
+    "page": 3,
+    "caption": "Afferent fibres to the mammalian bulb: olfactory nerve (ON) fibres ending in glomeruli, and centrifugal fibres from contralateral and ipsilateral AON (cAON, iAON, via the anterior commissure, AC), tenia tecta (TT), olfactory cortex (OC), HDB, locus coeruleus (LC) and raphe (Ra), each with its own laminar termination."
+   },
+   "also": [
+    "62VAQVSZ",
+    "YAME37R4",
+    "R45M6L7I"
    ]
   },
   {
@@ -4483,6 +4803,34 @@ window.QUIZ = {
    },
    "also": [
     "I6Y3B65L"
+   ]
+  },
+  {
+   "id": "learning-19",
+   "topic": "learning",
+   "type": "predict",
+   "difficulty": 2,
+   "setup": "The Bruce effect: after mating, a female mouse forms a memory of the stud male's pheromones; later exposure to a strange male's odour blocks the pregnancy, but exposure to the stud male does not. Here the mGluR2 agonist DCG-IV is infused into the accessory olfactory bulb (AOB) while the female is exposed to male 1's odour without mating. She then mates with male 2 and is later re-exposed to male 1.",
+   "question": "What happens to the pregnancy when she is re-exposed to male 1?",
+   "options": [
+    "It is blocked: without mating DCG-IV cannot store a memory, since that needs the NA released at mating",
+    "It continues: DCG-IV stored a memory of male 1 by depressing GC inhibition of the mitral cells he drives",
+    "It continues, but only because DCG-IV erased her memory of male 2, so neither male's odour is familiar",
+    "It is blocked: DCG-IV strengthened GC inhibition of male 1's mitral cells, so his odour stays novel"
+   ],
+   "answer": 1,
+   "explanation": "Glutamate released by an activated mitral cell acts on mGluR2, found predominantly on GC dendrites, and reduces reciprocal GABAergic inhibition from those GCs, enhancing that mitral cell's output to the cortex (Fig. 5.21). Infusing DCG-IV into the AOB while the female smelled male 1 formed a memory of his pheromone that ordinarily forms only during mating. When she then mated with male 2 she formed a memory of him in the usual way, and the memory of male 1 prevented the pregnancy block that re-exposure to him would otherwise cause. Reducing reciprocal inhibition from GCs through mGluR2 therefore mimics the memory formation that occurs during mating. The chapter adds that several types of olfactory learning depend on noradrenaline, with noradrenergic modulation of dendrodendritic inhibition proposed as its site of action (centrifugal NA fibres in Fig. 5.21), and cites Llano and Marty (1995) calling these data the best mammalian evidence linking a specific learned behaviour to a change at an identified synapse. Note that this is the accessory bulb, which receives vomeronasal input, not the main bulb covered by most of this quiz.",
+   "takeaway": "In the accessory bulb, mGluR2-driven depression of GC inhibition onto pheromone-activated mitral cells is enough to store the Bruce-effect memory.",
+   "source": "APE7Z5MD",
+   "figure": {
+    "file": "img/learning-19.png",
+    "label": "Fig. 5.21",
+    "page": 52,
+    "caption": "Proposed memory mechanism in the mouse AOB: vomeronasal (VN) input to a mitral cell (MC), its reciprocal synapse with a GC spine, and noradrenergic centrifugal fibres (CF, NE). Glutamate acts on GluR (EPSP) and on GC mGluR2, which depresses GABAergic inhibition of the activated mitral cell. From Kaba et al. (1995)."
+   },
+   "also": [
+    "GG6A8BGG",
+    "JL32LN6M"
    ]
   }
  ]

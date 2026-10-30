@@ -1,6 +1,6 @@
 # Granule Cell Quiz
 
-An interactive quiz on olfactory bulb granule cells (GCs), built from papers in my Zotero library. There are 130 questions across eight topics:
+An interactive quiz on olfactory bulb granule cells (GCs), built from papers in my Zotero library and the olfactory bulb chapter of Shepherd's *The Synaptic Organization of the Brain*. There are 142 questions across eight topics:
 
 - anatomy and synapses
 - dendritic computation
