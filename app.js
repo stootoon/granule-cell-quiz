@@ -165,7 +165,7 @@
     if (prefs.pool === 'due') {
       const { due, fresh } = dueSplit();
       const nd = Math.min(due.length, len);
-      $('#pool-count').textContent = n ? `${len} questions: ${nd} due for review, ${len - nd} new` : 'Nothing due and nothing new for these settings';
+      $('#pool-count').textContent = n ? `${len} question${len === 1 ? '' : 's'}: ${nd} due for review, ${len - nd} new` : 'Nothing due and nothing new for these settings';
     } else $('#pool-count').textContent = n ? `${len} of ${n} matching questions` : 'No questions match these settings';
     $('#start-btn').disabled = !n;
     const seenAll = LQ.filter(q => stat(q.id).n).length;
